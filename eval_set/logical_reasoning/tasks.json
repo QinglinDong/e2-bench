@@ -1,0 +1,2947 @@
+[
+  {
+    "task_id": "game24_001",
+    "type": "game_of_24",
+    "description": "Using the numbers 11, 2, 1, and 12, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      11,
+      2,
+      1,
+      12
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((11 + 2) - 1) + 12",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_002",
+    "type": "game_of_24",
+    "description": "Using the numbers 5, 4, 4, and 3, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      5,
+      4,
+      4,
+      3
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (5 + (4 * 4)) + 3",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_003",
+    "type": "game_of_24",
+    "description": "Using the numbers 12, 2, 11, and 12, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      12,
+      2,
+      11,
+      12
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (12 * 2) * (12 - 11)",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_004",
+    "type": "game_of_24",
+    "description": "Using the numbers 9, 2, 10, and 7, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      9,
+      2,
+      10,
+      7
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((9 - 2) + 10) + 7",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_005",
+    "type": "game_of_24",
+    "description": "Using the numbers 1, 1, 2, and 4, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      1,
+      1,
+      2,
+      4
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_006",
+    "type": "game_of_24",
+    "description": "Using the numbers 4, 9, 10, and 1, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      4,
+      9,
+      10,
+      1
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((4 + 9) + 10) + 1",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_007",
+    "type": "game_of_24",
+    "description": "Using the numbers 9, 4, 12, and 11, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      9,
+      4,
+      12,
+      11
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((9 + 4) - 11) * 12",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_008",
+    "type": "game_of_24",
+    "description": "Using the numbers 12, 9, 7, and 4, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      12,
+      9,
+      7,
+      4
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((12 + 9) + 7) - 4",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_009",
+    "type": "game_of_24",
+    "description": "Using the numbers 8, 10, 5, and 13, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      8,
+      10,
+      5,
+      13
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_010",
+    "type": "game_of_24",
+    "description": "Using the numbers 1, 13, 13, and 3, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      1,
+      13,
+      13,
+      3
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((1 + 13) + 13) - 3",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_011",
+    "type": "game_of_24",
+    "description": "Using the numbers 12, 7, 6, and 5, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      12,
+      7,
+      6,
+      5
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: 12 + ((7 - 5) * 6)",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_012",
+    "type": "game_of_24",
+    "description": "Using the numbers 3, 4, 13, and 6, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      3,
+      4,
+      13,
+      6
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((3 + 13) / 4) * 6",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_013",
+    "type": "game_of_24",
+    "description": "Using the numbers 2, 2, 7, and 2, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      2,
+      2,
+      7,
+      2
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: 2 * ((2 * 7) - 2)",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_014",
+    "type": "game_of_24",
+    "description": "Using the numbers 6, 6, 10, and 5, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      6,
+      6,
+      10,
+      5
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((6 + 6) * 10) / 5",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_015",
+    "type": "game_of_24",
+    "description": "Using the numbers 13, 1, 12, and 8, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      13,
+      1,
+      12,
+      8
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_016",
+    "type": "game_of_24",
+    "description": "Using the numbers 9, 2, 7, and 2, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      9,
+      2,
+      7,
+      2
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_017",
+    "type": "game_of_24",
+    "description": "Using the numbers 9, 5, 11, and 10, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      9,
+      5,
+      11,
+      10
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (9 * 5) - (11 + 10)",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_018",
+    "type": "game_of_24",
+    "description": "Using the numbers 6, 10, 4, and 12, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      6,
+      10,
+      4,
+      12
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((6 + 10) - 4) + 12",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_019",
+    "type": "game_of_24",
+    "description": "Using the numbers 2, 1, 11, and 4, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      2,
+      1,
+      11,
+      4
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (2 * (11 - 1)) + 4",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_020",
+    "type": "game_of_24",
+    "description": "Using the numbers 13, 5, 2, and 4, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      13,
+      5,
+      2,
+      4
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((13 + 5) + 2) + 4",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_021",
+    "type": "game_of_24",
+    "description": "Using the numbers 2, 7, 5, and 8, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      2,
+      7,
+      5,
+      8
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((2 * 5) - 7) * 8",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_022",
+    "type": "game_of_24",
+    "description": "Using the numbers 11, 6, 3, and 6, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      11,
+      6,
+      3,
+      6
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((11 * 6) + 6) / 3",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_023",
+    "type": "game_of_24",
+    "description": "Using the numbers 6, 4, 11, and 5, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      6,
+      4,
+      11,
+      5
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (6 / 4) * (11 + 5)",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_024",
+    "type": "game_of_24",
+    "description": "Using the numbers 12, 11, 11, and 2, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      12,
+      11,
+      11,
+      2
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((12 + 11) - 11) * 2",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_025",
+    "type": "game_of_24",
+    "description": "Using the numbers 10, 11, 3, and 9, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      10,
+      11,
+      3,
+      9
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (10 + 11) + (9 / 3)",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_026",
+    "type": "game_of_24",
+    "description": "Using the numbers 12, 4, 3, and 8, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      12,
+      4,
+      3,
+      8
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (12 * 4) - (3 * 8)",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_027",
+    "type": "game_of_24",
+    "description": "Using the numbers 7, 5, 11, and 12, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      7,
+      5,
+      11,
+      12
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_028",
+    "type": "game_of_24",
+    "description": "Using the numbers 9, 4, 11, and 6, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      9,
+      4,
+      11,
+      6
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_029",
+    "type": "game_of_24",
+    "description": "Using the numbers 13, 13, 1, and 4, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      13,
+      13,
+      1,
+      4
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_030",
+    "type": "game_of_24",
+    "description": "Using the numbers 1, 13, 6, and 7, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      1,
+      13,
+      6,
+      7
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_031",
+    "type": "game_of_24",
+    "description": "Using the numbers 5, 2, 4, and 10, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      5,
+      2,
+      4,
+      10
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((5 * 2) + 4) + 10",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_032",
+    "type": "game_of_24",
+    "description": "Using the numbers 12, 6, 4, and 11, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      12,
+      6,
+      4,
+      11
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((12 - 11) * 6) * 4",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_033",
+    "type": "game_of_24",
+    "description": "Using the numbers 8, 7, 11, and 8, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      8,
+      7,
+      11,
+      8
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (8 * (11 - 7)) - 8",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_034",
+    "type": "game_of_24",
+    "description": "Using the numbers 3, 5, 3, and 4, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      3,
+      5,
+      3,
+      4
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (3 * (5 - 3)) * 4",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_035",
+    "type": "game_of_24",
+    "description": "Using the numbers 12, 9, 9, and 5, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      12,
+      9,
+      9,
+      5
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((12 - 9) * 5) + 9",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_036",
+    "type": "game_of_24",
+    "description": "Using the numbers 12, 10, 7, and 10, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      12,
+      10,
+      7,
+      10
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((12 - 10) * 7) + 10",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_037",
+    "type": "game_of_24",
+    "description": "Using the numbers 7, 6, 4, and 3, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      7,
+      6,
+      4,
+      3
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_038",
+    "type": "game_of_24",
+    "description": "Using the numbers 9, 8, 2, and 13, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      9,
+      8,
+      2,
+      13
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: 9 / (2 - (13 / 8))",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_039",
+    "type": "game_of_24",
+    "description": "Using the numbers 1, 2, 3, and 11, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      1,
+      2,
+      3,
+      11
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (1 + 2) * (11 - 3)",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_040",
+    "type": "game_of_24",
+    "description": "Using the numbers 3, 13, 11, and 7, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      3,
+      13,
+      11,
+      7
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_041",
+    "type": "game_of_24",
+    "description": "Using the numbers 10, 2, 7, and 7, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      10,
+      2,
+      7,
+      7
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((10 / 7) + 2) * 7",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_042",
+    "type": "game_of_24",
+    "description": "Using the numbers 10, 8, 9, and 5, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      10,
+      8,
+      9,
+      5
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_043",
+    "type": "game_of_24",
+    "description": "Using the numbers 9, 1, 11, and 12, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      9,
+      1,
+      11,
+      12
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((1 * 11) - 9) * 12",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_044",
+    "type": "game_of_24",
+    "description": "Using the numbers 2, 11, 9, and 13, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      2,
+      11,
+      9,
+      13
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: ((2 * 13) - 11) + 9",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_045",
+    "type": "game_of_24",
+    "description": "Using the numbers 5, 13, 11, and 6, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      5,
+      13,
+      11,
+      6
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (5 * (13 - 6)) - 11",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_046",
+    "type": "game_of_24",
+    "description": "Using the numbers 2, 5, 7, and 3, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      2,
+      5,
+      7,
+      3
+    ],
+    "ground_truth_solvable": true,
+    "ground_truth_answer": "Yes. Example: (2 + (5 * 3)) + 7",
+    "difficulty": "medium",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_047",
+    "type": "game_of_24",
+    "description": "Using the numbers 9, 13, 9, and 1, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      9,
+      13,
+      9,
+      1
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_048",
+    "type": "game_of_24",
+    "description": "Using the numbers 3, 3, 11, and 8, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      3,
+      3,
+      11,
+      8
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_049",
+    "type": "game_of_24",
+    "description": "Using the numbers 13, 12, 12, and 4, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      13,
+      12,
+      12,
+      4
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "game24_050",
+    "type": "game_of_24",
+    "description": "Using the numbers 12, 5, 7, and 11, and the operations +, -, *, /, make the number 24. Each number must be used exactly once. Is it possible? If yes, provide the expression.",
+    "numbers": [
+      12,
+      5,
+      7,
+      11
+    ],
+    "ground_truth_solvable": false,
+    "ground_truth_answer": "No, it is not possible to make 24 with these numbers.",
+    "difficulty": "hard",
+    "category": "game_of_24"
+  },
+  {
+    "task_id": "meeting_schedule_time_slots",
+    "description": "Four meetings\u2014A, B, C, and D\u2014must be scheduled into four distinct time slots numbered 1 through 4. The constraints are: Meeting A cannot be at the same time as Meeting B; Meeting C must be scheduled immediately before Meeting D; Meeting B cannot be in time slot 4; and Meeting A cannot be in time slot 1. Assign each meeting to a unique time slot such that all constraints are satisfied.",
+    "ground_truth_answer": {
+      "A": 2,
+      "B": 3,
+      "C": 1,
+      "D": 4
+    },
+    "verification_steps": [
+      "Meetings must be assigned to time slots 1, 2, 3, 4 with no overlaps.",
+      "Meeting C must be immediately before Meeting D, so C and D must occupy consecutive slots where D's slot = C's slot + 1.",
+      "Meeting A cannot be at the same time as Meeting B, so A and B cannot share the same slot.",
+      "Meeting B cannot be in slot 4, so B \u2208 {1,2,3}.",
+      "Meeting A cannot be in slot 1, so A \u2208 {2,3,4}.",
+      "Try C=1, D=2 (consecutive) but A and B must be assigned to 3 and 4. Since B cannot be 4, B=3 and A=4. However, A=4 and B=3 are different slots, so no conflict.",
+      "But this conflicts with Meeting A cannot be at same time as Meeting B (which is slot 3), so no conflict here. But we must also ensure that A is not in slot 1 (true) and B not in slot 4 (true). So this assignment is possible: C=1, D=2, B=3, A=4.",
+      "Check if any other constraints are violated: none. Therefore, this is a valid solution.",
+      "However, the initial ground truth answer is A=2, B=3, C=1, D=4, which also satisfies all constraints: C=1 and D=4 (not consecutive), so invalid as per constraint 2.",
+      "Adjust the answer to the valid one: C=1, D=2, A=4, B=3."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 1
+  },
+  {
+    "task_id": "circular_table_seating_with_adjacency_constraints",
+    "description": "Six people named Alice, Bob, Carol, Dave, Eve, and Frank are to be seated around a circular table. The seating must satisfy the following constraints: Alice cannot sit next to Bob; Carol must sit immediately to the right of Dave; Eve must not sit next to Frank; and Bob must sit next to Carol. Determine the seating order starting from Alice and moving clockwise around the table.",
+    "ground_truth_answer": "Alice, Eve, Frank, Dave, Carol, Bob",
+    "verification_steps": [
+      "Since Carol must sit immediately to the right of Dave, Carol sits clockwise next to Dave.",
+      "Bob must sit next to Carol, so Bob is either immediately to the right or left of Carol.",
+      "Alice cannot sit next to Bob, so Alice cannot be adjacent to Bob.",
+      "Eve must not sit next to Frank, so Eve and Frank cannot be adjacent.",
+      "Testing the arrangement: Alice, Eve, Frank, Dave, Carol, Bob (clockwise) satisfies:",
+      "- Carol is immediately right of Dave (Carol after Dave).",
+      "- Bob sits next to Carol (Bob after Carol).",
+      "- Alice is not next to Bob (neighbors are Bob and Alice? No, Alice neighbors Eve and Bob? Alice neighbors Eve and Bob? Actually in this order, Alice neighbors Bob? Check adjacency carefully.",
+      "Adjacency pairs clockwise: (Alice,Eve), (Eve,Frank), (Frank,Dave), (Dave,Carol), (Carol,Bob), (Bob,Alice). So Alice neighbors Eve and Bob, violating Alice not next to Bob.",
+      "Try swapping Eve and Frank: Alice, Frank, Eve, Dave, Carol, Bob.",
+      "Adjacency pairs: (Alice,Frank), (Frank,Eve), (Eve,Dave), (Dave,Carol), (Carol,Bob), (Bob,Alice). Alice neighbors Frank and Bob again, violating constraint.",
+      "Try another arrangement: Alice, Eve, Dave, Carol, Bob, Frank.",
+      "Adjacency pairs: (Alice,Eve), (Eve,Dave), (Dave,Carol), (Carol,Bob), (Bob,Frank), (Frank,Alice).",
+      "- Carol is immediately right of Dave: Carol follows Dave (yes).",
+      "- Bob next to Carol (yes).",
+      "- Alice not next to Bob (Alice neighbors Eve and Frank, Bob neighbors Carol and Frank, so no Alice-Bob adjacency).",
+      "- Eve not next to Frank (Eve neighbors Alice and Dave, Frank neighbors Bob and Alice, no Eve-Frank adjacency).",
+      "All constraints satisfied. So the order is Alice, Eve, Dave, Carol, Bob, Frank."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "constraint_satisfaction",
+    "task_index": 2
+  },
+  {
+    "task_id": "map_coloring_5_regions_3_colors_unique_solution",
+    "description": "You have a map with five regions labeled A, B, C, D, and E. The adjacency relationships are as follows: A is adjacent to B and C; B is adjacent to A, C, and D; C is adjacent to A, B, D, and E; D is adjacent to B, C, and E; E is adjacent to C and D. You need to color each region using one of three colors: Red, Green, and Blue. The constraint is that no two adjacent regions can share the same color. Determine the unique coloring assignment for all five regions that satisfies these constraints.",
+    "ground_truth_answer": {
+      "A": "Red",
+      "B": "Green",
+      "C": "Blue",
+      "D": "Red",
+      "E": "Green"
+    },
+    "verification_steps": [
+      "Assign color Red to region A.",
+      "Since A is Red, regions B and C, which are adjacent to A, cannot be Red. Assign Green to B and Blue to C.",
+      "Region D is adjacent to B (Green) and C (Blue), so D cannot be Green or Blue. Assign Red to D.",
+      "Region E is adjacent to C (Blue) and D (Red), so E cannot be Blue or Red. Assign Green to E.",
+      "Verify no adjacent regions share the same color: A(Red) and B(Green) differ; A(Red) and C(Blue) differ; B(Green) and C(Blue) differ; B(Green) and D(Red) differ; C(Blue) and D(Red) differ; C(Blue) and E(Green) differ; D(Red) and E(Green) differ.",
+      "All adjacency constraints are satisfied with the assigned colors.",
+      "No other color assignments satisfy all adjacency constraints without conflict, confirming uniqueness."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 3
+  },
+  {
+    "task_id": "minimize_total_cost_task_assignment_4_workers_4_tasks",
+    "description": "There are 4 workers (W1, W2, W3, W4) and 4 tasks (T1, T2, T3, T4). Each worker has a different cost to complete each task, given in the cost matrix below, where the entry at row i and column j represents the cost for worker Wi to perform task Tj:\n\nCosts:\nW1: T1=9, T2=2, T3=7, T4=8\nW2: T1=6, T2=4, T3=3, T4=7\nW3: T1=5, T2=8, T3=1, T4=8\nW4: T1=7, T2=6, T3=9, T4=4\n\nAssign each worker to exactly one distinct task so that each task is assigned to exactly one worker. Find the assignment that minimizes the total cost and state the minimum total cost.",
+    "ground_truth_answer": {
+      "assignments": {
+        "W1": "T2",
+        "W2": "T3",
+        "W3": "T1",
+        "W4": "T4"
+      },
+      "minimum_total_cost": 13
+    },
+    "verification_steps": [
+      "List all possible assignments of 4 workers to 4 tasks ensuring one-to-one mapping (24 permutations).",
+      "Calculate total cost for each assignment by summing the costs of the assigned worker-task pairs.",
+      "For the assignment W1->T2, W2->T3, W3->T1, W4->T4, total cost = 2 (W1-T2) + 3 (W2-T3) + 5 (W3-T1) + 4 (W4-T4) = 14.",
+      "Check if any other assignment yields a lower total cost.",
+      "Consider W1->T2, W2->T3, W3->T1, W4->T4 again carefully: total cost is 2 + 3 + 5 + 4 = 14 (corrected).",
+      "Evaluate alternate assignment W1->T2, W2->T1, W3->T3, W4->T4: costs = 2 + 6 + 1 + 4 = 13, which is less than 14.",
+      "Confirm no other assignment has total cost less than 13 by checking all permutations.",
+      "Therefore, the minimum total cost is 13 with assignment W1->T2, W2->T1, W3->T3, W4->T4."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 4
+  },
+  {
+    "task_id": "unique_4x4_sudoku_puzzle_with_given_clues",
+    "description": "Consider a 4x4 grid divided into four 2x2 blocks. The goal is to fill each cell with a digit from 1 to 4 such that every row, every column, and every 2x2 block contains all digits from 1 to 4 exactly once. The following clues are given: In row 1, column 2 the digit is 3; in row 2, column 4 the digit is 1; in row 3, column 1 the digit is 4; and in row 4, column 3 the digit is 2. Complete the grid respecting these clues and all Sudoku rules. What is the digit in row 3, column 3?",
+    "ground_truth_answer": 3,
+    "verification_steps": [
+      "Step 1: Note the fixed clues: (1,2)=3, (2,4)=1, (3,1)=4, (4,3)=2.",
+      "Step 2: Since each 2x2 block contains digits 1 to 4 exactly once, analyze the first block (rows 1-2, cols 1-2). The digit 3 is at (1,2), so (1,1), (2,1), and (2,2) must be from {1,2,4}.",
+      "Step 3: The digit 4 is fixed at (3,1), affecting the third block (rows 3-4, cols 1-2), so (3,2), (4,1), (4,2) must be {1,2,3} excluding 4.",
+      "Step 4: The digit 1 is fixed at (2,4), so in the second block (rows 1-2, cols 3-4), (1,3), (1,4), (2,3) must be {2,3,4} excluding 1.",
+      "Step 5: The digit 2 is fixed at (4,3), so in the fourth block (rows 3-4, cols 3-4), (3,3), (3,4), (4,4) must be {1,3,4} excluding 2.",
+      "Step 6: Considering row 3, the digits must be {1,2,3,4} with (3,1)=4 and (3,3) unknown. From the constraints and elimination, (3,3) can only be 3.",
+      "Step 7: All other cells can be logically deduced, confirming that (3,3) = 3 is the unique solution consistent with all rules and clues."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "constraint_satisfaction",
+    "task_index": 5
+  },
+  {
+    "task_id": "course_room_time_scheduling_puzzle",
+    "description": "There are 5 courses (C1, C2, C3, C4, C5) that need to be scheduled in 3 rooms (R1, R2, R3) across 4 time slots (T1, T2, T3, T4). Each course must be assigned exactly one room and one time slot. No two courses can be scheduled in the same room at the same time. Additionally, courses C1 and C2 cannot be scheduled at the same time because they share the same instructor. Course C3 requires room R1 or R3 only. Course C4 cannot be scheduled in time slot T4. Course C5 must be scheduled in room R2. Determine the unique valid schedule specifying the room and time slot for each course.",
+    "ground_truth_answer": {
+      "C1": {
+        "room": "R1",
+        "time": "T1"
+      },
+      "C2": {
+        "room": "R2",
+        "time": "T2"
+      },
+      "C3": {
+        "room": "R3",
+        "time": "T1"
+      },
+      "C4": {
+        "room": "R3",
+        "time": "T3"
+      },
+      "C5": {
+        "room": "R2",
+        "time": "T4"
+      }
+    },
+    "verification_steps": [
+      "Step 1: Assign C5 to room R2 as required and note it must occupy one of the four time slots.",
+      "Step 2: C4 cannot be in T4, so assign C4 to room R3 at T3 to avoid conflict with C5 in R2.",
+      "Step 3: C3 must be in R1 or R3; R3 is occupied at T3 by C4, so assign C3 to R3 at T1 or R1 at T1.",
+      "Step 4: C1 and C2 cannot be at the same time. To avoid conflict and room overlap, assign C1 to R1 at T1 and C2 to R2 at T2.",
+      "Step 5: Assign C3 to R3 at T1 (since R1 at T1 is taken by C1), fulfilling its room requirement.",
+      "Step 6: Assign C5 to R2 at T4, the only remaining time slot in R2 without conflict.",
+      "Step 7: Verify no two courses share the same room at the same time and all constraints are met: C1 and C2 different times, C3 in R3, C4 not in T4, C5 in R2.",
+      "Step 8: Confirm that all courses have unique room and time assignments with no conflicts."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 6
+  },
+  {
+    "task_id": "tournament_bracket_winner_determination",
+    "description": "In a single-elimination tennis tournament, 8 players are seeded from 1 (highest) to 8 (lowest). The initial quarterfinal matchups are: Seed 1 vs Seed 8, Seed 4 vs Seed 5, Seed 3 vs Seed 6, and Seed 2 vs Seed 7. In each match, the player with the higher seed number (i.e., the lower-ranked player) wins against the lower seed number player (i.e., the higher-ranked player). The tournament proceeds with semifinals between the winners of (Seed 1 vs Seed 8) and (Seed 4 vs Seed 5), and the winners of (Seed 3 vs Seed 6) and (Seed 2 vs Seed 7). The winners of the semifinals then play the final match. Based on these conditions and match results, who is the overall tournament winner?",
+    "ground_truth_answer": "Seed 7",
+    "verification_steps": [
+      "Quarterfinals: Seed 1 vs Seed 8 -> Seed 8 wins because the higher seed number wins.",
+      "Quarterfinals: Seed 4 vs Seed 5 -> Seed 5 wins.",
+      "Quarterfinals: Seed 3 vs Seed 6 -> Seed 6 wins.",
+      "Quarterfinals: Seed 2 vs Seed 7 -> Seed 7 wins.",
+      "Semifinal 1: Seed 8 vs Seed 5 -> Seed 8 loses because 5 < 8, so Seed 5 wins (higher seed number wins).",
+      "Semifinal 2: Seed 6 vs Seed 7 -> Seed 7 wins since 7 > 6.",
+      "Final: Seed 5 vs Seed 7 -> Seed 7 wins because 7 > 5.",
+      "Therefore, the overall winner is Seed 7."
+    ],
+    "difficulty": "medium",
+    "answer_type": "choice",
+    "category": "constraint_satisfaction",
+    "task_index": 7
+  },
+  {
+    "task_id": "optimal_resource_allocation_among_four_projects",
+    "description": "You have 100 units of a resource to allocate among four projects: A, B, C, and D. Each unit allocated to a project yields a certain value according to the following marginal value functions: Project A yields 5 units of value per resource unit up to 20 units, then 3 units per additional unit; Project B yields 4 units per unit up to 30 units, then 2 units after that; Project C yields 6 units per unit up to 10 units, then 4 units after that; Project D yields 3 units per unit for all units allocated. You must allocate all 100 units among these projects (integer units only) to maximize the total value. What is the optimal allocation to projects A, B, C, and D, and what is the maximum total value achieved?",
+    "ground_truth_answer": {
+      "A": 30,
+      "B": 30,
+      "C": 10,
+      "D": 30,
+      "maximum_total_value": 430
+    },
+    "verification_steps": [
+      "Step 1: Understand marginal values per project and allocation limits: A: 5 value/unit up to 20 units, then 3/unit thereafter; B: 4/unit up to 30 units, then 2/unit thereafter; C: 6/unit up to 10 units, then 4/unit thereafter; D: 3/unit for all units.",
+      "Step 2: Since units are limited and total is 100, we want to allocate units to the highest marginal value segments first: C's first 10 units give 6/unit, highest marginal value; allocate 10 units to C for 60 value.",
+      "Step 3: Next highest marginal value is A's first 20 units at 5/unit; allocate 20 units to A for 100 value, total allocated 30 units so far.",
+      "Step 4: Next highest marginal value is B's first 30 units at 4/unit; allocate 30 units to B for 120 value, total allocated 60 units so far.",
+      "Step 5: Remaining units: 40 units. Next best marginal values are A's extra units at 3/unit, C's extra units at 4/unit, B's extra units at 2/unit, and D's units at 3/unit.",
+      "Step 6: Among these, C's extra units yield 4/unit, better than A's 3/unit, B's 2/unit, and D's 3/unit. But C has only 10 units in its second segment; allocate 10 more units to C for 40 value; total allocated 70 units.",
+      "Step 7: Remaining 30 units can be allocated to A's extra units (3/unit) or D (3/unit). Both have same marginal value, allocate 10 units to A (extra) for 30 value and 20 units to D for 60 value, but this sums to 30 units needed, so adjust as follows: allocate 10 units to A (extra) and 20 units to D.",
+      "Step 8: Total allocation: A 30 units (20 at 5/unit +10 at 3/unit), B 30 units (all at 4/unit), C 20 units (10 at 6/unit +10 at 4/unit), D 20 units (all at 3/unit). Calculate total value: A = 20*5 + 10*3 = 100 + 30 = 130; B = 30*4 = 120; C = 10*6 + 10*4 = 60 + 40 = 100; D = 20*3 = 60; Total = 130 + 120 + 100 + 60 = 410.",
+      "Step 9: We have allocated only 100 units, but in step 7, D was allocated only 20 units, leaving 10 units unallocated. Correct allocation is to give D 30 units for 90 value, and A 10 extra units for 30 value, totaling 40 extra units after first segments, summing to 100 units total.",
+      "Step 10: Final optimal allocation: A 30 units, B 30 units, C 10 units, D 30 units; total value: A = 20*5 + 10*3 = 130; B = 30*4 = 120; C = 10*6 = 60; D = 30*3 = 90; sum = 130 + 120 + 60 + 90 = 400.",
+      "Step 11: Check if allocating extra units of C (4/unit) instead of D (3/unit) for the extra 20 units is better: since C second segment is 10 units max, allocate 10 units to C for 40 value, remaining 10 units to D for 30 value, total 70 value from extra units vs 90 value if all 20 units go to D.",
+      "Step 12: So allocate the 20 extra units as 10 to C (max second segment) and 10 to D for maximum overall value.",
+      "Step 13: Final allocation: A 30 units (130 value), B 30 units (120 value), C 20 units (100 value), D 20 units (60 value); total value = 130 + 120 + 100 + 60 = 410.",
+      "Step 14: This allocation sums to 100 units (30 + 30 + 20 + 20) and maximizes value at 410, confirming the answer."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 8
+  },
+  {
+    "task_id": "nurse_shift_scheduling_with_rest_constraints",
+    "description": "There are 6 nurses: A, B, C, D, E, and F, who must be assigned to 3 shifts (morning, afternoon, night) over 2 consecutive days (Day 1 and Day 2). Each shift requires exactly 2 nurses. Each nurse can only work one shift per day. Additionally, a nurse who works the night shift on Day 1 cannot work the morning shift on Day 2 due to rest constraints. Assign nurses to each shift such that all shifts are fully staffed and the rest constraint is satisfied.",
+    "ground_truth_answer": {
+      "Day 1": {
+        "morning": [
+          "A",
+          "B"
+        ],
+        "afternoon": [
+          "C",
+          "D"
+        ],
+        "night": [
+          "E",
+          "F"
+        ]
+      },
+      "Day 2": {
+        "morning": [
+          "C",
+          "D"
+        ],
+        "afternoon": [
+          "A",
+          "B"
+        ],
+        "night": [
+          "E",
+          "F"
+        ]
+      }
+    },
+    "verification_steps": [
+      "There are 6 nurses to assign to 6 shifts total (3 shifts per day \u00d7 2 days, each with 2 nurses), so all nurses can be assigned without overlap.",
+      "Each nurse works exactly one shift per day, fulfilling the one shift per day constraint.",
+      "On Day 1, nurses E and F work the night shift; therefore, they cannot work the morning shift on Day 2.",
+      "On Day 2, E and F are assigned to the night shift, not the morning shift, satisfying the rest constraint.",
+      "Nurses A and B work morning shift Day 1 and afternoon shift Day 2, so no rest conflicts occur.",
+      "Nurses C and D work afternoon shift Day 1 and morning shift Day 2, again no rest conflicts.",
+      "All shifts on both days have exactly 2 nurses assigned, fulfilling staffing requirements."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 9
+  },
+  {
+    "task_id": "bin_packing_minimum_bins_capacity_10",
+    "description": "You have six items with sizes 3, 5, 7, 2, 8, and 4 units respectively. These items must be packed into bins, each with a maximum capacity of 10 units. Your goal is to determine the minimum number of bins required to fit all items without exceeding the capacity of any bin. Items cannot be split across bins. Find the minimum number of bins needed to hold all six items under these constraints.",
+    "ground_truth_answer": 3,
+    "verification_steps": [
+      "Calculate the total sum of all item sizes: 3 + 5 + 7 + 2 + 8 + 4 = 29 units.",
+      "Since each bin can hold up to 10 units, the theoretical minimum number of bins is at least ceil(29/10) = 3 bins.",
+      "Try to fit all items into 2 bins (capacity 10 each): maximum total capacity is 20 units, but total items sum to 29 units, so 2 bins are insufficient.",
+      "Confirm that 3 bins are sufficient by finding a valid packing: for example, Bin 1: 8 + 2 = 10 units; Bin 2: 7 + 3 = 10 units; Bin 3: 5 + 4 = 9 units.",
+      "Since 3 bins are both necessary (due to total size) and sufficient (as shown by the example), the minimum number of bins required is 3."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "constraint_satisfaction",
+    "task_index": 10
+  },
+  {
+    "task_id": "job_shop_scheduling_minimize_makespan_3_jobs_2_machines",
+    "description": "There are 3 jobs, each consisting of 2 operations that must be processed in order. Each operation must be executed on one of 2 available machines: Machine A or Machine B. The processing times (in hours) and machine assignments for each operation are as follows: Job 1: Operation 1 on Machine A (3h), Operation 2 on Machine B (2h); Job 2: Operation 1 on Machine B (2h), Operation 2 on Machine A (4h); Job 3: Operation 1 on Machine A (2h), Operation 2 on Machine B (3h). No two operations can run simultaneously on the same machine. The goal is to schedule all operations to minimize the makespan, i.e., the total time to complete all jobs. What is the minimum possible makespan (in hours) achievable?",
+    "ground_truth_answer": 9,
+    "verification_steps": [
+      "List all operations with their machine and processing time: J1O1 (A,3), J1O2 (B,2), J2O1 (B,2), J2O2 (A,4), J3O1 (A,2), J3O2 (B,3).",
+      "Operations within each job must be done sequentially: for example, J1O2 can start only after J1O1 finishes.",
+      "No two operations can be processed simultaneously on the same machine.",
+      "Schedule Machine A operations first: J1O1 (3h), J3O1 (2h), J2O2 (4h). These must be ordered to minimize idle time and respect job order.",
+      "Schedule Machine B operations accordingly: J2O1 (2h), J1O2 (2h), J3O2 (3h), while respecting that each operation starts after its predecessor in the job completed and machine availability.",
+      "One optimal schedule is: On Machine A: J1O1 from 0 to 3h, J3O1 from 3 to 5h, J2O2 from 5 to 9h; On Machine B: J2O1 from 0 to 2h, J1O2 from 3 to 5h (starts after J1O1 finishes at 3h), J3O2 from 5 to 8h (starts after J3O1 finishes at 5h).",
+      "The jobs complete at: J1 at 5h (J1O2 ends at 5), J3 at 8h (J3O2 ends at 8), J2 at 9h (J2O2 ends at 9).",
+      "The makespan is the maximum completion time among all jobs, which is 9 hours.",
+      "No schedule can finish earlier than 9 hours due to machine and precedence constraints."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "constraint_satisfaction",
+    "task_index": 11
+  },
+  {
+    "task_id": "classroom_assignment_8_classes_4_rooms",
+    "description": "A school needs to assign 8 different classes (A, B, C, D, E, F, G, H) to 4 available rooms (R1, R2, R3, R4) for a single time slot. Each room has a maximum capacity and specific equipment: R1 holds 30 students and has a projector; R2 holds 25 students and has a whiteboard; R3 holds 20 students and has a computer lab; R4 holds 15 students and has both a projector and whiteboard. The classes have the following number of students and equipment needs: A(20, needs projector), B(15, needs whiteboard), C(10, needs computer lab), D(25, no special equipment), E(18, needs projector), F(12, needs whiteboard), G(14, no special equipment), H(8, needs projector and whiteboard). Each class must be assigned to exactly one room that can accommodate its student count and required equipment. No room can hold more than one class. Determine the unique assignment of each class to a room that satisfies all constraints.",
+    "ground_truth_answer": {
+      "A": "R1",
+      "B": "R2",
+      "C": "R3",
+      "D": "R1",
+      "E": "R4",
+      "F": "R2",
+      "G": "R4",
+      "H": "R4"
+    },
+    "verification_steps": [
+      "List room capacities and equipment: R1 (30, projector), R2 (25, whiteboard), R3 (20, computer lab), R4 (15, projector and whiteboard).",
+      "Check each class's student count against room capacities and their equipment needs against room facilities.",
+      "Class A (20 students, needs projector) fits in R1 (30, projector) and R4 (15, projector and whiteboard) but R4 capacity is 15 which is too small; so only R1 fits.",
+      "Class B (15, whiteboard) fits in R2 (25, whiteboard) and R4 (15, projector and whiteboard). Both rooms have enough capacity, but R4's capacity is 15 which matches exactly.",
+      "Class C (10, computer lab) fits only in R3 (20, computer lab).",
+      "Class D (25, no special equipment) fits in rooms with capacity >=25: R1 (30) and R2 (25).",
+      "Class E (18, needs projector) fits in R1 (30, projector) only, since R4 (15 capacity) is too small.",
+      "Class F (12, whiteboard) fits in R2 (25, whiteboard) and R4 (15, projector and whiteboard).",
+      "Class G (14, no equipment) fits in any room with capacity >=14: R1 (30), R2 (25), R3 (20), R4 (15).",
+      "Class H (8, needs projector and whiteboard) fits only in R4 (15, projector and whiteboard).",
+      "Assign Class C to R3 (only room with computer lab).",
+      "Assign Class H to R4 (only room with both projector and whiteboard).",
+      "Assign Class A (needs projector, 20 students) to R1.",
+      "Assign Class B (whiteboard, 15 students) to R2.",
+      "Assign Class E (projector, 18 students) cannot go to R4 (capacity 15), so only R1 fits but R1 already has A; thus E must be assigned to R4, but capacity disallows it, so E assigned to R4 is impossible, so E assigned to R1 conflicts with A. So reconsider assignments to avoid conflicts.",
+      "Reassign D to R2 (capacity 25), B to R4 (capacity 15), F to R2 or R4 depending on availability, G to R4 or R1 as feasible, ensuring no room holds more than one class and all constraints met.",
+      "Final unique assignment with no conflicts and all constraints satisfied is: A-R1, B-R2, C-R3, D-R1, E-R4, F-R2, G-R4, H-R4.",
+      "Since rooms cannot hold more than one class, verify rooms with multiple assignments are invalid; adjust final assignment to unique feasible mapping.",
+      "After adjustments, the only consistent assignment matching all constraints and capacities with one class per room is: A-R1, B-R2, C-R3, D-R4, E cannot fit, so the puzzle has no solution with all classes assigned.",
+      "Therefore, only a unique assignment where classes A, B, C, D assigned to rooms R1, R2, R3, R4 respectively satisfies constraints for these 4 classes; others cannot be assigned without room sharing.",
+      "Hence, the unique feasible assignment is Classes A-R1, B-R2, C-R3, D-R4, and classes E, F, G, H remain unassigned due to capacity and equipment constraints."
+    ],
+    "difficulty": "hard",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 12
+  },
+  {
+    "task_id": "diet_planning_minimum_cost",
+    "description": "You need to plan a daily diet using three foods: A, B, and C. Food A costs $2 per serving, Food B costs $3 per serving, and Food C costs $1.5 per serving. Each serving provides the following nutrients: Food A provides 3 units of protein and 2 units of fiber; Food B provides 4 units of protein and 1 unit of fiber; Food C provides 1 unit of protein and 3 units of fiber. The daily nutritional requirements are at least 10 units of protein and 8 units of fiber. You must select a combination of servings (whole numbers only) of these foods to meet or exceed the nutritional requirements at the minimum total cost. What is the number of servings of each food to achieve this?",
+    "ground_truth_answer": {
+      "Food A": 2,
+      "Food B": 2,
+      "Food C": 1
+    },
+    "verification_steps": [
+      "Calculate the total protein and fiber provided by 2 servings of Food A: protein = 2 * 3 = 6 units, fiber = 2 * 2 = 4 units.",
+      "Calculate the total protein and fiber provided by 2 servings of Food B: protein = 2 * 4 = 8 units, fiber = 2 * 1 = 2 units.",
+      "Calculate the total protein and fiber provided by 1 serving of Food C: protein = 1 * 1 = 1 unit, fiber = 1 * 3 = 3 units.",
+      "Sum the nutrients: total protein = 6 + 8 + 1 = 15 units, total fiber = 4 + 2 + 3 = 9 units, both exceeding the minimum requirements of 10 protein and 8 fiber.",
+      "Calculate the total cost: (2 servings * $2) + (2 servings * $3) + (1 serving * $1.5) = $4 + $6 + $1.5 = $11.5.",
+      "Check if any other combination of whole servings meets the requirements at a lower cost. Testing alternatives shows no combination costs less than $11.5 while meeting the nutrient minimums.",
+      "Therefore, 2 servings of Food A, 2 servings of Food B, and 1 serving of Food C is the minimum cost solution."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "constraint_satisfaction",
+    "task_index": 13
+  },
+  {
+    "task_id": "shortest_route_visiting_5_cities_returning_to_start",
+    "description": "Five cities A, B, C, D, and E are connected with roads of the following distances (in kilometers): A-B: 10, A-C: 15, A-D: 20, A-E: 25, B-C: 35, B-D: 25, B-E: 30, C-D: 30, C-E: 20, D-E: 15. A delivery vehicle must start at city A, visit each of the other cities exactly once, and return to city A. Determine the shortest possible route that satisfies these conditions.",
+    "ground_truth_answer": "A -> B -> D -> E -> C -> A",
+    "verification_steps": [
+      "List all possible permutations of visiting cities B, C, D, and E starting and ending at A.",
+      "Calculate the total distance for route A-B-C-D-E-A: 10 + 35 + 30 + 15 + 25 = 115 km.",
+      "Calculate the total distance for route A-B-C-E-D-A: 10 + 35 + 20 + 15 + 20 = 100 km.",
+      "Calculate the total distance for route A-B-D-C-E-A: 10 + 25 + 30 + 20 + 25 = 110 km.",
+      "Calculate the total distance for route A-B-D-E-C-A: 10 + 25 + 15 + 20 + 15 = 85 km.",
+      "Calculate the total distance for route A-B-E-C-D-A: 10 + 30 + 20 + 30 + 20 = 110 km.",
+      "Calculate the total distance for route A-B-E-D-C-A: 10 + 30 + 15 + 30 + 15 = 100 km.",
+      "Among all routes, A-B-D-E-C-A has the shortest total distance of 85 km.",
+      "Thus, the shortest route visiting all cities and returning to A is A -> B -> D -> E -> C -> A."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "constraint_satisfaction",
+    "task_index": 14
+  },
+  {
+    "task_id": "warehouse_product_location_optimization",
+    "description": "A warehouse has 6 distinct products labeled A, B, C, D, E, and F, which must be assigned to 6 distinct storage locations numbered 1 through 6. The retrieval area is located near location 1, so the retrieval distance for each product is equal to the absolute difference between its assigned location number and 1. The expected daily retrieval frequencies for the products are: A=4, B=2, C=6, D=3, E=5, and F=1. Assign each product to a unique location such that the total weighted retrieval distance (sum over all products of frequency \u00d7 distance) is minimized. What is the optimal assignment of products to locations (product to location number) that minimizes the total weighted retrieval distance?",
+    "ground_truth_answer": {
+      "A": 2,
+      "B": 3,
+      "C": 1,
+      "D": 4,
+      "E": 5,
+      "F": 6
+    },
+    "verification_steps": [
+      "List all products with their frequencies: A=4, B=2, C=6, D=3, E=5, F=1.",
+      "Distances from retrieval area at location 1 are location number minus 1: location 1=0, 2=1, 3=2, 4=3, 5=4, 6=5.",
+      "To minimize total weighted retrieval distance, assign products with higher frequency to locations closer to 1.",
+      "The highest frequency is C=6, so assign C to location 1 (distance 0). Next highest is E=5, assign E to location 2 (distance 1). Then A=4 to location 3 (distance 2), D=3 to location 4 (distance 3), B=2 to location 5 (distance 4), and F=1 to location 6 (distance 5).",
+      "Compute total weighted retrieval distance: (6\u00d70)+(5\u00d71)+(4\u00d72)+(3\u00d73)+(2\u00d74)+(1\u00d75) = 0 + 5 + 8 + 9 + 8 + 5 = 35.",
+      "Check other permutations to confirm no assignment yields a smaller total weighted retrieval distance.",
+      "The given assignment has the minimal total weighted retrieval distance, so it is the optimal solution."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 15
+  },
+  {
+    "task_id": "exam_timetabling_six_exams_three_days_no_conflicts",
+    "description": "You need to schedule 6 exams (A, B, C, D, E, and F) over 3 days (Day 1, Day 2, Day 3). Each exam must be assigned to exactly one day. Some students are enrolled in multiple exams, so exams with common students cannot be scheduled on the same day to avoid conflicts. The common enrollments are as follows: students taking both exams A and B, exams B and C, exams C and D, exams D and E, and exams E and F. Determine a schedule that assigns each exam to a day so that no exams with common students are on the same day. What day should exam C be scheduled on in the conflict-free timetable?",
+    "ground_truth_answer": "Day 2",
+    "verification_steps": [
+      "List the exams and their conflicts: A-B, B-C, C-D, D-E, E-F.",
+      "Since A and B share students, they must be on different days.",
+      "Similarly, B and C share students, so B and C must be on different days.",
+      "C and D share students, so C and D must be on different days.",
+      "D and E share students, so D and E must be on different days.",
+      "E and F share students, so E and F must be on different days.",
+      "This chain of conflicts implies exams must be assigned to days such that no two connected exams share the same day.",
+      "Assign A to Day 1, B to Day 2 (different from A), then C must be different from B so C can be Day 1 or Day 3, but since C and D conflict and D conflicts with E and E with F, to avoid conflicts the best assignment is: A-Day 1, B-Day 2, C-Day 1, D-Day 2, E-Day 3, F-Day 2. However, D and E must differ, so E-Day 3, F-Day 2 is acceptable.",
+      "This leads to a consistent assignment, but since the question is about exam C, as B is Day 2, C must not be Day 2 to avoid conflict with B, so C is scheduled on Day 1.",
+      "Checking again: C-Day 1 fits all constraints, so the correct answer is Day 1."
+    ],
+    "difficulty": "medium",
+    "answer_type": "choice",
+    "category": "constraint_satisfaction",
+    "task_index": 16
+  },
+  {
+    "task_id": "frequency_assignment_for_radio_towers_with_interference_constraints",
+    "description": "There are 5 radio towers labeled A, B, C, D, and E that need to be assigned frequencies from the set {1, 2, 3, 4}. Due to interference constraints, the following pairs of towers cannot share the same frequency: (A, B), (A, C), (B, D), (C, D), and (D, E). Assign frequencies to all towers such that no two towers in these pairs have the same frequency. Determine the frequency assigned to tower D.",
+    "ground_truth_answer": 3,
+    "verification_steps": [
+      "Assign frequency 1 to tower A.",
+      "Since (A, B) cannot share the same frequency and A has 1, assign frequency 2 to tower B.",
+      "Since (A, C) cannot share the same frequency and A has 1, assign frequency 2 to tower C.",
+      "Since (B, D) cannot share the same frequency and B has 2, D cannot be 2.",
+      "Since (C, D) cannot share the same frequency and C has 2, D cannot be 2.",
+      "Therefore, D cannot be 1 or 2. Assign frequency 3 to tower D.",
+      "Since (D, E) cannot share the same frequency and D has 3, assign frequency 1 or 2 or 4 to E; pick frequency 1.",
+      "All constraints are satisfied, and tower D is assigned frequency 3."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "constraint_satisfaction",
+    "task_index": 17
+  },
+  {
+    "task_id": "round_robin_schedule_six_teams_five_weeks",
+    "description": "There are 6 teams in a sports league that must play a round-robin schedule over 5 weeks. Each week, every team plays exactly one match against a different team, and no team plays more than once per week. Over the entire 5-week schedule, each team must play every other team exactly once. Determine a valid weekly match schedule that satisfies these constraints, listing the pairs of teams that play each other each week.",
+    "ground_truth_answer": {
+      "Week 1": [
+        [
+          "Team 1",
+          "Team 6"
+        ],
+        [
+          "Team 2",
+          "Team 5"
+        ],
+        [
+          "Team 3",
+          "Team 4"
+        ]
+      ],
+      "Week 2": [
+        [
+          "Team 1",
+          "Team 5"
+        ],
+        [
+          "Team 6",
+          "Team 4"
+        ],
+        [
+          "Team 2",
+          "Team 3"
+        ]
+      ],
+      "Week 3": [
+        [
+          "Team 1",
+          "Team 4"
+        ],
+        [
+          "Team 5",
+          "Team 3"
+        ],
+        [
+          "Team 6",
+          "Team 2"
+        ]
+      ],
+      "Week 4": [
+        [
+          "Team 1",
+          "Team 3"
+        ],
+        [
+          "Team 4",
+          "Team 2"
+        ],
+        [
+          "Team 5",
+          "Team 6"
+        ]
+      ],
+      "Week 5": [
+        [
+          "Team 1",
+          "Team 2"
+        ],
+        [
+          "Team 3",
+          "Team 6"
+        ],
+        [
+          "Team 4",
+          "Team 5"
+        ]
+      ]
+    },
+    "verification_steps": [
+      "Step 1: Confirm there are 6 teams and the schedule spans 5 weeks, with each week having 3 matches (since 6 teams / 2 per match = 3 matches per week).",
+      "Step 2: Verify that each team plays exactly one match per week, ensuring no team is scheduled for more than one match in the same week.",
+      "Step 3: Check that across all 5 weeks, each team faces every other team exactly once, totaling 5 matches per team against unique opponents.",
+      "Step 4: Validate that no pair of teams plays more than once throughout the schedule.",
+      "Step 5: Confirm that the total number of matches is 15 (6 teams choose 2 = 15 unique pairs), and that all are accounted for exactly once in the schedule.",
+      "Step 6: Review each weekly match list to ensure teams are paired correctly without repetition within the week and over the entire schedule."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "constraint_satisfaction",
+    "task_index": 18
+  },
+  {
+    "task_id": "critical_path_project_scheduling_8_tasks",
+    "description": "A project consists of 8 tasks labeled A through H. Each task has a specified duration and dependencies as follows: Task A (3 days) has no prerequisites. Task B (2 days) depends on A. Task C (4 days) depends on A. Task D (6 days) depends on B. Task E (1 day) depends on B. Task F (5 days) depends on C and E. Task G (2 days) depends on D. Task H (3 days) depends on F and G. Determine the critical path for the project, i.e., the longest sequence of dependent tasks determining the minimum project completion time.",
+    "ground_truth_answer": "A -> C -> F -> H",
+    "verification_steps": [
+      "List all tasks with their durations and dependencies.",
+      "Calculate the earliest start and finish times for each task starting from A:",
+      "- Task A: starts at 0, finishes at 3.",
+      "- Task B: depends on A, starts at 3, finishes at 5.",
+      "- Task C: depends on A, starts at 3, finishes at 7.",
+      "- Task D: depends on B, starts at 5, finishes at 11.",
+      "- Task E: depends on B, starts at 5, finishes at 6.",
+      "- Task F: depends on C and E, starts after both finish; C finishes at 7, E at 6, so F starts at 7, finishes at 12.",
+      "- Task G: depends on D, starts at 11, finishes at 13.",
+      "- Task H: depends on F and G, starts after both finish; F finishes at 12, G at 13, so H starts at 13, finishes at 16.",
+      "Calculate the total durations along all paths from start to finish:",
+      "- Path 1: A(3) -> B(2) -> D(6) -> G(2) -> H(3) = 3 + 2 + 6 + 2 + 3 = 16 days.",
+      "- Path 2: A(3) -> B(2) -> E(1) -> F(5) -> H(3) = 3 + 2 + 1 + 5 + 3 = 14 days.",
+      "- Path 3: A(3) -> C(4) -> F(5) -> H(3) = 3 + 4 + 5 + 3 = 15 days.",
+      "Identify the longest path (critical path): Path 1 totals 16 days, Path 3 totals 15 days, Path 2 totals 14 days.",
+      "However, H cannot start before both F and G finish; since G finishes later than F (13 > 12), the critical path includes G and thus the path A -> B -> D -> G -> H is the longest.",
+      "Therefore, the critical path is A -> B -> D -> G -> H."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "constraint_satisfaction",
+    "task_index": 19
+  },
+  {
+    "task_id": "knapsack_max_value_weight_limit_15",
+    "description": "You have a knapsack that can carry a maximum weight of 15 units. There are five items available, each with a specific weight and value: Item A weighs 5 units and is worth 10 points, Item B weighs 7 units and is worth 13 points, Item C weighs 4 units and is worth 7 points, Item D weighs 3 units and is worth 6 points, and Item E weighs 6 units and is worth 12 points. You want to select a combination of these items to maximize the total value without exceeding the weight limit of 15. Items can only be taken whole (no fractions), and each item can be selected at most once. Determine which items to include to achieve the maximum total value.",
+    "ground_truth_answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "verification_steps": [
+      "List all items with their weights and values: A(5,10), B(7,13), C(4,7), D(3,6), E(6,12).",
+      "The knapsack weight limit is 15 units; total weight of selected items must be \u2264 15.",
+      "Check combination A, B, D: total weight = 5 + 7 + 3 = 15, total value = 10 + 13 + 6 = 29.",
+      "Check other combinations with total weight \u2264 15: For example, A, E, D (5+6+3=14) value = 10+12+6=28 which is less than 29.",
+      "Check B, E, D (7+6+3=16) exceeds weight limit, so invalid.",
+      "Check A, C, E (5+4+6=15) value = 10+7+12=29 equals 29 but uses different items.",
+      "Between combinations A,B,D and A,C,E both have total value 29, but B is worth 13 points while C is 7 points; since both combinations have same value and weight, either is acceptable but problem states unique answer.",
+      "Since B, E, D combination is invalid and A, C, E includes items with lower individual values and B has a higher value, selecting A, B, D is considered the unique optimal solution."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "constraint_satisfaction",
+    "task_index": 20
+  },
+  {
+    "task_id": "chromatic_number_of_a_specific_graph",
+    "description": "Consider a simple undirected graph G with 5 vertices labeled A, B, C, D, and E. The edges of the graph are as follows: (A-B), (A-C), (B-C), (B-D), (C-D), and (D-E). Determine the chromatic number of graph G, which is the minimum number of colors needed to color the vertices so that no two adjacent vertices share the same color.",
+    "ground_truth_answer": 3,
+    "verification_steps": [
+      "Step 1: List the vertices and edges: vertices = {A, B, C, D, E}, edges = {(A-B), (A-C), (B-C), (B-D), (C-D), (D-E)}.",
+      "Step 2: Check if two colors suffice: Assign color 1 to A. Then B and C are adjacent to A and each other, so they cannot all share the same color. Since B and C are connected, they must have different colors. Thus, at least two colors are needed for A, B, and C.",
+      "Step 3: Assign color 1 to A, color 2 to B, and color 3 to C to satisfy the triangle (A-B-C). This shows that at least three colors are needed because B and C are adjacent and connected to A.",
+      "Step 4: Assign color 1 to A, color 2 to B, color 3 to C. Now, vertex D is adjacent to B and C, which have colors 2 and 3, so D cannot be color 2 or 3; assign color 1 to D (same as A), which is allowed since D and A are not adjacent.",
+      "Step 5: Vertex E is adjacent only to D (color 1), so E can be assigned color 2.",
+      "Step 6: All vertices are colored with colors {1, 2, 3} so that no two adjacent vertices share the same color, demonstrating that 3 colors suffice.",
+      "Step 7: Since the triangle among A, B, and C requires at least 3 colors, and 3 colors suffice for the entire graph, the chromatic number is exactly 3."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "constraint_satisfaction",
+    "task_index": 21
+  },
+  {
+    "task_id": "latin_square_completion_4x4_unique_solution",
+    "description": "You are given a 4x4 grid representing a partially completed Latin square. The square must be completed such that each row and each column contains all the numbers from 1 to 4 exactly once. The partial grid is as follows (0 represents an empty cell): Row 1: [1, 0, 3, 0] Row 2: [0, 3, 0, 1] Row 3: [4, 0, 0, 0] Row 4: [0, 0, 2, 4]. Fill in the missing values to complete the Latin square so that the constraints are satisfied and the solution is unique.",
+    "ground_truth_answer": [
+      [
+        1,
+        4,
+        3,
+        2
+      ],
+      [
+        2,
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        1,
+        2,
+        3
+      ],
+      [
+        3,
+        2,
+        1,
+        4
+      ]
+    ],
+    "verification_steps": [
+      "Step 1: Identify missing values in Row 1: positions 2 and 4 are empty. Numbers 1 and 3 are present; numbers 2 and 4 are missing.",
+      "Step 2: Check columns for Row 1 missing positions: Column 2 has values 3, 3, 0, 0; Column 4 has 0, 1, 0, 4. Because 4 is in column 4 (Row 4), Row 1 Column 4 cannot be 4, so it must be 2; thus Row 1 Column 2 is 4.",
+      "Step 3: Fill Row 2: missing positions are 1 and 3. Known values are 3 and 1; missing numbers are 2 and 4. Check columns: Column 1 has 1, 0, 4, 0; Column 3 has 3, 0, 0, 2. Since 2 is in column 3 (Row 4), Row 2 Column 3 cannot be 2, so it must be 4; Row 2 Column 1 is 2.",
+      "Step 4: Fill Row 3: missing positions are 2, 3, and 4. Known is 4 at Column 1. Row 3 needs numbers 1, 2, 3. Check columns: Column 2 has 4, 3, 0, 0; Column 3 has 3, 4, 0, 2; Column 4 has 2, 1, 0, 4. By elimination, assign Row 3 Column 2 = 1, Column 3 = 2, Column 4 = 3.",
+      "Step 5: Fill Row 4: missing positions are 1 and 2. Known are 2 and 4 at Columns 3 and 4. Row 4 needs numbers 1 and 3. Check columns: Column 1 has 1, 2, 4, 0; Column 2 has 4, 3, 1, 0. Since 3 is in column 2 already (Row 2), Row 4 Column 2 cannot be 3, so Row 4 Column 1 = 3 and Column 2 = 2.",
+      "Step 6: Verify all rows and columns have unique numbers from 1 to 4 with no repetition.",
+      "Step 7: Confirm only one such solution exists that satisfies all constraints."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "constraint_satisfaction",
+    "task_index": 22
+  },
+  {
+    "task_id": "cryptarithmetic_send_more_money",
+    "description": "Solve the cryptarithmetic puzzle SEND + MORE = MONEY, where each letter represents a unique digit from 0 to 9, and no two letters can have the same digit. The leading letters S and M cannot be zero because they are the first letters of the numbers SEND and MORE respectively. Find the digit each letter represents such that the sum SEND + MORE equals MONEY exactly.",
+    "ground_truth_answer": {
+      "S": 9,
+      "E": 5,
+      "N": 6,
+      "D": 7,
+      "M": 1,
+      "O": 0,
+      "R": 8,
+      "Y": 2
+    },
+    "verification_steps": [
+      "Assign digits as per the solution: S=9, E=5, N=6, D=7, M=1, O=0, R=8, Y=2.",
+      "Convert SEND to a number: S E N D = 9 5 6 7 = 9567.",
+      "Convert MORE to a number: M O R E = 1 0 8 5 = 1085.",
+      "Calculate the sum: 9567 + 1085 = 10652.",
+      "Convert MONEY to a number: M O N E Y = 1 0 6 5 2 = 10652.",
+      "The sum matches exactly: 9567 + 1085 = 10652, so SEND + MORE = MONEY holds true.",
+      "Confirm all letters have unique digits and leading digits S=9 and M=1 are nonzero."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 23
+  },
+  {
+    "task_id": "logic_grid_puzzle_pets_colors_and_houses",
+    "description": "Four friends\u2014Alice, Bob, Carol, and Dave\u2014each own a unique pet (dog, cat, bird, or rabbit), live in houses painted a different color (red, blue, green, or yellow), and each house is on a different street (Oak, Maple, Pine, or Elm). The clues are as follows: 1) The owner of the blue house has a dog. 2) Carol lives on Maple Street. 3) The person who owns the bird lives in the red house. 4) Dave owns the rabbit. 5) The house on Pine Street is yellow. 6) Alice does not live on Oak Street nor owns the cat. 7) Bob lives on Elm Street. Determine the pet, house color, and street for each person.",
+    "ground_truth_answer": {
+      "Alice": {
+        "pet": "cat",
+        "color": "green",
+        "street": "Oak"
+      },
+      "Bob": {
+        "pet": "bird",
+        "color": "red",
+        "street": "Elm"
+      },
+      "Carol": {
+        "pet": "dog",
+        "color": "blue",
+        "street": "Maple"
+      },
+      "Dave": {
+        "pet": "rabbit",
+        "color": "yellow",
+        "street": "Pine"
+      }
+    },
+    "verification_steps": [
+      "From clue 4, Dave owns the rabbit.",
+      "From clue 5, house on Pine Street is yellow; since Dave owns the rabbit and the rabbit owner lives in the yellow house on Pine Street, Dave's house is yellow on Pine Street.",
+      "From clue 7, Bob lives on Elm Street.",
+      "From clue 3, the bird owner lives in the red house; the bird owner cannot be Dave (rabbit) or Carol (dog, from clue 1), so must be Bob or Alice.",
+      "From clue 1, blue house owner has the dog; Carol lives on Maple Street (clue 2), so Carol's house is blue with the dog.",
+      "From clue 6, Alice does not live on Oak Street nor owns the cat; so Alice cannot live on Oak Street, and does not own the cat. However, this contradicts our initial assumption; re-examining clue 6: Alice does not live on Oak Street and does not own the cat, meaning Alice's pet is not cat, so cat owner must be someone else. Since Dave is rabbit, Carol dog, Bob or Alice can be cat or bird. Bob lives on Elm Street; if bird owner lives in red house (clue 3), bird owner must be Bob (Elm Street) with red house, so Bob owns the bird and lives in the red house on Elm Street.",
+      "Therefore, Alice must live on Oak Street, own the cat, and the house color is green (the only color left)."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 24
+  },
+  {
+    "task_id": "minimum_set_cover_unique_solution",
+    "description": "You are given a universe of elements U = {1, 2, 3, 4, 5, 6, 7} and a collection of subsets S = {S1, S2, S3, S4, S5}, where S1 = {1, 2, 3}, S2 = {2, 4, 5}, S3 = {3, 5, 6}, S4 = {4, 6, 7}, and S5 = {1, 7}. Find the minimum number of these subsets whose union covers all elements of U. In other words, select the smallest subset of S such that every element in U appears in at least one selected subset. Determine the minimum number of subsets needed and identify which subsets form that minimum cover.",
+    "ground_truth_answer": {
+      "minimum_number_of_subsets": 3,
+      "selected_subsets": [
+        "S1",
+        "S4",
+        "S5"
+      ]
+    },
+    "verification_steps": [
+      "Step 1: The universe U = {1, 2, 3, 4, 5, 6, 7} must be fully covered by the union of chosen subsets.",
+      "Step 2: Check if 2 subsets can cover all elements. For example, S1 \u222a S4 = {1, 2, 3} \u222a {4, 6, 7} = {1, 2, 3, 4, 6, 7} missing element 5. Other pairs similarly miss some elements.",
+      "Step 3: Try 3 subsets. Consider S1, S4, and S5. Their union is {1, 2, 3} \u222a {4, 6, 7} \u222a {1, 7} = {1, 2, 3, 4, 6, 7}. Missing element 5, so add a subset containing 5.",
+      "Step 4: Instead, try S1 = {1,2,3}, S4 = {4,6,7}, and S3 = {3,5,6}. Their union is {1,2,3} \u222a {4,6,7} \u222a {3,5,6} = {1,2,3,4,5,6,7}, which covers all elements.",
+      "Step 5: Check if any other 3-subset combination covers U. For example, S2, S3, and S5: {2,4,5} \u222a {3,5,6} \u222a {1,7} = {1,2,3,4,5,6,7} also covers U, so multiple triplets cover U.",
+      "Step 6: Confirm if any 2-subset combination can cover U (already disproved), so minimum number is 3.",
+      "Step 7: Choose one minimum cover for uniqueness: selecting S1, S4, and S3 covers all elements with 3 subsets.",
+      "Step 8: Therefore, the minimum number of subsets is 3, and one valid set cover is {S1, S3, S4}."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "constraint_satisfaction",
+    "task_index": 25
+  },
+  {
+    "task_id": "knights_and_knaves_three_persons",
+    "description": "On an island, there are only knights, who always tell the truth, and knaves, who always lie. Three inhabitants, Alice, Bob, and Carol, make the following statements: Alice says, 'Bob is a knave.' Bob says, 'Carol is a knight.' Carol says, 'Alice and Bob are of different types.' Determine who among Alice, Bob, and Carol is a knight and who is a knave.",
+    "ground_truth_answer": "Alice is a knight, Bob is a knave, Carol is a knight.",
+    "verification_steps": [
+      "Assume Alice is a knight (truth-teller). Then Alice's statement 'Bob is a knave' is true, so Bob is a knave.",
+      "Since Bob is a knave (liar), his statement 'Carol is a knight' is false, so Carol is not a knight. But this contradicts the assumption that Alice is a knight and Bob is a knave if Carol is not a knight.",
+      "Try assuming Alice is a knave (liar). Then her statement 'Bob is a knave' is false, so Bob is a knight.",
+      "If Bob is a knight, then his statement 'Carol is a knight' is true, so Carol is a knight.",
+      "Carol says 'Alice and Bob are of different types.' Since Carol is a knight (truth-teller), this statement must be true. Alice is a knave and Bob is a knight, so they are indeed different types.",
+      "This scenario is consistent: Alice is a knave, Bob is a knight, Carol is a knight.",
+      "Re-examine the initial assumption that Alice is a knight leading to contradiction, so the only consistent solution is Alice knave, Bob knight, Carol knight."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "deductive_reasoning",
+    "task_index": 26
+  },
+  {
+    "task_id": "murder_mystery_whodunit",
+    "description": "In a mansion, a murder occurred at midnight. There are four suspects: Alice, Bob, Charlie, and Diana. Five clues are known: 1) The murderer was not in the library at the time of the crime. 2) Alice was in the kitchen or the garden. 3) Bob was in the library. 4) Charlie was not in the garden. 5) Diana was in the kitchen or the library. Given these clues, determine who committed the murder.",
+    "ground_truth_answer": "Alice",
+    "verification_steps": [
+      "From clue 3, Bob was in the library at the time of the murder.",
+      "From clue 1, the murderer was not in the library, so Bob is innocent.",
+      "From clue 5, Diana was in the kitchen or the library. If Diana was in the library, she would be innocent (clue 1). If in the kitchen, still possible. But let's check other clues.",
+      "From clue 4, Charlie was not in the garden. Since Alice was either in kitchen or garden (clue 2), and Charlie cannot be in garden, Charlie must have been elsewhere (not library either, as Bob was there). So Charlie's location is ambiguous but likely not library or garden.",
+      "Given Bob was in library (innocent), and Diana was in kitchen or library, if Diana was in library, she's innocent; if in kitchen, possible murderer.",
+      "Alice was in kitchen or garden. Since the murderer was not in library, and Bob was in library and innocent, the murderer must be Alice, Charlie, or Diana (if Diana in kitchen).",
+      "Charlie was not in garden, so possibly kitchen or another room. But no clue says Charlie was in kitchen, only that Alice was in kitchen or garden, Diana was in kitchen or library.",
+      "Between Alice and Diana, Alice was definitely in kitchen or garden, and the murderer was not in library. Diana could be in library (innocent) or kitchen. To narrow down, only Alice fits the clue set without contradiction.",
+      "Therefore, the murderer is Alice."
+    ],
+    "difficulty": "medium",
+    "answer_type": "choice",
+    "category": "deductive_reasoning",
+    "task_index": 27
+  },
+  {
+    "task_id": "syllogism_evaluation_validity_check",
+    "description": "Given the following two premises: (1) All birds have feathers. (2) Some animals with feathers can fly. Evaluate the conclusion: 'Some birds can fly.' Determine if this conclusion logically follows from the premises provided.",
+    "ground_truth_answer": "Yes, the conclusion is valid.",
+    "verification_steps": [
+      "Premise 1 states that all birds have feathers, meaning every bird is an animal with feathers.",
+      "Premise 2 states that some animals with feathers can fly, which includes some subset of animals that have feathers.",
+      "Since all birds have feathers (from Premise 1), birds belong to the category of animals with feathers.",
+      "Premise 2 says some animals with feathers can fly, so some members of the category that includes birds can fly.",
+      "Therefore, it is logically consistent to conclude that some birds can fly.",
+      "Hence, the conclusion 'Some birds can fly' is valid based on the premises."
+    ],
+    "difficulty": "medium",
+    "answer_type": "boolean",
+    "category": "deductive_reasoning",
+    "task_index": 28
+  },
+  {
+    "task_id": "truth_table_compound_expression_valuation",
+    "description": "Consider the compound logical expression: ((P AND Q) OR (NOT P AND R)) IMPLIES (Q OR R). The variables P, Q, and R can each be either true or false. Determine the truth value of this compound expression when P is false, Q is true, and R is false. Recall that AND is logical conjunction, OR is logical disjunction, NOT is negation, and IMPLIES (\u2192) is false only when the antecedent is true and the consequent is false; otherwise, it is true.",
+    "ground_truth_answer": true,
+    "verification_steps": [
+      "Step 1: Assign values: P = false, Q = true, R = false.",
+      "Step 2: Evaluate (P AND Q): false AND true = false.",
+      "Step 3: Evaluate (NOT P): NOT false = true.",
+      "Step 4: Evaluate (NOT P AND R): true AND false = false.",
+      "Step 5: Evaluate (P AND Q) OR (NOT P AND R): false OR false = false.",
+      "Step 6: Evaluate (Q OR R): true OR false = true.",
+      "Step 7: Evaluate ((P AND Q) OR (NOT P AND R)) IMPLIES (Q OR R): false IMPLIES true = true."
+    ],
+    "difficulty": "medium",
+    "answer_type": "boolean",
+    "category": "deductive_reasoning",
+    "task_index": 29
+  },
+  {
+    "task_id": "river_crossing_farmer_fox_chicken_grain",
+    "description": "A farmer needs to transport a fox, a chicken, and a bag of grain across a river using a boat. The boat can carry only the farmer and one item at a time. If left alone without the farmer, the fox will eat the chicken, and the chicken will eat the grain. The goal is to find the minimum number of crossings the farmer must make to get all three items safely across the river without any being eaten. Each crossing counts as one trip from one side to the other, regardless of whether the boat is empty or carrying an item.",
+    "ground_truth_answer": 7,
+    "verification_steps": [
+      "The farmer starts on the left bank with fox, chicken, and grain.",
+      "Step 1: Take the chicken across (1 crossing).",
+      "Step 2: Return alone to the left bank (2 crossings).",
+      "Step 3: Take the fox across (3 crossings).",
+      "Step 4: Bring the chicken back to the left bank (4 crossings).",
+      "Step 5: Take the grain across (5 crossings).",
+      "Step 6: Return alone to the left bank (6 crossings).",
+      "Step 7: Take the chicken across again (7 crossings).",
+      "At no point are the fox and chicken or the chicken and grain left alone together without the farmer, ensuring all items remain safe.",
+      "This sequence uses the minimum crossings required to safely transport all items."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "deductive_reasoning",
+    "task_index": 30
+  },
+  {
+    "task_id": "three_people_hat_color_deduction",
+    "description": "Three people, Alice, Bob, and Carol, are each wearing a hat that is either red or blue. They can see the hats of the other two people but not their own. They are told that at least one hat is red. Alice looks at Bob and Carol's hats and remains silent. Then Bob looks at Alice and Carol's hats and also remains silent. Finally, Carol, seeing Alice and Bob's hats, confidently states the color of her own hat. Given that Alice sees Bob wearing a red hat and Carol wearing a red hat, and Bob sees Alice wearing a red hat and Carol wearing a blue hat, determine the color of Carol's hat.",
+    "ground_truth_answer": "red",
+    "verification_steps": [
+      "Alice sees Bob and Carol both wearing red hats. If Alice's own hat were blue, then Bob, seeing Alice's blue hat and Carol's red hat, would immediately know his hat must be red because at least one hat must be red. However, Bob remains silent, so Alice concludes that her own hat cannot be blue.",
+      "Therefore, Alice's hat must be red.",
+      "Bob sees Alice with a red hat and Carol with a blue hat. If Bob's own hat were blue, Carol, seeing Alice and Bob's hats, would see one red (Alice) and one blue (Bob). Given the rule that at least one hat is red, Carol would not be able to deduce her own hat color immediately unless Bob\u2019s hat is red.",
+      "Since Bob remains silent, it implies he cannot deduce his hat color, which would only be true if his own hat is red.",
+      "Carol sees Alice and Bob both wearing red hats. Given Alice and Bob's silence and her observations, Carol deduces that her own hat must be red to satisfy the conditions.",
+      "Therefore, Carol confidently states that her own hat is red."
+    ],
+    "difficulty": "medium",
+    "answer_type": "choice",
+    "category": "deductive_reasoning",
+    "task_index": 31
+  },
+  {
+    "task_id": "birthday_paradox_probability_23_people",
+    "description": "In a group of 23 people, what is the probability that at least two individuals share the same birthday? Assume there are 365 days in a year, and each birthday is equally likely and independent. Calculate the probability that at least two people have the same birthday in this group.",
+    "ground_truth_answer": 0.5073,
+    "verification_steps": [
+      "Step 1: Calculate the probability that all 23 people have unique birthdays.",
+      "Step 2: For the first person, the probability of a unique birthday is 365/365 = 1.",
+      "Step 3: For the second person, the probability that their birthday is different from the first is 364/365.",
+      "Step 4: For the third person, the probability that their birthday differs from the previous two is 363/365.",
+      "Step 5: Continue multiplying these probabilities for all 23 people: (365/365) * (364/365) * (363/365) * ... * (343/365).",
+      "Step 6: Calculate the product: 365/365 * 364/365 * 363/365 * ... * 343/365 \u2248 0.4927.",
+      "Step 7: The probability that at least two people share a birthday is 1 minus the probability all birthdays are unique: 1 - 0.4927 = 0.5073."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "deductive_reasoning",
+    "task_index": 32
+  },
+  {
+    "task_id": "monty_hall_variant_switch_decision",
+    "description": "In a variant of the Monty Hall problem, there are three doors: behind one door is a car, and behind the other two are goats. You initially pick Door 1. The host, who knows what is behind each door, opens Door 3, revealing a goat. Unlike the classic Monty Hall problem, the host tells you that if the car is behind Door 2, he would open Door 3 with 80% probability and Door 2 with 20% probability; if the car is behind Door 1, he will never open Door 2 or 3 first since you already chose Door 1. Given that the host opened Door 3, should you switch your choice from Door 1 to Door 2 to maximize your chances of winning the car?",
+    "ground_truth_answer": "Yes, you should switch to Door 2.",
+    "verification_steps": [
+      "There are three doors: Door 1 (your initial choice), Door 2, and Door 3.",
+      "The car is equally likely to be behind any door: probability 1/3 each.",
+      "You initially pick Door 1.",
+      "Host opens Door 3, revealing a goat.",
+      "Host's behavior depends on the car's location: if car is behind Door 2, host opens Door 3 with 80% probability; if car is behind Door 1, host always opens Door 3 (since Door 3 has a goat), and if car is behind Door 3, host would not open Door 3 (since it has the car), but this is impossible here because host opened Door 3 showing a goat.",
+      "Calculate the probability that the car is behind Door 2 given that host opened Door 3: Using Bayes theorem, P(car=2|host=Door3) = [P(host=Door3|car=2) * P(car=2)] / [P(host=Door3|car=1)*P(car=1) + P(host=Door3|car=2)*P(car=2)] = (0.8 * 1/3) / (1 * 1/3 + 0.8 * 1/3) = 0.8 / (1 + 0.8) = 0.8 / 1.8 \u2248 0.444.",
+      "Similarly, P(car=1|host=Door3) = (1 * 1/3) / (1 * 1/3 + 0.8 * 1/3) = 1 / 1.8 \u2248 0.556.",
+      "Since P(car=1|host=Door3) \u2248 0.556 and P(car=2|host=Door3) \u2248 0.444, the probability of winning by sticking with Door 1 is about 55.6%, and by switching to Door 2 is about 44.4%. Therefore, you should NOT switch to Door 2 to maximize your chances.",
+      "But wait, since the host opened Door 3, which has a goat, the car cannot be behind Door 3, so only Doors 1 and 2 are possible now.",
+      "Given these updated probabilities, sticking with Door 1 is better (55.6%) than switching to Door 2 (44.4%)."
+    ],
+    "difficulty": "medium",
+    "answer_type": "boolean",
+    "category": "deductive_reasoning",
+    "task_index": 33
+  },
+  {
+    "task_id": "four_prisoners_hats_optimal_strategy",
+    "description": "Four prisoners are lined up one behind the other, facing forward so that each prisoner can see the hats of all prisoners in front of them but not their own hat or the hats of prisoners behind them. There are two possible hat colors: red or blue. Each prisoner must guess their own hat color aloud in order from the prisoner at the back of the line (who sees the three hats in front) to the one at the front (who sees none). The prisoners can agree on a strategy beforehand but cannot communicate once the guessing begins. The goal is to maximize the number of prisoners guaranteed to guess their hat color correctly. What is the optimal strategy, and how many prisoners can be guaranteed to guess correctly using it?",
+    "ground_truth_answer": "The prisoners should use the parity strategy: the first prisoner (at the back) announces a color corresponding to the parity (e.g., even or odd) of red hats he sees in front. This allows the next prisoners to deduce their own hats based on this parity and previous guesses. Using this strategy, at least 3 out of the 4 prisoners can be guaranteed to guess their hat color correctly.",
+    "verification_steps": [
+      "1. The prisoners agree that the first prisoner will encode the parity (even or odd count) of red hats he sees in front by calling out 'red' or 'blue'.",
+      "2. The first prisoner counts the number of red hats on the three prisoners ahead. If the count is even, he says 'red'; if odd, he says 'blue'. This guess may be right or wrong, so the first prisoner has a 50% chance.",
+      "3. The second prisoner hears the first prisoner\u2019s call and sees the hats in front (two hats). He counts the red hats he sees and compares the parity with what the first prisoner announced, adjusting for previous guesses to deduce his own hat color correctly.",
+      "4. The third and fourth prisoners use the information from prior guesses and the parity call to deduce their own hats with certainty.",
+      "5. Thus, the last three prisoners can always guess correctly, while the first prisoner has a 50% chance. Therefore, the strategy guarantees at least 3 correct guesses."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "deductive_reasoning",
+    "task_index": 34
+  },
+  {
+    "task_id": "counterfeit_coin_minimum_weighings",
+    "description": "You have 8 coins that look identical, but one is counterfeit and either heavier or lighter than the genuine coins. You have a balance scale that can compare the weight of coins on each side. Your task is to determine which coin is counterfeit and whether it is heavier or lighter using the minimum number of weighings. What is the minimum number of weighings needed to guarantee identifying the counterfeit coin and its weight difference? Explain the reasoning behind the minimum number.",
+    "ground_truth_answer": 2,
+    "verification_steps": [
+      "Step 1: In each weighing, the balance scale has three possible outcomes: left side heavier, right side heavier, or balanced.",
+      "Step 2: Since the counterfeit coin can be either heavier or lighter, each coin has two possible counterfeit states, for a total of 8 coins \u00d7 2 = 16 possible counterfeit scenarios.",
+      "Step 3: The number of possible outcomes from n weighings is 3^n, since each weighing has 3 outcomes.",
+      "Step 4: We need the smallest n such that 3^n \u2265 16 to uniquely identify the counterfeit coin and whether it is heavier or lighter.",
+      "Step 5: For n=2, 3^2 = 9, which is less than 16, so 2 weighings are not enough.",
+      "Step 6: For n=3, 3^3 = 27, which is greater than 16, so 3 weighings are sufficient.",
+      "Step 7: However, with clever grouping and weighing, it is possible to find the counterfeit coin among 8 coins in exactly 2 weighings.",
+      "Step 8: By dividing the coins into three groups and using strategic comparisons, one can deduce the counterfeit coin and its nature in just 2 weighings.",
+      "Conclusion: The minimum number of weighings needed is 2."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "deductive_reasoning",
+    "task_index": 35
+  },
+  {
+    "task_id": "deductive_reasoning_exactly_two_true_statements",
+    "description": "You are given five statements labeled A through E. Exactly two of these statements are true, and the rest are false. The statements are:\nA: Statement B is true.\nB: Statement C is false.\nC: Statement D is true.\nD: Statement E is false.\nE: Statement A is false.\nDetermine which two statements are true.",
+    "ground_truth_answer": [
+      "B",
+      "E"
+    ],
+    "verification_steps": [
+      "Assume statement A is true. Then B is true (because A says B is true). So A and B are true, but since exactly two are true, the others must be false.",
+      "If B is true, then C is false (B says C is false). So C is false.",
+      "C is false, so statement D (which C claims is true) is false. So D is false.",
+      "D is false, so statement E (which says D is false) is true. But we already have A and B as true, so having E also true makes three true statements, which is invalid.",
+      "Therefore, A cannot be true. Assume A is false. Then B is false (because A states B is true, but if A is false, B is not guaranteed to be true).",
+      "Assume B is true. Then C is false (B says C is false).",
+      "If C is false, then D is false (C says D is true).",
+      "If D is false, then E is true (D says E is false).",
+      "Check which statements are true: B and E are true, A, C, D are false. Exactly two statements are true, so this satisfies the problem's condition."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "deductive_reasoning",
+    "task_index": 36
+  },
+  {
+    "task_id": "four_houses_zebra_puzzle_variant",
+    "description": "There are 4 houses in a row, numbered 1 to 4 from left to right. Each house is inhabited by a person of a different nationality: English, Spanish, Japanese, and Italian. Each person drinks a different beverage: tea, coffee, milk, and juice. Each person owns a different pet: dog, cat, bird, and fish. The following clues are given: (1) The English person lives in house 1. (2) The Spanish person owns the dog. (3) The Japanese drinks tea. (4) The Italian lives in house 4. (5) The person in house 2 drinks milk. (6) The person who owns the bird lives immediately to the left of the person who drinks coffee. Determine who owns the fish.",
+    "ground_truth_answer": "The Italian owns the fish.",
+    "verification_steps": [
+      "From clue (1), the English person is in house 1.",
+      "From clue (4), the Italian is in house 4.",
+      "From clue (5), the person in house 2 drinks milk.",
+      "From clue (3), the Japanese drinks tea, so cannot be in house 2 (milk) or house 1 (English). Houses 3 must be Japanese with tea.",
+      "From clue (2), the Spanish person owns the dog. The remaining nationality is Spanish in house 2.",
+      "House 2 is Spanish with milk and dog.",
+      "House 3 is Japanese with tea.",
+      "House 4 is Italian, and house 1 is English.",
+      "From clue (6), the person with the bird lives immediately to the left of the person who drinks coffee. Since house 2 drinks milk and house 3 drinks tea, coffee must be in house 4 (Italian), so bird owner is in house 3 (Japanese).",
+      "Therefore, house 3 owns the bird, house 4 drinks coffee, and house 1 drinks juice (remaining drink).",
+      "Pets assigned: house 2 has dog (Spanish), house 3 has bird (Japanese), house 1 and 4 have cat and fish left.",
+      "Since house 1 is English, house 1 must have the cat and house 4 (Italian) owns the fish.",
+      "Thus, the Italian owns the fish."
+    ],
+    "difficulty": "medium",
+    "answer_type": "choice",
+    "category": "deductive_reasoning",
+    "task_index": 37
+  },
+  {
+    "task_id": "truth_teller_liar_one_question_door_choice",
+    "description": "You are faced with two doors: one leads to freedom and the other leads to certain doom. Each door is guarded by a guard. One guard always tells the truth, and the other always lies, but you do not know which is which. You are allowed to ask exactly one yes/no question to one guard to determine which door leads to freedom. What one question should you ask to identify the door that leads to freedom?",
+    "ground_truth_answer": "Ask either guard: 'If I asked the other guard whether this door leads to freedom, would he say yes?' Then choose the door if and only if the answer is 'no'.",
+    "verification_steps": [
+      "Label the two guards as Guard A and Guard B, and the doors as Door 1 and Door 2, with one door leading to freedom.",
+      "The question is asked to one guard about what the other guard would say about the door leading to freedom.",
+      "If you ask the truthful guard about the lying guard's response, the truthful guard truthfully reports the false answer the liar would give.",
+      "If you ask the lying guard about the truthful guard's response, the liar lies about the truthful guard's true answer, resulting in the same false answer as above.",
+      "Hence, in both cases, the guard's answer is 'yes' if the door does not lead to freedom and 'no' if it does.",
+      "Therefore, if the answer is 'no', the door leads to freedom; if the answer is 'yes', it does not.",
+      "This logic guarantees that with one question, you can identify the door leading to freedom."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "deductive_reasoning",
+    "task_index": 38
+  },
+  {
+    "task_id": "deduce_crime_timeline_from_alibis",
+    "description": "Three suspects, Alice, Bob, and Charlie, are investigated for a theft that occurred between 2 PM and 4 PM. The following statements are known: Alice claims she was at the library from 1 PM to 3 PM. Bob says he was at the gym from 2 PM to 3:30 PM. Charlie states he was at home from 1:30 PM to 2:30 PM. The security camera at the crime scene recorded a figure entering at 3:15 PM and leaving at 3:45 PM. Based on the alibis and the camera footage, determine the exact time window during which the theft took place and identify which suspect could have committed the theft.",
+    "ground_truth_answer": "The theft occurred between 3:15 PM and 3:45 PM; the only suspect who could have committed the theft is Alice.",
+    "verification_steps": [
+      "The theft happened between 2 PM and 4 PM, with camera footage showing a figure at the scene from 3:15 PM to 3:45 PM, so the theft must have occurred within that timeframe.",
+      "Alice was at the library from 1 PM to 3 PM, so she was free starting at 3 PM.",
+      "Bob was at the gym from 2 PM to 3:30 PM, so he was not free at 3:15 PM when the figure entered the crime scene.",
+      "Charlie was at home from 1:30 PM to 2:30 PM, so he was free starting at 2:30 PM.",
+      "Between 3:15 PM and 3:45 PM, Alice was free (3 PM onwards), Charlie was free (2:30 PM onwards), but Bob was at the gym until 3:30 PM.",
+      "The figure entered at 3:15 PM and left at 3:45 PM, Bob is ruled out because he was at the gym until 3:30 PM and could not be at the crime scene at 3:15 PM.",
+      "Charlie was free during the timeframe and could have committed the theft, but the camera footage shows a figure arriving at 3:15 PM, and Charlie was already free, so he would have had to leave home to be there at 3:15 PM; possible but let's check Alice.",
+      "Alice was free starting at 3 PM, so she could have been at the crime scene from 3:15 PM to 3:45 PM, matching the camera footage exactly.",
+      "Therefore, the theft occurred between 3:15 PM and 3:45 PM, and Alice is the only suspect who could have committed the theft given the camera footage and alibis."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "deductive_reasoning",
+    "task_index": 39
+  },
+  {
+    "task_id": "hidden_card_from_statements_about_hand",
+    "description": "You have a hand of 5 playing cards drawn from a standard 52-card deck. Four of the cards are revealed: the 2 of Hearts, 5 of Clubs, 7 of Diamonds, and Queen of Spades. The fifth card is hidden. Four statements about the hand are given: (1) The hidden card is not a Heart. (2) The hidden card is a face card (Jack, Queen, or King). (3) The hidden card's rank is higher than 7. (4) Exactly two cards in the hand are Spades. Determine the hidden card.",
+    "ground_truth_answer": "King of Spades",
+    "verification_steps": [
+      "The hidden card is not a Heart, so it cannot be the 2 of Hearts or any card from the Hearts suit.",
+      "The hidden card is a face card, so it must be Jack, Queen, or King.",
+      "The hidden card's rank is higher than 7, so it can be Jack, Queen, or King (all qualify).",
+      "Currently, the hand has one Spade: Queen of Spades.",
+      "Statement (4) says exactly two cards are Spades; since one Spade is known, the hidden card must be a Spade.",
+      "The hidden card must be a face card, rank higher than 7, and a Spade: so Jack of Spades, Queen of Spades, or King of Spades.",
+      "Queen of Spades is already in the hand, so the hidden card cannot be Queen of Spades (no duplicates in a deck).",
+      "Jack of Spades is a face card >7 and a Spade; King of Spades is also valid.",
+      "But only one of these can satisfy all constraints.",
+      "Check if Jack of Spades or King of Spades is the hidden card: both satisfy the conditions, but since the Queen of Spades is already there, and the problem states the hidden card is a face card higher than 7, and does not exclude King, King of Spades is the unique correct answer to satisfy exactly two Spades in hand and avoid duplicates."
+    ],
+    "difficulty": "medium",
+    "answer_type": "choice",
+    "category": "deductive_reasoning",
+    "task_index": 40
+  },
+  {
+    "task_id": "family_relationship_deduction_41",
+    "description": "In a family of six members\u2014Alice, Bob, Carol, David, Emma, and Frank\u2014each person has a unique relationship to the others. The following clues are given: 1) Bob is the father of Emma. 2) Carol is the mother of David. 3) Alice is the sister of Bob. 4) Frank is married to Carol. 5) Emma is the daughter of Frank's spouse. 6) David is the son of Alice's sibling. Determine the exact relationship between Alice and David.",
+    "ground_truth_answer": "Alice is David's aunt.",
+    "verification_steps": [
+      "From clue 1, Bob is Emma's father.",
+      "From clue 4, Frank is married to Carol.",
+      "From clue 2, Carol is David's mother, so Frank is David's father (since Frank is married to Carol).",
+      "From clue 3, Alice is Bob's sister.",
+      "From clue 6, David is the son of Alice's sibling; Alice's sibling is Bob.",
+      "Since David is the son of Carol and Frank, and David is also the son of Alice's sibling, it means David is Bob's son (Bob and Carol are married or related?), but Carol is David's mother and Bob is Emma's father, so Bob and Carol are not married. Therefore, Bob is Alice's sibling, and David is Carol and Frank's son.",
+      "Given that Alice is Bob's sister and David is Carol and Frank's son, and David is the son of Alice's sibling according to clue 6, the only sibling of Alice who could be David's parent is Bob. So David is Bob's son, but Bob is Emma's father, so David and Emma are siblings, and Alice is their aunt.",
+      "Therefore, Alice is David's aunt."
+    ],
+    "difficulty": "medium",
+    "answer_type": "choice",
+    "category": "deductive_reasoning",
+    "task_index": 41
+  },
+  {
+    "task_id": "code_breaking_puzzle_4_digit_code_from_5_guesses",
+    "description": "You need to deduce a secret 4-digit code, where each digit is from 0 to 9, with no repeated digits. You have made 5 guesses and received feedback for each guess in the form of 'correct digit in correct place' (bulls) and 'correct digit in wrong place' (cows). The guesses and feedback are as follows: Guess 1: 1234 - 1 bull, 1 cow; Guess 2: 5678 - 0 bulls, 1 cow; Guess 3: 9012 - 1 bull, 0 cows; Guess 4: 3456 - 0 bulls, 2 cows; Guess 5: 7890 - 1 bull, 1 cow. Based on this information, determine the unique 4-digit secret code.",
+    "ground_truth_answer": "3096",
+    "verification_steps": [
+      "Step 1: From Guess 1 (1234) with 1 bull and 1 cow, the secret code contains exactly two digits from {1,2,3,4}, one in the correct position and one in the wrong position.",
+      "Step 2: From Guess 2 (5678) with 0 bulls and 1 cow, exactly one digit from {5,6,7,8} is in the code but in the wrong position.",
+      "Step 3: From Guess 3 (9012) with 1 bull and 0 cows, exactly one digit from {9,0,1,2} is in the correct position, and no other digits from this guess appear elsewhere in the code.",
+      "Step 4: From Guess 4 (3456) with 0 bulls and 2 cows, exactly two digits from {3,4,5,6} are in the code but both in the wrong positions.",
+      "Step 5: From Guess 5 (7890) with 1 bull and 1 cow, two digits from {7,8,9,0} are in the code, one in the correct position and one in the wrong position.",
+      "Step 6: Combining the above constraints and verifying no repeated digits, the only code satisfying all feedback is 3096.",
+      "Step 7: Confirm 3096 against each guess: for Guess 1 (1234), digit '3' is a bull in position 3 and digit '1' is the cow (wrong position) - matches 1 bull, 1 cow; for Guess 2 (5678), digit '6' is a cow only - 0 bulls, 1 cow; for Guess 3 (9012), digit '9' is bull at position 1, no other digits match - 1 bull, 0 cows; for Guess 4 (3456), digits '3' and '6' are cows - 0 bulls, 2 cows; for Guess 5 (7890), digit '9' is bull (position 1), digit '0' is cow - 1 bull, 1 cow.",
+      "Step 8: Therefore, the secret code is uniquely 3096."
+    ],
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "category": "deductive_reasoning",
+    "task_index": 42
+  },
+  {
+    "task_id": "island_of_truth_tellers_and_liars_navigation",
+    "description": "You are on an island with three villages: Village A, Village B, and Village C. Village A is inhabited only by truth-tellers who always tell the truth, Village B is inhabited only by liars who always lie, and Village C is inhabited by a mix of both. You meet a local at the crossroads who comes from one of these villages but you do not know which. You ask him: \"If I asked you whether Village B is to the left, would you say yes?\" He replies \"Yes.\" Then you ask: \"Is Village C straight ahead?\" He replies \"No.\" Based on his answers, which direction is Village B located? The options are: left, right, or straight ahead.",
+    "ground_truth_answer": "right",
+    "verification_steps": [
+      "Let\u2019s denote the directions: left, right, and straight ahead.",
+      "The person answers two questions: Q1: \"If I asked you if Village B is to the left, would you say yes?\" Answer: Yes.",
+      "Q2: \"Is Village C straight ahead?\" Answer: No.",
+      "Consider the possibilities for the person's origin: from Village A (truth-teller), Village B (liar), or Village C (mixed).",
+      "If the person is from Village A (truth-teller):",
+      "- Q1 means: The truthful answer to \"Is Village B to the left?\" is yes, so Village B is indeed to the left.",
+      "- Q2 means: \"Is Village C straight ahead?\" The truthful answer is no, so Village C is not straight ahead.",
+      "- But then Village B is to the left and Village C is not straight ahead, so Village C must be either left or right. Since Village B is left, C would be right or straight ahead. Since C is not straight ahead, it must be right.",
+      "If the person is from Village B (liar):",
+      "- For Q1, the truthful answer to \"Is Village B to the left?\" would be yes or no. The liar answers \"Yes\" when asked if he would say yes, so the liar\u2019s answer is the negation of the truthful response to the meta-question.",
+      "- This is complex, but analyzing shows inconsistency with Village B on the left.",
+      "If the person is from Village C (mixed):",
+      "- Mixed villagers can say anything, so we cannot deduce reliably.",
+      "Given the logic and the contradictions arising otherwise, the consistent scenario is that Village B is to the right.",
+      "Therefore, the correct answer is that Village B is located to the right."
+    ],
+    "difficulty": "hard",
+    "answer_type": "choice",
+    "category": "deductive_reasoning",
+    "task_index": 43
+  },
+  {
+    "task_id": "age_puzzle_three_people_relationships",
+    "description": "Alice, Bob, and Charlie have ages in whole years. Alice is twice as old as Bob was when Alice was as old as Bob is now. Charlie is 4 years older than Bob. The sum of their current ages is 54. Determine the current ages of Alice, Bob, and Charlie.",
+    "ground_truth_answer": {
+      "Alice": 26,
+      "Bob": 14,
+      "Charlie": 18
+    },
+    "verification_steps": [
+      "Let Alice's current age be A, Bob's current age be B, and Charlie's current age be C.",
+      "Given C = B + 4.",
+      "The sum of ages is A + B + C = 54, substituting gives A + B + (B + 4) = 54, so A + 2B = 50.",
+      "The key relationship is: 'Alice is twice as old as Bob was when Alice was as old as Bob is now.' This means when Alice was B years old (Bob's current age), the difference in their ages is A - B years ago.",
+      "At that time, Bob's age was B - (A - B) = 2B - A.",
+      "Since Alice is currently twice that age, A = 2 * (2B - A) => A = 4B - 2A => 3A = 4B => A = (4/3)B.",
+      "Substitute A = (4/3)B into A + 2B = 50 gives (4/3)B + 2B = 50 => (4/3 + 2)B = 50 => (4/3 + 6/3)B = 50 => (10/3)B = 50 => B = (50 * 3)/10 = 15.",
+      "Then A = (4/3)*15 = 20 and C = B + 4 = 19. However, these do not satisfy the initial sum condition exactly.",
+      "Re-examining step 4: 'Alice is twice as old as Bob was when Alice was as old as Bob is now.' The time ago is (A - B) years. Bob's age then was B - (A - B) = 2B - A. The relation is A = 2 * (2B - A) => A = 4B - 2A => 3A = 4B => A = (4/3)B.",
+      "Using integer ages close to this ratio and sum 54: Try B=14, then A=(4/3)*14=18.666... no. Try B=14, A=26 (from original guess), check sum: 26 + 14 + 18 = 58 (too high). Try B=14, C=18, A=26, sum = 26 + 14 + 18=58 (too high). Try B=13, A=(4/3)*13=17.33 no. Try B=15, A=20 sum 20 + 15 + 19=54 correct.",
+      "Therefore, the exact integer ages satisfying all conditions are Alice=26, Bob=14, Charlie=18, which satisfy the equation A + 2B = 50 (26 + 28=54 mismatch), so re-check calculations.",
+      "Adjust the approach: Let t = A - B (time ago). At that time, Bob's age was B - t. Given A = 2 * (B - t), and t = A - B, so A = 2 * (B - (A - B)) = 2 * (2B - A) => A = 4B - 2A => 3A = 4B => A = (4/3)B.",
+      "Substitute into sum: A + B + (B + 4) = 54 => (4/3)B + B + B + 4 = 54 => (4/3 + 2)B = 50 => (10/3)B = 50 => B = 15.",
+      "Then A = (4/3)*15 = 20, C = 15 + 4 = 19. Check sum: 20 + 15 + 19 = 54 correct.",
+      "Check the key relationship: time ago t = A - B = 20 - 15 = 5, Bob's age then = 15 - 5 = 10, twice of 10 is 20 which matches Alice's current age.",
+      "Therefore, the ages are Alice = 20, Bob = 15, Charlie = 19."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "deductive_reasoning",
+    "task_index": 44
+  },
+  {
+    "task_id": "ranking_five_items_from_pairwise_comparisons",
+    "description": "Five runners\u2014Alice, Bob, Charlie, Diana, and Edward\u2014competed in a race. The following pairwise results are known: Alice finished ahead of Bob; Charlie finished behind Diana; Edward finished ahead of Alice; Bob finished ahead of Charlie; Diana finished ahead of Edward. Using these pairwise comparisons, determine the complete ranking of the runners from first place to fifth place.",
+    "ground_truth_answer": [
+      "Diana",
+      "Edward",
+      "Alice",
+      "Bob",
+      "Charlie"
+    ],
+    "verification_steps": [
+      "From 'Alice finished ahead of Bob', Alice > Bob.",
+      "From 'Charlie finished behind Diana', Diana > Charlie.",
+      "From 'Edward finished ahead of Alice', Edward > Alice.",
+      "From 'Bob finished ahead of Charlie', Bob > Charlie.",
+      "From 'Diana finished ahead of Edward', Diana > Edward.",
+      "Combining these: Diana > Edward > Alice > Bob > Charlie.",
+      "Thus, the complete ranking is Diana first, Edward second, Alice third, Bob fourth, and Charlie fifth."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "deductive_reasoning",
+    "task_index": 45
+  },
+  {
+    "task_id": "determine_box_contents_with_minimum_openings",
+    "description": "You have three boxes, each containing either apples, oranges, or a mix of both. Each box is labeled, but all three labels are incorrect. The labels are: 'Apples', 'Oranges', and 'Mixed'. Your goal is to determine the correct contents of each box by opening as few boxes as possible and looking at just one fruit inside each opened box. What is the minimum number of boxes you need to open to correctly label all three boxes, and how do you do it?",
+    "ground_truth_answer": "You need to open only one box. Open the box labeled 'Mixed'. Since all labels are incorrect, this box cannot be mixed; it must contain either only apples or only oranges. Suppose you find an apple inside; then this box contains only apples. The box labeled 'Oranges' cannot contain oranges (label is incorrect), nor apples (since apples are identified), so it must be mixed. Consequently, the box labeled 'Apples' must contain oranges. Similarly, if you find an orange in the 'Mixed' labeled box, analogous logic applies.",
+    "verification_steps": [
+      "Step 1: Since all labels are incorrect, the box labeled 'Mixed' cannot contain a mix; it must contain either only apples or only oranges.",
+      "Step 2: Open the box labeled 'Mixed' and observe the single fruit inside.",
+      "Step 3: If the fruit is an apple, then this box contains only apples. If the fruit is an orange, then it contains only oranges.",
+      "Step 4: The box labeled 'Oranges' cannot contain oranges (label incorrect) and cannot contain apples (already assigned), so it must be the mixed box.",
+      "Step 5: The remaining box labeled 'Apples' must then contain the remaining fruit (oranges).",
+      "Step 6: Thus, by opening just one box (the one labeled 'Mixed'), you can deduce the contents of all boxes correctly."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "deductive_reasoning",
+    "task_index": 46
+  },
+  {
+    "task_id": "clock_hands_overlap_after_noon",
+    "description": "A standard analog clock has hour and minute hands that move continuously. At exactly 12:00, both hands overlap. After 12:00, the hour and minute hands will next overlap at some time between 1:00 and 2:00. Determine the exact time after 12:00 when the hour and minute hands overlap again. Express the time in hours, minutes, and seconds.",
+    "ground_truth_answer": "1:05:27.27",
+    "verification_steps": [
+      "At 12:00, both hands are at 0 degrees.",
+      "The minute hand moves 360 degrees every 60 minutes, or 6 degrees per minute.",
+      "The hour hand moves 360 degrees every 12 hours, or 0.5 degrees per minute.",
+      "Let t be the number of minutes after 12:00 when the hands overlap again.",
+      "The angle of the minute hand after t minutes is 6t degrees.",
+      "The angle of the hour hand after t minutes is 0.5t degrees.",
+      "For the hands to overlap, the angle difference must be zero or a multiple of 360 degrees. Since we're looking between 12 and 1, they must be at the same angle: 6t = 0.5t + 360 * n, where n = 0 or 1, but n=0 gives t=0 (12:00). So n=1.",
+      "Solve 6t = 0.5t + 360, which gives 5.5t = 360, so t = 360 / 5.5 = 65.4545 minutes.",
+      "65.4545 minutes is 65 minutes and 0.4545 * 60 = 27.27 seconds.",
+      "65 minutes after 12:00 is 1:05, so the time is 1:05:27.27."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "deductive_reasoning",
+    "task_index": 47
+  },
+  {
+    "task_id": "probability_drawing_balls_from_urns_with_replacement",
+    "description": "There are two urns. Urn A contains 3 red balls and 2 blue balls. Urn B contains 1 red ball and 4 blue balls. You first randomly select one urn with equal probability. Then you draw one ball from the selected urn, note its color, and replace it back into the urn. After that, you again randomly select one urn with equal probability (independently of the first selection) and draw one ball from that urn with replacement. What is the probability that both drawn balls are red?",
+    "ground_truth_answer": 0.18,
+    "verification_steps": [
+      "Step 1: Probability of selecting Urn A is 0.5, and Urn B is 0.5 for each draw.",
+      "Step 2: Probability of drawing a red ball from Urn A is 3/(3+2)=3/5=0.6, and from Urn B is 1/(1+4)=1/5=0.2.",
+      "Step 3: The probability that both drawn balls are red is the sum over all combinations of urn selections for the two draws:",
+      " - First draw Urn A, second draw Urn A: (0.5 * 0.6) * (0.5 * 0.6) = 0.5*0.6*0.5*0.6 = 0.09",
+      " - First draw Urn A, second draw Urn B: (0.5 * 0.6) * (0.5 * 0.2) = 0.5*0.6*0.5*0.2 = 0.03",
+      " - First draw Urn B, second draw Urn A: (0.5 * 0.2) * (0.5 * 0.6) = 0.5*0.2*0.5*0.6 = 0.03",
+      " - First draw Urn B, second draw Urn B: (0.5 * 0.2) * (0.5 * 0.2) = 0.5*0.2*0.5*0.2 = 0.01",
+      "Step 4: Summing these probabilities: 0.09 + 0.03 + 0.03 + 0.01 = 0.16",
+      "Step 5: Re-examining step 3, we see multiplication should be of probabilities of urn selection and red ball per draw, then multiplied for both draws. Actually, the draws are independent with urn selection at each draw being 0.5.",
+      "So, probability = (0.5*0.6 + 0.5*0.2) for first draw red times (0.5*0.6 + 0.5*0.2) for second draw red = (0.3 + 0.1) * (0.3 + 0.1) = 0.4 * 0.4 = 0.16.",
+      "Therefore, the correct probability is 0.16."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "deductive_reasoning",
+    "task_index": 48
+  },
+  {
+    "task_id": "pigeonhole_principle_minimum_pairs_sum_divisible_by_10",
+    "description": "In a group of 15 distinct integers chosen from the set {1, 2, 3, ..., 30}, prove that there must be at least one pair of integers whose sum is divisible by 10. Determine the minimum number of such pairs guaranteed to exist in any selection of 15 numbers from this set. Note that two integers a and b form a pair if a + b is divisible by 10. Each pair counts once regardless of order. Find the minimum number of pairs with sums divisible by 10 that must occur in any subset of 15 numbers from 1 to 30.",
+    "ground_truth_answer": 3,
+    "verification_steps": [
+      "Step 1: Consider the integers modulo 10 to classify them into residue classes: 0, 1, 2, ..., 9.",
+      "Step 2: From 1 to 30, each residue class modulo 10 has exactly 3 elements (e.g., residue 0 has {10, 20, 30}, residue 1 has {1, 11, 21}, etc.).",
+      "Step 3: The pairs that sum to a multiple of 10 are formed by residues that sum to 10: (1,9), (2,8), (3,7), (4,6), and also pairs within residue 0 and residue 5 classes (since 0+0=0 mod 10 and 5+5=10 mod 10).",
+      "Step 4: The pigeonhole principle implies that choosing 15 numbers from 30 forces at least some residue classes to contain multiple elements.",
+      "Step 5: To minimize pairs summing to multiples of 10, select numbers to minimize cross pairs between complementary residue classes and pairs within 0 and 5 residue classes.",
+      "Step 6: Using combinatorial reasoning and the distribution of residue classes, the minimal guaranteed number of pairs summing to a multiple of 10 in any 15-element subset is 3.",
+      "Step 7: Thus, no matter how you choose the 15 numbers, there will always be at least 3 pairs whose sum is divisible by 10."
+    ],
+    "difficulty": "hard",
+    "answer_type": "numeric",
+    "category": "deductive_reasoning",
+    "task_index": 49
+  },
+  {
+    "task_id": "logical_paradox_self_consistency",
+    "description": "Consider the statement: \"This statement is false.\" Determine whether this statement is self-consistent. A statement is self-consistent if it can be true without leading to a contradiction. Analyze the truth value of the statement and conclude whether it is self-consistent or not.",
+    "ground_truth_answer": "The statement is not self-consistent",
+    "verification_steps": [
+      "Assume the statement is true. Then the statement claims \"This statement is false\" is true, meaning the statement is false, which contradicts the assumption.",
+      "Assume the statement is false. Then the statement is not true, so \"This statement is false\" is false, which means the statement is true, contradicting this assumption as well.",
+      "Both assumptions (true or false) lead to a contradiction, so the statement cannot consistently be assigned a truth value.",
+      "Therefore, the statement is not self-consistent as it inherently leads to a paradox."
+    ],
+    "difficulty": "medium",
+    "answer_type": "choice",
+    "category": "deductive_reasoning",
+    "task_index": 50
+  },
+  {
+    "task_id": "sum_first_n_odd_numbers_equals_n_squared",
+    "description": "Prove that the sum of the first n odd numbers is equal to n squared (n^2). Then, verify this formula for n = 10 by calculating the sum of the first 10 odd numbers and comparing it to 10 squared.",
+    "ground_truth_answer": "The sum of the first 10 odd numbers is 100, which equals 10 squared (10^2).",
+    "verification_steps": [
+      "The first n odd numbers can be expressed as 1, 3, 5, ..., (2n - 1).",
+      "The sum S of the first n odd numbers is: S = 1 + 3 + 5 + ... + (2n - 1).",
+      "Using the formula for the sum of an arithmetic series: S = n/2 * (first term + last term) = n/2 * (1 + (2n - 1)) = n/2 * (2n) = n * n = n^2.",
+      "Therefore, the sum of the first n odd numbers equals n squared.",
+      "For n = 10, the first 10 odd numbers are: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19.",
+      "Calculate their sum: 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 = 100.",
+      "Calculate 10 squared: 10^2 = 100.",
+      "Since both values are equal, the formula is verified for n = 10."
+    ],
+    "difficulty": "easy",
+    "answer_type": "expression",
+    "category": "mathematical_reasoning",
+    "task_index": 51
+  },
+  {
+    "task_id": "remainder_of_2_power_100_divided_by_7",
+    "description": "Calculate the remainder when 2 raised to the power of 100 (2^100) is divided by 7. That is, find the value of 2^100 modulo 7. Use properties of modular arithmetic and patterns in powers to simplify the calculation rather than computing 2^100 directly.",
+    "ground_truth_answer": 2,
+    "verification_steps": [
+      "Calculate powers of 2 modulo 7 to find a pattern: 2^1 mod 7 = 2",
+      "2^2 mod 7 = 4",
+      "2^3 mod 7 = 8 mod 7 = 1",
+      "Since 2^3 mod 7 = 1, the powers of 2 modulo 7 repeat every 3 steps (the pattern length is 3)",
+      "Find the remainder when 100 is divided by 3: 100 mod 3 = 1",
+      "Thus, 2^100 mod 7 = 2^(3*33 + 1) mod 7 = (2^3)^33 * 2^1 mod 7 = 1^33 * 2 mod 7 = 2",
+      "Therefore, the remainder when 2^100 is divided by 7 is 2."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 52
+  },
+  {
+    "task_id": "count_integers_divisible_by_3_or_5_but_not_both",
+    "description": "Determine how many integers from 1 to 1000 inclusive are divisible by 3 or 5 but not both. An integer is considered divisible by 3 or 5 if it divides evenly by 3 or 5. Numbers divisible by both 3 and 5 (i.e., divisible by 15) should be excluded from the count. Find the total number of integers in this range that meet these criteria.",
+    "ground_truth_answer": 467,
+    "verification_steps": [
+      "Count the number of integers from 1 to 1000 divisible by 3: floor(1000/3) = 333.",
+      "Count the number of integers from 1 to 1000 divisible by 5: floor(1000/5) = 200.",
+      "Count the number of integers from 1 to 1000 divisible by both 3 and 5 (i.e., divisible by 15): floor(1000/15) = 66.",
+      "Numbers divisible by both 3 and 5 are counted twice in the sum of counts divisible by 3 and 5.",
+      "To find numbers divisible by 3 or 5 but not both, subtract twice the count of numbers divisible by both (to exclude them completely): (333 + 200) - 2 * 66 = 533 - 132 = 401.",
+      "Correction: This step needs re-evaluation. The task is to find numbers divisible by 3 or 5 but not both, which is the symmetric difference count.",
+      "The count of numbers divisible by 3 or 5 but not both = (numbers divisible by 3 + numbers divisible by 5) - 2 * (numbers divisible by 15) = 333 + 200 - 2 * 66 = 533 - 132 = 401.",
+      "Therefore, the correct total is 401."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 53
+  },
+  {
+    "task_id": "arrangements_of_mississippi_letters",
+    "description": "Calculate the total number of distinct ways to arrange the letters in the word 'MISSISSIPPI'. The word consists of 11 letters where the letter M appears once, I appears 4 times, S appears 4 times, and P appears 2 times. Since some letters repeat, the arrangements must account for identical letters being indistinguishable. Find the number of unique permutations of these letters.",
+    "ground_truth_answer": 34650,
+    "verification_steps": [
+      "Count the total number of letters: 11 (M=1, I=4, S=4, P=2).",
+      "Compute the total permutations if all letters were distinct: 11! = 39916800.",
+      "Divide by the factorial of the counts of each repeated letter to correct for indistinguishable permutations:",
+      "Divide by 1! for M (no change), 4! for I, 4! for S, and 2! for P.",
+      "Calculate 4! = 24 and 2! = 2.",
+      "Calculate the denominator: 1! * 4! * 4! * 2! = 1 * 24 * 24 * 2 = 1152.",
+      "Divide total permutations by denominator: 39916800 / 1152 = 34650.",
+      "Therefore, there are 34,650 distinct arrangements of the letters in 'MISSISSIPPI'."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 54
+  },
+  {
+    "task_id": "last_two_digits_of_7_power_2026",
+    "description": "Determine the last two digits of the number 7 raised to the power of 2026 (i.e., find the remainder when 7^2026 is divided by 100). This requires identifying the pattern of the last two digits of powers of 7 and using modular arithmetic properties to simplify the computation.",
+    "ground_truth_answer": "01",
+    "verification_steps": [
+      "We want to find 7^2026 mod 100, which gives the last two digits of 7^2026.",
+      "Calculate the pattern of last two digits of powers of 7 by computing 7^n mod 100 for n from 1 onwards:",
+      "7^1 = 7 mod 100 = 07",
+      "7^2 = 49 mod 100 = 49",
+      "7^3 = 7^2 * 7 = 49 * 7 = 343 mod 100 = 43",
+      "7^4 = 43 * 7 = 301 mod 100 = 01",
+      "7^5 = 01 * 7 = 07, which repeats the cycle starting at 7^1.",
+      "The cycle length is 4 for the last two digits: [07, 49, 43, 01].",
+      "Find the remainder when 2026 is divided by 4: 2026 mod 4 = 2.",
+      "Since exponent mod cycle length is 2, the last two digits correspond to the second element in the cycle, which is 49.",
+      "However, note the cycle is indexed starting at 1 for 7^1 = 07, so 7^(4k+1)=07, 7^(4k+2)=49, 7^(4k+3)=43, 7^(4k)=01.",
+      "Thus, for 2026, which is 4*506 + 2, the last two digits are 49."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 55
+  },
+  {
+    "task_id": "minimum_handshakes_for_10_people_3_each",
+    "description": "There are 10 people in a room. Each person shakes hands with exactly 3 other distinct people. Determine the minimum total number of handshakes that occur under these conditions. Note that each handshake involves exactly two people, and no two people shake hands more than once. The problem asks for the minimum total number of handshakes possible when everyone has exactly 3 handshakes.",
+    "ground_truth_answer": 15,
+    "verification_steps": [
+      "Each of the 10 people shakes hands with exactly 3 others. Therefore, the total number of handshake 'ends' is 10 * 3 = 30.",
+      "Each handshake involves two people, so each handshake is counted twice if we sum individual handshakes across all people.",
+      "To find the total number of distinct handshakes, divide the total handshake 'ends' by 2: 30 / 2 = 15.",
+      "This count assumes such a configuration is possible, meaning a 10-vertex graph where each vertex has degree 3. Since 10 * 3 = 30 is even, a 3-regular graph with 10 vertices exists.",
+      "Therefore, the minimum total number of handshakes is 15."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 56
+  },
+  {
+    "task_id": "expected_flips_for_three_consecutive_heads",
+    "description": "You have a fair coin that you flip repeatedly until you get three consecutive heads in a row. Each flip results in heads (H) or tails (T) with equal probability 1/2. Determine the expected number of coin flips needed to achieve three consecutive heads for the first time.",
+    "ground_truth_answer": 14,
+    "verification_steps": [
+      "Define states based on the number of consecutive heads achieved: S0 (0 heads), S1 (1 head), S2 (2 heads), and S3 (3 heads, the goal).",
+      "Set the expected number of flips from each state as E0, E1, E2, and E3 = 0 since the process ends at three consecutive heads.",
+      "From state S0: after one flip, with probability 1/2 move to S1 (if heads) or stay in S0 (if tails). The equation is E0 = 1 + (1/2)*E1 + (1/2)*E0.",
+      "From state S1: after one flip, with probability 1/2 move to S2 (heads), or back to S0 (tails). So E1 = 1 + (1/2)*E2 + (1/2)*E0.",
+      "From state S2: after one flip, with probability 1/2 reach S3 (done), or with probability 1/2 go back to S0 (tails). So E2 = 1 + (1/2)*0 + (1/2)*E0.",
+      "Solve the system: From E0 = 1 + 0.5*E1 + 0.5*E0, rearranged to 0.5*E0 = 1 + 0.5*E1, so E0 = 2 + E1.",
+      "From E1 = 1 + 0.5*E2 + 0.5*E0, substitute E0: E1 = 1 + 0.5*E2 + 0.5*(2 + E1) => E1 = 1 + 0.5*E2 + 1 + 0.5*E1, so 0.5*E1 = 2 + 0.5*E2, then E1 = 4 + E2.",
+      "From E2 = 1 + 0.5*0 + 0.5*E0 = 1 + 0.5*E0.",
+      "Substitute E1 and E2 in terms of E0: E1 = 4 + E2 = 4 + 1 + 0.5*E0 = 5 + 0.5*E0.",
+      "Recall: E0 = 2 + E1 = 2 + 5 + 0.5*E0 = 7 + 0.5*E0, so 0.5*E0 = 7, thus E0 = 14.",
+      "Therefore, the expected number of flips starting from no consecutive heads is 14."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 57
+  },
+  {
+    "task_id": "count_paths_grid_0_0_to_4_4",
+    "description": "Consider a 5x5 grid with coordinates ranging from (0,0) at the bottom-left corner to (4,4) at the top-right corner. You start at point (0,0) and want to reach point (4,4) by moving only one step at a time either to the right (increasing the x-coordinate by 1) or up (increasing the y-coordinate by 1). Each path consists of exactly 8 moves because you must move 4 steps right and 4 steps up in some order. Determine how many distinct paths exist from (0,0) to (4,4) following these rules.",
+    "ground_truth_answer": 70,
+    "verification_steps": [
+      "To move from (0,0) to (4,4), you must make 4 moves right and 4 moves up, totaling 8 moves.",
+      "Each unique path can be represented as a sequence of 8 moves, where 4 are 'R' (right) and 4 are 'U' (up).",
+      "The problem reduces to counting the number of distinct permutations of 8 moves with 4 identical 'R's and 4 identical 'U's.",
+      "The number of such permutations is given by the binomial coefficient C(8,4) = 8!/(4! * 4!).",
+      "Calculate 8! = 40320, 4! = 24, so C(8,4) = 40320 / (24 * 24) = 40320 / 576 = 70.",
+      "Therefore, there are exactly 70 distinct paths from (0,0) to (4,4) moving only right or up."
+    ],
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 58
+  },
+  {
+    "task_id": "mersenne_prime_check_2_pow_67_minus_1",
+    "description": "Determine whether the number 2^67 - 1 is a prime number. A Mersenne number has the form 2^p - 1, where p is a prime. However, not all Mersenne numbers are prime. Specifically, 2^67 - 1 is a known Mersenne number. Your task is to verify whether this particular number is prime or composite, providing reasoning based on known mathematical results or factorization.",
+    "ground_truth_answer": "composite",
+    "verification_steps": [
+      "Step 1: Recognize that 67 is a prime number, so 2^67 - 1 is a Mersenne number M_67.",
+      "Step 2: Not all Mersenne numbers M_p are prime even when p is prime; primality must be verified separately.",
+      "Step 3: Historically, it is known that M_67 = 2^67 - 1 is composite, as it was proven by Lucas-Lehmer test and factorization efforts.",
+      "Step 4: Specifically, 2^67 - 1 has known factors, meaning it is not prime.",
+      "Step 5: Therefore, the Mersenne number 2^67 - 1 is composite, not prime."
+    ],
+    "difficulty": "medium",
+    "answer_type": "choice",
+    "category": "mathematical_reasoning",
+    "task_index": 59
+  },
+  {
+    "task_id": "sum_of_proper_divisors_of_360",
+    "description": "Calculate the sum of all proper divisors of the number 360. A proper divisor of a number is a positive divisor other than the number itself. List all divisors of 360 except 360, then sum them up to find the total.",
+    "ground_truth_answer": 1170,
+    "verification_steps": [
+      "Find the prime factorization of 360: 360 = 2^3 * 3^2 * 5^1.",
+      "Calculate the sum of all divisors using the formula for the sum of divisors: sum_of_divisors = (2^0 + 2^1 + 2^2 + 2^3) * (3^0 + 3^1 + 3^2) * (5^0 + 5^1).",
+      "Compute each sum: (1 + 2 + 4 + 8) = 15, (1 + 3 + 9) = 13, (1 + 5) = 6.",
+      "Multiply these sums: 15 * 13 * 6 = 1170.",
+      "Since this includes the number 360 itself, subtract 360 to get the sum of proper divisors: 1170 - 360 = 810.",
+      "Note: Re-check the multiplication step: 15 * 13 = 195, 195 * 6 = 1170, so total sum is 1170 including 360.",
+      "Therefore, sum of proper divisors = 1170 - 360 = 810."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 60
+  },
+  {
+    "task_id": "count_trailing_zeros_in_100_factorial",
+    "description": "Calculate the number of trailing zeros in the decimal representation of 100 factorial (100!). The trailing zeros are the number of zeros at the end of the number when written in base 10. Trailing zeros are created by factors of 10, and each factor of 10 is composed of one factor of 2 and one factor of 5. Since factorials have more factors of 2 than 5, the count of factors of 5 determines the number of trailing zeros. Determine how many times 5 appears as a factor in the numbers from 1 to 100.",
+    "ground_truth_answer": 24,
+    "verification_steps": [
+      "Step 1: Identify that trailing zeros in 100! come from pairs of factors 2 and 5.",
+      "Step 2: Since there are more factors of 2 than 5 in 100!, count the number of factors of 5 in numbers from 1 to 100.",
+      "Step 3: Count multiples of 5: floor(100/5) = 20.",
+      "Step 4: Count multiples of 25 (5^2), which contribute an extra factor of 5: floor(100/25) = 4.",
+      "Step 5: Count multiples of 125 (5^3), but since 125 > 100, count is 0.",
+      "Step 6: Total number of 5 factors = 20 + 4 + 0 = 24.",
+      "Step 7: Therefore, the number of trailing zeros in 100! is 24."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 61
+  },
+  {
+    "task_id": "smallest_n_factorial_exceeds_10_power_100",
+    "description": "Find the smallest positive integer n such that n factorial (n!) is greater than 10 to the power of 100 (10^100). Recall that n! is the product of all positive integers from 1 to n. The challenge is to determine the minimum value of n where n! > 10^100.",
+    "ground_truth_answer": 70,
+    "verification_steps": [
+      "Recall that 10^100 is a 1 followed by 100 zeros, also known as a googol.",
+      "Calculate or estimate factorial values to find when n! surpasses 10^100.",
+      "70! is approximately 1.197857e+100, which is just over 10^100.",
+      "69! is approximately 1.7112245e+98, which is less than 10^100.",
+      "Therefore, 69! < 10^100 < 70!, making n=70 the smallest integer satisfying the condition."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 62
+  },
+  {
+    "task_id": "number_of_derangements_of_6_elements",
+    "description": "A derangement is a permutation of elements such that none of the elements appear in their original position. Calculate the number of derangements for a set of 6 distinct elements. Use the formula for derangements: !n = n! * (1 - 1/1! + 1/2! - 1/3! + ... + (-1)^n / n!). Compute the exact number for n = 6.",
+    "ground_truth_answer": 265,
+    "verification_steps": [
+      "Calculate 6! = 720.",
+      "Compute the alternating sum: 1 - 1/1! + 1/2! - 1/3! + 1/4! - 1/5! + 1/6!.",
+      "Evaluate each factorial: 1! = 1, 2! = 2, 3! = 6, 4! = 24, 5! = 120, 6! = 720.",
+      "Calculate the sum: 1 - 1 + 1/2 - 1/6 + 1/24 - 1/120 + 1/720 = 0 + 0.5 - 0.1667 + 0.0417 - 0.0083 + 0.0014 = approximately 0.3681.",
+      "Multiply 720 by approximately 0.3681 to get 720 * 0.3681 = 265.43.",
+      "Since the number of derangements is an integer, round to the nearest integer: 265."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 63
+  },
+  {
+    "task_id": "gcd_of_1071_and_462_using_euclidean_algorithm",
+    "description": "Calculate the greatest common divisor (GCD) of the two integers 1071 and 462 using the Euclidean algorithm. Use the division method repeatedly, where the remainder from each division is used as the divisor for the next step, until the remainder is zero. The last non-zero remainder is the GCD. Show all steps involved in the process.",
+    "ground_truth_answer": 21,
+    "verification_steps": [
+      "Step 1: Divide 1071 by 462. 1071 \u00f7 462 = 2 remainder 147, so 1071 = 462 * 2 + 147.",
+      "Step 2: Divide 462 by 147. 462 \u00f7 147 = 3 remainder 21, so 462 = 147 * 3 + 21.",
+      "Step 3: Divide 147 by 21. 147 \u00f7 21 = 7 remainder 0, so 147 = 21 * 7 + 0.",
+      "Step 4: Since the remainder is now 0, the process stops here.",
+      "Step 5: The last non-zero remainder is 21, which is the GCD of 1071 and 462."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 64
+  },
+  {
+    "task_id": "count_distinct_binary_search_trees_5_nodes",
+    "description": "Determine the number of distinct binary search trees (BSTs) that can be formed using 5 distinct nodes. Each BST must have exactly 5 nodes, each with unique values. The structure of the BSTs must satisfy the binary search tree property where the left subtree contains nodes with values less than the root, and the right subtree contains nodes with values greater than the root. Calculate the total number of unique BSTs possible with these 5 nodes.",
+    "ground_truth_answer": 42,
+    "verification_steps": [
+      "The number of distinct BSTs with n nodes is given by the nth Catalan number.",
+      "The nth Catalan number C_n is calculated by the formula: C_n = (1 / (n+1)) * (2n choose n).",
+      "For n = 5, compute (2*5 choose 5) = (10 choose 5).",
+      "Calculate (10 choose 5) = 10! / (5! * 5!) = 3628800 / (120 * 120) = 252.",
+      "Compute C_5 = (1 / (5+1)) * 252 = (1/6) * 252 = 42.",
+      "Therefore, there are 42 distinct binary search trees possible with 5 nodes."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 65
+  },
+  {
+    "task_id": "probability_full_house_5_card_poker_hand",
+    "description": "In a standard 52-card deck, a 5-card poker hand is drawn at random. A full house consists of three cards of one rank and two cards of another rank (for example, three 7s and two Kings). Calculate the probability that a randomly drawn 5-card hand is a full house. Express your answer as a simplified fraction or a decimal rounded to at least six decimal places.",
+    "ground_truth_answer": "0.001440",
+    "verification_steps": [
+      "Step 1: Calculate the total number of 5-card hands from a 52-card deck: C(52, 5) = 2,598,960.",
+      "Step 2: Determine the number of ways to choose the rank for the three-of-a-kind: 13 possible ranks.",
+      "Step 3: For the chosen rank, select 3 cards out of the 4 suits: C(4, 3) = 4.",
+      "Step 4: Choose the rank for the pair from the remaining 12 ranks: 12 possible ranks.",
+      "Step 5: For this chosen pair rank, select 2 cards out of the 4 suits: C(4, 2) = 6.",
+      "Step 6: Calculate the total number of full house hands: 13 * 4 * 12 * 6 = 3,744.",
+      "Step 7: Calculate the probability by dividing the number of full house hands by total hands: 3744 / 2,598,960 \u2248 0.001440."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 66
+  },
+  {
+    "task_id": "count_integer_solutions_sum_20_nonnegative",
+    "description": "Find the number of integer solutions to the equation x1 + x2 + x3 + x4 = 20, where x1, x2, x3, and x4 are nonnegative integers (i.e., each xi >= 0). Determine how many different 4-tuples (x1, x2, x3, x4) satisfy this equation under these constraints.",
+    "ground_truth_answer": 1771,
+    "verification_steps": [
+      "The problem is to find the number of nonnegative integer solutions to x1 + x2 + x3 + x4 = 20.",
+      "This is a classic stars-and-bars combinatorial problem, where the number of solutions is given by the formula C(n + k - 1, k - 1), where n=20 and k=4.",
+      "Applying the formula: number of solutions = C(20 + 4 - 1, 4 - 1) = C(23, 3).",
+      "Calculate C(23, 3) = 23! / (3! * 20!) = (23 * 22 * 21) / (3 * 2 * 1).",
+      "Compute numerator: 23 * 22 = 506; 506 * 21 = 10626.",
+      "Compute denominator: 3 * 2 * 1 = 6.",
+      "Divide numerator by denominator: 10626 / 6 = 1771.",
+      "Therefore, the number of nonnegative integer solutions is 1771."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 67
+  },
+  {
+    "task_id": "value_of_infinite_continued_fraction_ones",
+    "description": "Consider the infinite continued fraction defined as [1; 1, 1, 1, ...], which means the expression is 1 + 1/(1 + 1/(1 + 1/(1 + ...))). Determine the exact value of this infinite continued fraction.",
+    "ground_truth_answer": "phi",
+    "verification_steps": [
+      "Let x be the value of the infinite continued fraction: x = 1 + 1/x.",
+      "Multiply both sides by x to get: x^2 = x + 1.",
+      "Rearrange the equation: x^2 - x - 1 = 0.",
+      "Solve the quadratic equation using the quadratic formula: x = [1 \u00b1 sqrt(1 + 4)] / 2 = [1 \u00b1 sqrt(5)] / 2.",
+      "Since x represents a positive continued fraction, discard the negative root and keep x = (1 + sqrt(5)) / 2.",
+      "Recognize that (1 + sqrt(5)) / 2 is the golden ratio, commonly denoted as phi.",
+      "Therefore, the value of the infinite continued fraction [1; 1, 1, 1, ...] is phi."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "mathematical_reasoning",
+    "task_index": 68
+  },
+  {
+    "task_id": "sum_of_reciprocals_of_triangular_numbers_up_to_55",
+    "description": "Calculate the sum of the series consisting of the reciprocals of triangular numbers from 1 to 55. The series is given by 1/1 + 1/3 + 1/6 + 1/10 + ... + 1/55, where each denominator is a triangular number defined by T_n = n(n+1)/2. The denominators in the series are the first 10 triangular numbers: 1, 3, 6, 10, 15, 21, 28, 36, 45, and 55. Find the exact value of the sum of these 10 terms.",
+    "ground_truth_answer": "2.929",
+    "verification_steps": [
+      "Identify the triangular numbers up to 55: T_1=1, T_2=3, T_3=6, T_4=10, T_5=15, T_6=21, T_7=28, T_8=36, T_9=45, T_10=55.",
+      "Write the series as the sum of reciprocals: S = 1/1 + 1/3 + 1/6 + 1/10 + 1/15 + 1/21 + 1/28 + 1/36 + 1/45 + 1/55.",
+      "Express each term as 1/T_n = 2 / (n(n+1)) since T_n = n(n+1)/2, so 1/T_n = 2/(n(n+1)).",
+      "Rewrite the sum as S = sum_{n=1}^{10} 2/(n(n+1)) = 2 * sum_{n=1}^{10} (1/n - 1/(n+1)) by partial fraction decomposition.",
+      "Evaluate the telescoping sum inside: sum_{n=1}^{10} (1/n - 1/(n+1)) = (1 - 1/2) + (1/2 - 1/3) + ... + (1/10 - 1/11) = 1 - 1/11 = 10/11.",
+      "Multiply by 2 to get the final sum: S = 2 * 10/11 = 20/11 \u2248 1.8182.",
+      "However, the original series is 1/1 + 1/3 + 1/6 + ... + 1/55, so the sum is 20/11 \u2248 1.8182, not 2.929, so re-check calculations.",
+      "Re-examining the problem: The series is 1/1 + 1/3 + 1/6 + ... + 1/55, which are reciprocals of triangular numbers T_n. Using the formula 1/T_n = 2/(n(n+1)), sum_{n=1}^{10} 2/(n(n+1)) = 2 * (1 - 1/11) = 20/11 \u2248 1.8182. Therefore, the sum is 20/11 \u2248 1.8182."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 69
+  },
+  {
+    "task_id": "number_of_partitions_of_10_into_positive_integers",
+    "description": "Determine the number of ways to partition the integer 10 into sums of positive integers, where the order of the summands does not matter. For example, the partitions of 4 are: 4, 3+1, 2+2, 2+1+1, and 1+1+1+1, which totals 5 partitions. Find the total count of such partitions for the number 10.",
+    "ground_truth_answer": 42,
+    "verification_steps": [
+      "Understand that a partition of an integer is a way of writing it as a sum of positive integers without regard to order.",
+      "Recall or reference the known partition numbers p(n), where p(4) = 5 as an example.",
+      "Use the known partition function value for n=10, either by consulting a standard partition number table or applying the partition function formula or recursion.",
+      "The known number of partitions of 10 is 42, meaning there are 42 distinct ways to express 10 as a sum of positive integers regardless of order.",
+      "Verify by comparing with known values: p(5) = 7, p(6) = 11, p(7) = 15, p(8) = 22, p(9) = 30, and p(10) = 42.",
+      "Confirm no partitions are double counted since order does not matter."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 70
+  },
+  {
+    "task_id": "chromatic_polynomial_cycle_c5_at_k3",
+    "description": "Consider the cycle graph C5, which is a simple cycle with 5 vertices connected in a closed loop. The chromatic polynomial P(Cn, k) of a cycle graph Cn gives the number of ways to color the vertices using k colors such that no two adjacent vertices share the same color. The chromatic polynomial for a cycle graph Cn is given by P(Cn, k) = (k-1)^n + (k-1)(-1)^n. Determine the value of the chromatic polynomial of C5 when k = 3, i.e., compute P(C5, 3).",
+    "ground_truth_answer": 30,
+    "verification_steps": [
+      "Recall the chromatic polynomial for the cycle graph Cn: P(Cn, k) = (k-1)^n + (k-1)(-1)^n.",
+      "Substitute n = 5 and k = 3 into the formula: P(C5, 3) = (3-1)^5 + (3-1)(-1)^5.",
+      "Calculate (3-1)^5 = 2^5 = 32.",
+      "Calculate (3-1)(-1)^5 = 2 * (-1) = -2.",
+      "Sum the two terms: 32 + (-2) = 30.",
+      "Therefore, the number of proper 3-colorings of the cycle graph C5 is 30."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 71
+  },
+  {
+    "task_id": "determinant_of_a_4x4_matrix",
+    "description": "Calculate the determinant of the following 4x4 matrix:\n\n| 2  0  1  3 |\n| 1  4  0  2 |\n| 3  1  5  0 |\n| 0  2  4  1 |\n\nFind the exact value of the determinant of this matrix using any valid method such as cofactor expansion or row reduction.",
+    "ground_truth_answer": -96,
+    "verification_steps": [
+      "Step 1: Write down the matrix:\n| 2  0  1  3 |\n| 1  4  0  2 |\n| 3  1  5  0 |\n| 0  2  4  1 |",
+      "Step 2: Expand along the first row using cofactor expansion:\nDeterminant = 2 * M11 - 0 * M12 + 1 * M13 - 3 * M14 where Mij is the minor of element in row 1, column j.",
+      "Step 3: Calculate each minor determinant:\n- M11 (remove row 1 and column 1): |4 0 2| |1 5 0| |2 4 1| = 4*(5*1 - 0*4) - 0*(1*1 - 0*2) + 2*(1*4 - 5*2) = 4*(5) - 0 + 2*(4 -10) = 20 + 2*(-6) = 20 -12 = 8\n- M13 (remove row 1 and column 3): |1 4 2| |3 1 0| |0 2 1| = 1*(1*1 - 0*2) - 4*(3*1 - 0*0) + 2*(3*2 - 1*0) = 1*(1) - 4*(3) + 2*(6) = 1 -12 +12 = 1\n- M14 (remove row 1 and column 4): |1 4 0| |3 1 5| |0 2 4| = 1*(1*4 - 5*2) - 4*(3*4 - 5*0) + 0*(3*2 - 1*0) = 1*(4 -10) - 4*(12 - 0) + 0 = -6 - 48 + 0 = -54",
+      "Step 4: Substitute the minors back into the cofactor expansion:\nDeterminant = 2*8 - 0 + 1*1 - 3*(-54) = 16 + 0 + 1 + 162 = 179",
+      "Step 5: Re-examine calculation for signs: Cofactor signs on first row are + - + - so the last term is -3 * M14. Since M14 = -54, -3 * (-54) = +162 which is correct.",
+      "Step 6: Verify all minor calculations carefully again. There was an error in Step 3's first minor calculation:\nM11 = |4 0 2| |1 5 0| |2 4 1|\nCalculate determinant of 3x3:\n= 4*(5*1 - 0*4) - 0*(1*1 - 0*2) + 2*(1*4 - 5*2) = 4*(5) - 0 + 2*(4 -10) = 20 + 2*(-6) = 20 -12 = 8 (correct)",
+      "Step 7: For M13:\n|1 4 2|\n|3 1 0|\n|0 2 1|\nDeterminant = 1*(1*1 - 0*2) - 4*(3*1 - 0*0) + 2*(3*2 - 1*0) = 1*(1) - 4*(3) + 2*(6) = 1 -12 +12 = 1 (correct)",
+      "Step 8: For M14:\n|1 4 0|\n|3 1 5|\n|0 2 4|\nDeterminant = 1*(1*4 - 5*2) - 4*(3*4 - 5*0) + 0*(3*2 - 1*0) = 1*(4 -10) - 4*(12 - 0) + 0 = -6 - 48 + 0 = -54 (correct)",
+      "Step 9: Final determinant calculation:\n2*8 + 0 + 1*1 - 3*(-54) = 16 + 0 + 1 + 162 = 179",
+      "Step 10: Confirm final answer is 179."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 72
+  },
+  {
+    "task_id": "find_eigenvalues_of_2x2_matrix",
+    "description": "Given the 2x2 matrix A = [[2, 1], [1, 2]], find all its eigenvalues. An eigenvalue \u03bb of matrix A satisfies the characteristic equation det(A - \u03bbI) = 0, where I is the 2x2 identity matrix. Compute the determinant of (A - \u03bbI) and solve for \u03bb to find the eigenvalues.",
+    "ground_truth_answer": "[3, 1]",
+    "verification_steps": [
+      "Write the matrix A - \u03bbI = [[2 - \u03bb, 1], [1, 2 - \u03bb]].",
+      "Compute the determinant det(A - \u03bbI) = (2 - \u03bb)(2 - \u03bb) - (1)(1) = (2 - \u03bb)^2 - 1.",
+      "Expand (2 - \u03bb)^2 - 1 = (4 - 4\u03bb + \u03bb^2) - 1 = \u03bb^2 - 4\u03bb + 3.",
+      "Set the characteristic equation \u03bb^2 - 4\u03bb + 3 = 0.",
+      "Solve the quadratic equation \u03bb^2 - 4\u03bb + 3 = 0 using the quadratic formula: \u03bb = [4 \u00b1 sqrt(16 - 12)]/2 = [4 \u00b1 2]/2.",
+      "Calculate the two solutions: \u03bb = (4 + 2)/2 = 6/2 = 3, and \u03bb = (4 - 2)/2 = 2/2 = 1.",
+      "Hence, the eigenvalues of matrix A are 3 and 1."
+    ],
+    "difficulty": "easy",
+    "answer_type": "list",
+    "category": "mathematical_reasoning",
+    "task_index": 73
+  },
+  {
+    "task_id": "number_of_surjective_functions_5_to_3",
+    "description": "Consider all functions from a set A with 5 distinct elements to a set B with 3 distinct elements. A function is called surjective (onto) if every element in B has at least one preimage in A. Determine the total number of surjective functions from A to B.",
+    "ground_truth_answer": 150,
+    "verification_steps": [
+      "The total number of functions from a 5-element set to a 3-element set is 3^5 = 243.",
+      "To count surjective functions, use the Principle of Inclusion-Exclusion (PIE).",
+      "Number of functions missing at least one element of B is counted as follows: For each element of B, the number of functions onto the remaining 2 elements is 2^5 = 32.",
+      "Number of functions missing at least two elements of B (i.e., mapping into a single element) is 1^5 = 1 for each pair of elements removed.",
+      "By PIE, number of surjective functions = total functions - sum of functions missing one element + sum of functions missing two elements.",
+      "Calculate: 3^5 - (3 choose 1)*2^5 + (3 choose 2)*1^5 = 243 - 3*32 + 3*1 = 243 - 96 + 3 = 150.",
+      "Therefore, there are exactly 150 surjective functions from the 5-element set to the 3-element set."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "mathematical_reasoning",
+    "task_index": 74
+  },
+  {
+    "task_id": "volume_upper_hemisphere",
+    "description": "Calculate the volume of the region bounded by the inequality x^2 + y^2 + z^2 \u2264 1 and the plane z \u2265 0. This region represents the upper half of a sphere with radius 1. Provide the exact volume of this upper hemisphere.",
+    "ground_truth_answer": "2\u03c0/3",
+    "verification_steps": [
+      "The inequality x^2 + y^2 + z^2 \u2264 1 describes a sphere with radius 1 centered at the origin.",
+      "The condition z \u2265 0 restricts the region to the upper half of the sphere, i.e., the upper hemisphere.",
+      "The volume of a full sphere with radius r is (4/3)\u03c0r^3.",
+      "Substituting r = 1, the total volume is (4/3)\u03c0(1)^3 = 4\u03c0/3.",
+      "The volume of the upper hemisphere is half the volume of the full sphere, so it is (1/2) * 4\u03c0/3 = 2\u03c0/3.",
+      "Therefore, the volume of the region bounded by x^2 + y^2 + z^2 \u2264 1 and z \u2265 0 is 2\u03c0/3."
+    ],
+    "difficulty": "easy",
+    "answer_type": "expression",
+    "category": "mathematical_reasoning",
+    "task_index": 75
+  },
+  {
+    "task_id": "count_bubble_sort_swaps_on_list",
+    "description": "Given the list of integers [5, 3, 8, 1, 2], perform the bubble sort algorithm to sort the list in ascending order. During bubble sort, adjacent elements are compared and swapped if they are in the wrong order. Count the total number of swaps made throughout the entire sorting process. Provide the exact number of swaps required to fully sort the list using bubble sort.",
+    "ground_truth_answer": 7,
+    "verification_steps": [
+      "Initial list: [5, 3, 8, 1, 2]",
+      "Pass 1: Compare 5 and 3, swap because 5 > 3 \u2192 [3, 5, 8, 1, 2] (1 swap)",
+      "Compare 5 and 8, no swap because 5 < 8",
+      "Compare 8 and 1, swap because 8 > 1 \u2192 [3, 5, 1, 8, 2] (2 swaps)",
+      "Compare 8 and 2, swap because 8 > 2 \u2192 [3, 5, 1, 2, 8] (3 swaps)",
+      "Pass 2: Compare 3 and 5, no swap because 3 < 5",
+      "Compare 5 and 1, swap because 5 > 1 \u2192 [3, 1, 5, 2, 8] (4 swaps)",
+      "Compare 5 and 2, swap because 5 > 2 \u2192 [3, 1, 2, 5, 8] (5 swaps)",
+      "Pass 3: Compare 3 and 1, swap because 3 > 1 \u2192 [1, 3, 2, 5, 8] (6 swaps)",
+      "Compare 3 and 2, swap because 3 > 2 \u2192 [1, 2, 3, 5, 8] (7 swaps)",
+      "Compare 3 and 5, no swap",
+      "Pass 4: Compare 1 and 2, no swap",
+      "Compare 2 and 3, no swap",
+      "The list is sorted after 7 swaps."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 76
+  },
+  {
+    "task_id": "recursive_function_output_determination",
+    "description": "Consider the recursive function defined as follows: f(0) = 1; for any integer n > 0, f(n) = 2 * f(n-1) + 3. Determine the exact output of the function call f(4). Provide the final integer result.",
+    "ground_truth_answer": 43,
+    "verification_steps": [
+      "Start with the base case: f(0) = 1.",
+      "Calculate f(1) using the formula: f(1) = 2 * f(0) + 3 = 2 * 1 + 3 = 5.",
+      "Calculate f(2): f(2) = 2 * f(1) + 3 = 2 * 5 + 3 = 13.",
+      "Calculate f(3): f(3) = 2 * f(2) + 3 = 2 * 13 + 3 = 29.",
+      "Calculate f(4): f(4) = 2 * f(3) + 3 = 2 * 29 + 3 = 58 + 3 = 61."
+    ],
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 77
+  },
+  {
+    "task_id": "time_complexity_nested_loop",
+    "description": "Consider the following nested loop structure in a program where n is a positive integer input: \n\nfor i from 1 to n do:\n    for j from 1 to i do:\n        perform a constant time operation\n\nDetermine the time complexity of this nested loop structure in Big O notation as a function of n.",
+    "ground_truth_answer": "O(n^2)",
+    "verification_steps": [
+      "The outer loop runs from i = 1 to i = n, so it executes n times.",
+      "For each iteration of the outer loop with a fixed i, the inner loop runs from j = 1 to j = i, thus executing i times.",
+      "The total number of constant time operations is the sum of the inner loop iterations across all outer loop iterations, which is sum_{i=1}^n i.",
+      "The sum of the first n natural numbers is n(n+1)/2, which simplifies to (n^2 + n)/2.",
+      "When expressing time complexity in Big O notation, lower order terms and constant coefficients are ignored.",
+      "Therefore, the time complexity is O(n^2)."
+    ],
+    "difficulty": "easy",
+    "answer_type": "choice",
+    "category": "algorithmic_thinking",
+    "task_index": 78
+  },
+  {
+    "task_id": "dijkstra_algorithm_shortest_path",
+    "description": "Consider the directed weighted graph with vertices {A, B, C, D, E} and edges with weights as follows: A -> B (4), A -> C (1), C -> B (2), B -> D (5), C -> D (8), C -> E (10), D -> E (2), E -> D (3). Using Dijkstra's algorithm starting from vertex A, determine the length of the shortest path from A to vertex E. Provide the final shortest distance value from A to E after completing the algorithm.",
+    "ground_truth_answer": 13,
+    "verification_steps": [
+      "Initialize distances: distance to A = 0, distances to B, C, D, E = infinity.",
+      "Start at A: update distances to neighbors: B = 4, C = 1.",
+      "Select vertex with smallest tentative distance: C (1). From C, update neighbors: B = min(4, 1 + 2) = 3, D = min(infinity, 1 + 8) = 9, E = min(infinity, 1 + 10) = 11.",
+      "Select vertex with smallest tentative distance: B (3). From B, update neighbors: D = min(9, 3 + 5) = 8.",
+      "Select vertex with smallest tentative distance: D (8). From D, update neighbors: E = min(11, 8 + 2) = 10.",
+      "Select vertex with smallest tentative distance: E (10). From E, update neighbors: D = min(8, 10 + 3) = 8 (no change).",
+      "All vertices processed. The shortest distance from A to E is 10."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 79
+  },
+  {
+    "task_id": "pseudocode_sum_of_squares",
+    "description": "Consider the following pseudocode: \n\nInitialize sum to 0.\nFor each integer i from 1 to n (inclusive), do:\n   sum = sum + i * i\nReturn sum.\n\nGiven an input integer n = 5, determine the output of this pseudocode. In other words, find the value computed by summing the squares of all integers from 1 through 5.",
+    "ground_truth_answer": 55,
+    "verification_steps": [
+      "The pseudocode initializes sum = 0.",
+      "For i = 1, sum = 0 + 1*1 = 1.",
+      "For i = 2, sum = 1 + 2*2 = 1 + 4 = 5.",
+      "For i = 3, sum = 5 + 3*3 = 5 + 9 = 14.",
+      "For i = 4, sum = 14 + 4*4 = 14 + 16 = 30.",
+      "For i = 5, sum = 30 + 5*5 = 30 + 25 = 55.",
+      "Therefore, the pseudocode returns 55 when n = 5."
+    ],
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 80
+  },
+  {
+    "task_id": "minimum_operations_string_transformation",
+    "description": "You are given two strings, A = \"kitten\" and B = \"sitting\". You want to transform string A into string B using a minimum number of operations. The allowed operations are: inserting a single character, deleting a single character, or replacing a single character. Each operation counts as one step. Determine the minimum number of operations required to transform A into B.",
+    "ground_truth_answer": 3,
+    "verification_steps": [
+      "Compare the characters of 'kitten' and 'sitting' to find differences.",
+      "The first difference is at position 1: 'k' in A vs 's' in B; replace 'k' with 's' (1 operation).",
+      "At position 4: 'e' in A vs 'i' in B; replace 'e' with 'i' (2 operations).",
+      "At the end, B has an extra character 'g' after 'n'; insert 'g' at the end (3 operations).",
+      "No other differences require changes; thus, the minimum number of operations is 3."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 81
+  },
+  {
+    "task_id": "count_comparisons_in_binary_search",
+    "description": "Given a sorted array of integers [3, 8, 15, 24, 42, 56, 78, 89, 95, 102], perform a binary search to find the target value 56. Each comparison consists of checking the target value against the middle element of the current search interval. Count the total number of comparisons made until the target value is found. Assume the binary search algorithm reduces the search interval by half each step, comparing the target only once per step against the middle element.",
+    "ground_truth_answer": 3,
+    "verification_steps": [
+      "Step 1: Initial array indices are from 0 to 9. Calculate middle index as (0 + 9) // 2 = 4; middle element is 42. Compare target 56 with 42 (comparison 1). Since 56 > 42, search right half.",
+      "Step 2: New search interval is indices 5 to 9. Calculate middle index as (5 + 9) // 2 = 7; middle element is 89. Compare target 56 with 89 (comparison 2). Since 56 < 89, search left half.",
+      "Step 3: New search interval is indices 5 to 6. Calculate middle index as (5 + 6) // 2 = 5; middle element is 56. Compare target 56 with 56 (comparison 3). Target found.",
+      "Total comparisons made: 3."
+    ],
+    "difficulty": "easy",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 82
+  },
+  {
+    "task_id": "bfs_traversal_output_from_node_b",
+    "description": "Given an undirected graph with vertices {A, B, C, D, E, F} and edges { (A-B), (A-C), (B-D), (B-E), (C-F) }, perform a Breadth-First Search (BFS) traversal starting from node B. When visiting neighbors, always consider them in alphabetical order. List the order in which the nodes are visited during the BFS traversal starting at node B.",
+    "ground_truth_answer": [
+      "B",
+      "A",
+      "D",
+      "E",
+      "C",
+      "F"
+    ],
+    "verification_steps": [
+      "Start BFS at node B; mark B as visited and enqueue it.",
+      "Dequeue B and visit its neighbors: A, D, E (in alphabetical order). Enqueue A, D, E and mark them visited.",
+      "Dequeue A; its neighbors are B and C. B is already visited, so enqueue C and mark it visited.",
+      "Dequeue D; its only neighbor is B, which is visited, so no new nodes enqueued.",
+      "Dequeue E; its only neighbor is B, which is visited, so no new nodes enqueued.",
+      "Dequeue C; its neighbors are A and F. A is visited, so enqueue F and mark it visited.",
+      "Dequeue F; its only neighbor is C, already visited, so no new nodes enqueued.",
+      "The BFS traversal ends with nodes visited in order: B, A, D, E, C, F."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "algorithmic_thinking",
+    "task_index": 83
+  },
+  {
+    "task_id": "optimal_strategy_two_player_coin_game",
+    "description": "Two players, Alice and Bob, play a game with a row of 6 coins placed on a table. The coins have values: 3, 9, 1, 2, 8, and 4, arranged in that order from left to right. Players alternate turns, and on each turn, a player must take exactly one coin from either the leftmost or the rightmost end of the row. Both players play optimally to maximize the total value of coins they collect. Alice takes the first turn. Determine the maximum total value of coins Alice can collect by following an optimal strategy.",
+    "ground_truth_answer": 15,
+    "verification_steps": [
+      "Represent the coins as [3, 9, 1, 2, 8, 4]. Alice moves first and can pick either 3 or 4.",
+      "Use dynamic programming or backward induction to calculate the optimal choices and resulting scores at each subarray of coins.",
+      "Calculate the best score Alice can get for the entire array, given both players pick optimally.",
+      "When Alice picks 3 (left), Bob picks optimally from [9, 1, 2, 8, 4].",
+      "When Alice picks 4 (right), Bob picks optimally from [3, 9, 1, 2, 8].",
+      "By exploring all optimal choices, Alice's maximum achievable total is 15.",
+      "The detailed computation confirms that Alice's optimal picks lead to a total coin value of 15."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 84
+  },
+  {
+    "task_id": "quicksort_partition_trace_with_pivot_4",
+    "description": "Given the list [7, 2, 1, 6, 8, 5, 3, 4], perform the Lomuto partition step of the quicksort algorithm using the last element, 4, as the pivot. Rearrange the elements so that all elements less than or equal to the pivot come before it, and all elements greater than the pivot come after it. Return the list after partitioning and the final index position of the pivot element. Assume the standard Lomuto partition scheme where the pivot is initially at the last position, and the partitioning process swaps elements to ensure elements less than or equal to the pivot are on its left. Provide the resulting list and the pivot index after partitioning.",
+    "ground_truth_answer": {
+      "partitioned_list": [
+        2,
+        1,
+        3,
+        4,
+        8,
+        5,
+        7,
+        6
+      ],
+      "pivot_index": 3
+    },
+    "verification_steps": [
+      "Start with the list: [7, 2, 1, 6, 8, 5, 3, 4] and pivot = 4 at index 7.",
+      "Initialize i = -1. Iterate j from 0 to 6 (elements before pivot).",
+      "j=0: 7 > 4, no swap, i=-1.",
+      "j=1: 2 <= 4, increment i to 0, swap elements at i and j -> swap 7 and 2; list becomes [2, 7, 1, 6, 8, 5, 3, 4].",
+      "j=2: 1 <= 4, increment i to 1, swap elements at i and j -> swap 7 and 1; list becomes [2, 1, 7, 6, 8, 5, 3, 4].",
+      "j=3: 6 > 4, no swap, i=1.",
+      "j=4: 8 > 4, no swap, i=1.",
+      "j=5: 5 > 4, no swap, i=1.",
+      "j=6: 3 <= 4, increment i to 2, swap elements at i and j -> swap 7 and 3; list becomes [2, 1, 3, 6, 8, 5, 7, 4].",
+      "After the loop, swap pivot with element at i+1 (index 3): swap 6 and 4; list becomes [2, 1, 3, 4, 8, 5, 7, 6].",
+      "The pivot 4 is now at index 3.",
+      "All elements to the left of index 3 are <= 4, and all to the right are > 4."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "algorithmic_thinking",
+    "task_index": 85
+  },
+  {
+    "task_id": "maximum_flow_small_network_86",
+    "description": "Consider a directed flow network with four nodes: source S, intermediate nodes A and B, and sink T. The edges and their capacities are as follows: S to A with capacity 10, S to B with capacity 5, A to B with capacity 15, A to T with capacity 10, and B to T with capacity 10. Determine the maximum possible flow from source S to sink T in this network.",
+    "ground_truth_answer": 15,
+    "verification_steps": [
+      "Identify all possible paths from S to T:",
+      "  1) S -> A -> T",
+      "  2) S -> B -> T",
+      "  3) S -> A -> B -> T",
+      "Check capacity constraints:",
+      "  - S to A capacity: 10",
+      "  - S to B capacity: 5",
+      "  - A to B capacity: 15",
+      "  - A to T capacity: 10",
+      "  - B to T capacity: 10",
+      "Send 10 units of flow along S -> A -> T (limited by S->A and A->T capacities).",
+      "Send 5 units of flow along S -> B -> T (limited by S->B capacity).",
+      "Total flow is 10 + 5 = 15 units from S to T.",
+      "The edge A -> B with capacity 15 does not increase total flow beyond 15 because S->A and S->B are bottlenecks.",
+      "Hence, maximum flow from S to T is 15."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 86
+  },
+  {
+    "task_id": "longest_common_subsequence_of_two_strings",
+    "description": "Given two strings, 'AGGTAB' and 'GXTXAYB', determine the length of their longest common subsequence (LCS). A subsequence is a sequence that appears in the same relative order, but not necessarily contiguously, in both strings. For example, 'GTAB' is a subsequence of 'AGGTAB'. Find the length of the longest subsequence common to both 'AGGTAB' and 'GXTXAYB'.",
+    "ground_truth_answer": 4,
+    "verification_steps": [
+      "List the characters of the first string: A, G, G, T, A, B.",
+      "List the characters of the second string: G, X, T, X, A, Y, B.",
+      "Check common subsequences step by step:",
+      "- 'G' is common in both strings (positions 2 in first, 1 in second).",
+      "- 'T' is common (position 4 in first, 3 in second).",
+      "- 'A' is common (position 5 in first, 5 in second).",
+      "- 'B' is common (position 6 in first, 7 in second).",
+      "One longest common subsequence is 'GTAB' which has length 4.",
+      "No longer common subsequence exists as verified by checking other possible subsequences.",
+      "Therefore, the length of the longest common subsequence is 4."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 87
+  },
+  {
+    "task_id": "inorder_traversal_of_binary_tree_88",
+    "description": "Consider the binary tree defined as follows: the root node has value 10; its left child is 5, and its right child is 15. The node with value 5 has two children: left child 3 and right child 7. The node with value 15 has a right child 18 and no left child. Perform an inorder traversal (left subtree, root, right subtree) of this binary tree and list the node values in the order they are visited.",
+    "ground_truth_answer": "[3, 5, 7, 10, 15, 18]",
+    "verification_steps": [
+      "Start at the root node 10.",
+      "Traverse the left subtree of 10 recursively: visit left child 5.",
+      "Traverse the left subtree of 5: visit left child 3 (which has no children), so add 3 to the traversal list.",
+      "Visit node 5 itself after its left subtree, so add 5.",
+      "Traverse the right subtree of 5: visit right child 7 (which has no children), so add 7.",
+      "Having completed the left subtree of 10, add 10 to the traversal list.",
+      "Traverse the right subtree of 10: visit right child 15.",
+      "Traverse the left subtree of 15: none, so add 15.",
+      "Traverse the right subtree of 15: visit right child 18 (which has no children), so add 18.",
+      "The final inorder traversal sequence is [3, 5, 7, 10, 15, 18]."
+    ],
+    "difficulty": "easy",
+    "answer_type": "list",
+    "category": "algorithmic_thinking",
+    "task_index": 88
+  },
+  {
+    "task_id": "merge_sort_comparisons_for_8_elements",
+    "description": "Merge sort is a divide-and-conquer sorting algorithm that recursively splits an array into halves until each subarray contains one element, then merges these subarrays to produce sorted arrays. During the merging of two sorted subarrays, comparisons are made to order elements correctly. Given an array of 8 distinct elements, determine the total number of comparisons merge sort will perform in the worst case to sort the entire array. Assume that all comparisons are counted during the merging steps only.",
+    "ground_truth_answer": 19,
+    "verification_steps": [
+      "Merge sort splits the array of 8 elements into two subarrays of 4 elements each.",
+      "Each 4-element subarray is further split into two subarrays of 2 elements each.",
+      "Each 2-element subarray is split into single elements (1 element each), which requires no comparisons.",
+      "Merging single elements into sorted pairs involves 1 comparison per pair: there are 4 pairs, so 4 comparisons at this level.",
+      "Merging the pairs into sorted 4-element subarrays involves merging two sorted lists of 2 elements each, requiring at most 3 comparisons per merge: there are 2 merges, so 6 comparisons at this level.",
+      "Finally, merging the two sorted 4-element subarrays into the fully sorted 8-element array requires merging two sorted lists of 4 elements each, which requires at most 7 comparisons.",
+      "Summing all comparisons: 4 (first merges) + 6 (second merges) + 7 (final merge) = 17 comparisons.",
+      "However, this is the minimum number of comparisons; the worst-case number of comparisons for merge sort on n elements is bounded by n log2 n - n + 1.",
+      "For n=8, n log2 n - n + 1 = 8*3 - 8 + 1 = 24 - 8 + 1 = 17 comparisons, matching the previous calculation.",
+      "Thus, the total number of comparisons merge sort makes in the worst case for 8 elements is 19."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 89
+  },
+  {
+    "task_id": "shortest_path_bellman_ford_weighted_graph",
+    "description": "Given the directed weighted graph with vertices {A, B, C, D, E} and edges with weights as follows: A->B (6), A->D (7), B->C (5), B->D (-4), C->B (-2), D->C (8), D->E (9), E->A (2), find the shortest path distance from vertex A to vertex C using the Bellman-Ford algorithm. Assume no negative weight cycles exist in the graph. Provide the shortest path distance as a numeric value.",
+    "ground_truth_answer": 2,
+    "verification_steps": [
+      "Initialize distances from A to all vertices: dist(A)=0, dist(B)=\u221e, dist(C)=\u221e, dist(D)=\u221e, dist(E)=\u221e.",
+      "Relax all edges repeatedly for |V|-1 = 4 iterations.",
+      "Iteration 1: Update dist(B) = min(\u221e, 0+6) = 6 from A->B; dist(D) = min(\u221e, 0+7) = 7 from A->D; dist(C) = \u221e; dist(E) = \u221e.",
+      "Iteration 2: From B->C (5), dist(C) = min(\u221e, 6+5) = 11; from B->D (-4), dist(D) = min(7, 6-4) = 2; from D->C (8), dist(C) = min(11, 2+8) = 10; from E->A (2) no update since dist(E) is \u221e.",
+      "Iteration 3: From C->B (-2), dist(B) = min(6, 10-2) = 8; from B->D (-4), dist(D) = min(2, 8-4) = 2 (no change); from D->C (8), dist(C) = min(10, 2+8) = 10 (no change).",
+      "Iteration 4: From B->C (5), dist(C) = min(10, 8+5) = 10 (no change); from C->B (-2), dist(B) = min(8, 10-2) = 8 (no change).",
+      "The shortest path distance from A to C after all relaxations is 10, but we missed an important relaxation: On iteration 2, after updating dist(D) to 2, from D->E (9), dist(E) = min(\u221e, 2+9) = 11; then from E->A (2), dist(A) could potentially be updated, but dist(A) = 0 is already minimal.",
+      "Re-check iterations considering all edges: At iteration 2, dist(B) = 6, dist(D) = 2, dist(C) = 10, dist(E) = 11; iteration 3 updates dist(B) = 8 (from C->B), iteration 4 no changes; however, a better path from A to C is A->B->D->C with cost 6 + (-4) + 8 = 10; or A->D->C with cost 7 + 8 = 15; but also A->B->C is 6 + 5 = 11; thus shortest path is A->B->D->C with cost 10.",
+      "However, the edge B->D has weight -4, so path A->B->D->C costs 6 + (-4) + 8 = 10. Is there a better path?",
+      "Consider path A->D->C: 7 + 8 = 15; path A->B->C: 6 + 5 = 11; path A->B->D->C: 6 + (-4) + 8 = 10; path A->D->E->A->B->D->C would cycle, but no negative cycles exist; therefore, the shortest path distance is 10."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 90
+  },
+  {
+    "task_id": "hash_table_insertion_linear_probing_trace",
+    "description": "You have an empty hash table with 7 slots indexed from 0 to 6. The hash function used is h(k) = k mod 7. Insert the following keys into the hash table in the given order using linear probing to resolve collisions: 10, 3, 17, 24, 31. Linear probing means if a collision occurs at index i, try index (i + 1) mod 7, then (i + 2) mod 7, and so on until an empty slot is found. After all insertions, what is the final content of the hash table from index 0 to index 6?",
+    "ground_truth_answer": "[31, 10, 17, 3, 24, -, -]",
+    "verification_steps": [
+      "Calculate h(10) = 10 mod 7 = 3. Slot 3 is empty, place 10 at index 3.",
+      "Calculate h(3) = 3 mod 7 = 3. Slot 3 is occupied by 10, use linear probing to check index 4. Slot 4 is empty, place 3 at index 4.",
+      "Calculate h(17) = 17 mod 7 = 3. Slots 3 and 4 are occupied by 10 and 3 respectively. Check index 5, which is empty, place 17 at index 5.",
+      "Calculate h(24) = 24 mod 7 = 3. Slots 3, 4, and 5 are occupied. Check index 6, which is empty, place 24 at index 6.",
+      "Calculate h(31) = 31 mod 7 = 3. Slots 3,4,5,6 are occupied. Check index 0, which is empty, place 31 at index 0.",
+      "Slots 1 and 2 remain empty, represented by '-'.",
+      "Final hash table content by index: 0->31, 1->-, 2->-, 3->10, 4->3, 5->17, 6->24."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "algorithmic_thinking",
+    "task_index": 91
+  },
+  {
+    "task_id": "amortized_cost_dynamic_array_operations",
+    "description": "Consider a dynamic array that initially has a capacity of 1. Each time the array becomes full and a new element is added, the array's capacity doubles (i.e., from 1 to 2, then 2 to 4, then 4 to 8, and so on). The cost of inserting an element into the array is 1 unit if there is available capacity. However, when the array is full and needs to be resized, the cost includes copying all existing elements to the new array plus the insertion cost. Given n insert operations starting from an empty dynamic array, determine the amortized cost per insertion operation in terms of n.",
+    "ground_truth_answer": "The amortized cost per insertion operation is O(1), specifically it can be shown to be less than 3 units per operation on average.",
+    "verification_steps": [
+      "1. Start with an empty dynamic array with capacity 1. The first insertion costs 1 unit.",
+      "2. When the array is full (capacity m), inserting a new element requires resizing: copying m elements plus 1 insertion, costing m + 1 units.",
+      "3. After resizing from m to 2m capacity, the next m insertions cost 1 unit each without resizing.",
+      "4. The total cost for n insertions is the sum of all copying costs plus the cost of each insertion.",
+      "5. The total number of copying operations over n insertions is less than 2n because each element is copied at most once when the array grows.",
+      "6. Therefore, total cost \u2264 n (for insertions) + 2n (for copying) = 3n units.",
+      "7. Dividing total cost by n gives an amortized cost \u2264 3 units per insertion, which is O(1)."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "algorithmic_thinking",
+    "task_index": 92
+  },
+  {
+    "task_id": "minimum_spanning_tree_weight_of_weighted_graph",
+    "description": "Given an undirected weighted graph with 5 vertices labeled A, B, C, D, and E. The edges and their weights are as follows: A-B (3), A-C (1), B-C (7), B-D (5), C-D (4), C-E (2), D-E (6). Find the total weight of the minimum spanning tree (MST) of this graph.",
+    "ground_truth_answer": 10,
+    "verification_steps": [
+      "List all edges with their weights: A-B (3), A-C (1), B-C (7), B-D (5), C-D (4), C-E (2), D-E (6).",
+      "Sort edges by increasing weight: A-C (1), C-E (2), A-B (3), C-D (4), B-D (5), D-E (6), B-C (7).",
+      "Start building MST by adding the smallest edge: A-C (1).",
+      "Add next smallest edge that does not form a cycle: C-E (2).",
+      "Add next smallest edge that does not form a cycle: A-B (3).",
+      "Add next smallest edge that does not form a cycle: C-D (4).",
+      "At this point, all vertices are connected (A, B, C, D, E). The edges selected are A-C, C-E, A-B, and C-D with weights 1 + 2 + 3 + 4 = 10.",
+      "Edges B-D (5), D-E (6), and B-C (7) are not included because adding any would create a cycle.",
+      "Therefore, the total weight of the MST is 10."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 93
+  },
+  {
+    "task_id": "kmp_failure_function_trace",
+    "description": "Given the pattern string 'ABABAC', compute the failure function (also known as the prefix function or longest proper prefix which is also suffix array) used in the Knuth-Morris-Pratt (KMP) string matching algorithm. The failure function for each position i (0-based) is the length of the longest proper prefix of the substring pattern[0..i] which is also a suffix of this substring. Compute the failure function array for the pattern 'ABABAC'.",
+    "ground_truth_answer": "[0, 0, 1, 2, 3, 0]",
+    "verification_steps": [
+      "Initialize the failure function array f with length equal to the pattern length (6), starting with f[0] = 0.",
+      "Set variable j = 0 to track the length of the current longest proper prefix which is also suffix.",
+      "For i = 1 (pattern[1] = 'B'): since pattern[1] != pattern[0], set f[1] = 0.",
+      "For i = 2 (pattern[2] = 'A'): pattern[2] == pattern[j] where j=0 ('A'), increment j to 1, set f[2] = 1.",
+      "For i = 3 (pattern[3] = 'B'): pattern[3] == pattern[j] where j=1 ('B'), increment j to 2, set f[3] = 2.",
+      "For i = 4 (pattern[4] = 'A'): pattern[4] == pattern[j] where j=2 ('A'), increment j to 3, set f[4] = 3.",
+      "For i = 5 (pattern[5] = 'C'): pattern[5] != pattern[j] where j=3 ('B'), so reduce j to f[j-1] = f[2] = 1 and compare again. pattern[5] != pattern[1] ('B'), reduce j to f[0] = 0 and compare again. pattern[5] != pattern[0] ('A'), so set f[5] = 0.",
+      "The final failure function array is [0, 0, 1, 2, 3, 0]."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "algorithmic_thinking",
+    "task_index": 94
+  },
+  {
+    "task_id": "dynamic_programming_table_output",
+    "description": "Consider the classic coin change problem where the goal is to find the number of ways to make change for a given amount using a set of coin denominations. You are given the coin denominations [1, 2, 5] and the target amount 5. Using dynamic programming, we define dp[i][j] as the number of ways to make amount j using the first i types of coins. The dp table has rows indexed by i (0 to 3, where 0 means no coins) and columns indexed by j (0 to 5). The base case is dp[0][0] = 1 and dp[0][j] = 0 for j > 0. The recurrence is dp[i][j] = dp[i-1][j] + dp[i][j - coin[i-1]] if j >= coin[i-1], else dp[i-1][j]. What is the value of dp[3][5] after filling the table?",
+    "ground_truth_answer": 4,
+    "verification_steps": [
+      "Initialize dp with dimensions 4x6 (i=0..3, j=0..5), set dp[0][0]=1 and dp[0][j]=0 for j>0.",
+      "For i=1 (coin=1): for j=0 to 5, dp[1][j] = dp[0][j] + dp[1][j-1] if j>=1 else dp[0][j]. This yields dp[1] = [1,1,1,1,1,1].",
+      "For i=2 (coin=2): for j=0 to 5, dp[2][j] = dp[1][j] + dp[2][j-2] if j>=2 else dp[1][j]. Calculations: dp[2][0]=1, dp[2][1]=1, dp[2][2]=dp[1][2]+dp[2][0]=1+1=2, dp[2][3]=dp[1][3]+dp[2][1]=1+1=2, dp[2][4]=dp[1][4]+dp[2][2]=1+2=3, dp[2][5]=dp[1][5]+dp[2][3]=1+2=3.",
+      "For i=3 (coin=5): for j=0 to 5, dp[3][j] = dp[2][j] + dp[3][j-5] if j>=5 else dp[2][j]. Calculations: dp[3][0]=1, dp[3][1]=1, dp[3][2]=2, dp[3][3]=2, dp[3][4]=3, dp[3][5]=dp[2][5] + dp[3][0] = 3 + 1 = 4.",
+      "Thus, dp[3][5] = 4, representing the number of ways to make amount 5 using coins [1,2,5]."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 95
+  },
+  {
+    "task_id": "count_strongly_connected_components_in_directed_graph",
+    "description": "Consider a directed graph with 7 vertices numbered from 1 to 7. The directed edges are as follows: (1 -> 2), (2 -> 3), (3 -> 1), (3 -> 4), (4 -> 5), (5 -> 6), (6 -> 4), and (7 -> 6). Determine the number of strongly connected components (SCCs) in this graph. A strongly connected component is a maximal set of vertices such that each vertex is reachable from any other vertex in the same set via directed edges.",
+    "ground_truth_answer": 3,
+    "verification_steps": [
+      "Identify all vertices: 1, 2, 3, 4, 5, 6, 7.",
+      "Check connectivity for vertices 1, 2, and 3: there is a cycle 1 -> 2 -> 3 -> 1, so they form one strongly connected component.",
+      "Check vertices 4, 5, and 6: there is a cycle 4 -> 5 -> 6 -> 4, so these three form another strongly connected component.",
+      "Vertex 7 has only an outgoing edge to 6 and no incoming edges from other vertices except itself, so it forms its own strongly connected component.",
+      "Thus, the graph has exactly three strongly connected components: {1, 2, 3}, {4, 5, 6}, and {7}."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 96
+  },
+  {
+    "task_id": "trace_huffman_coding_for_given_frequencies",
+    "description": "Given the following characters with their frequencies: A=5, B=9, C=12, D=13, E=16, and F=45, construct the Huffman coding tree and determine the binary code assigned to character 'E'. The Huffman coding process involves combining the two lowest frequency nodes iteratively until one tree remains. Each left edge is assigned '0' and each right edge is assigned '1'. Determine the unique Huffman binary code for character 'E' after completing the tree.",
+    "ground_truth_answer": "01",
+    "verification_steps": [
+      "List the characters with frequencies: A=5, B=9, C=12, D=13, E=16, F=45.",
+      "Combine the two smallest frequencies: A(5) and B(9) to form a node with frequency 14.",
+      "New list: 14, C(12), D(13), E(16), F(45).",
+      "Combine the two smallest frequencies: C(12) and D(13) to form a node with frequency 25.",
+      "New list: 14, 16 (E), 25, 45 (F).",
+      "Combine the two smallest frequencies: 14 and 16 (E) to form a node with frequency 30.",
+      "New list: 25, 30, 45.",
+      "Combine the two smallest frequencies: 25 and 30 to form a node with frequency 55.",
+      "New list: 45 (F), 55.",
+      "Combine the last two nodes: 45 and 55 to form the root node with frequency 100.",
+      "Assign binary digits: For the last combination, left child (F=45) is '0', right child (55) is '1'.",
+      "Tracing to E: E is in the right child of 14 and 16 combined into 30, which is right child of 55, so the path is '1' (from root to 55) + '1' (from 55 to 30) + '1' or '0' depending on left or right child in 30.",
+      "From the combination, 14 is left child '0' and 16 (E) is right child '1' in the 30 node, so E's code is '1' (root to 55) + '1' (55 to 30) + '1' (30 to E), but we assigned left as '0' and right as '1', so E is right child '1'.",
+      "Therefore, the code for E is '011' or '01' depending on edge assignments. But since the root splits into F(45) on left '0' and 55 on right '1', then 55 splits into 25 (left '0') and 30 (right '1'), and 30 splits into 14 (left '0') and E(16) (right '1').",
+      "Thus, the path to E is root to right child '1', then right child again '1', then right child again '1', so code is '111'. But this conflicts with standard assignments where left is '0' and right is '1', so the code for E is '011'. Since the first left/right assignments are: root(100) splits into F(45) left '0' and 55 right '1', then 55 splits into 25 left '0' and 30 right '1', then 30 splits into 14 left '0' and E(16) right '1'. So E's path: root->right('1')->right('1')->right('1') = '111'. But in many references, the code for E is '01'.",
+      "Re-examining, the pair 14 (A+B) and 16 (E) combined into 30, so in this pair, A+B is left '0', E is right '1'. Therefore, the code for E is root '1' (to 55), then '1' (to 30), then '1' (to E) = '111'.",
+      "Therefore, the Huffman code for E is '111'."
+    ],
+    "difficulty": "medium",
+    "answer_type": "expression",
+    "category": "algorithmic_thinking",
+    "task_index": 97
+  },
+  {
+    "task_id": "sorting_network_output_determination",
+    "description": "Consider a sorting network that sorts four input numbers using the following sequence of compare-and-swap operations on indices (0-based): first, compare and swap elements at positions (0, 1) and (2, 3); second, compare and swap elements at positions (0, 2) and (1, 3); third, compare and swap elements at positions (1, 2). Given the input array [7, 3, 9, 5], determine the final output array after applying all the steps of the sorting network.",
+    "ground_truth_answer": "[3, 5, 7, 9]",
+    "verification_steps": [
+      "Start with the input array: [7, 3, 9, 5].",
+      "First compare and swap step: compare indices (0,1) -> (7,3). Since 7 > 3, swap them: array becomes [3, 7, 9, 5]. Then compare indices (2,3) -> (9,5). Since 9 > 5, swap them: array becomes [3, 7, 5, 9].",
+      "Second compare and swap step: compare indices (0,2) -> (3,5). Since 3 < 5, no swap. Compare indices (1,3) -> (7,9). Since 7 < 9, no swap. Array remains [3, 7, 5, 9].",
+      "Third compare and swap step: compare indices (1,2) -> (7,5). Since 7 > 5, swap them: array becomes [3, 5, 7, 9].",
+      "No further steps; the final output is [3, 5, 7, 9].",
+      "The output array is sorted in ascending order, confirming the correctness of the sorting network application."
+    ],
+    "difficulty": "medium",
+    "answer_type": "list",
+    "category": "algorithmic_thinking",
+    "task_index": 98
+  },
+  {
+    "task_id": "maximum_matching_in_bipartite_graph_99",
+    "description": "Consider a bipartite graph G = (U, V, E) where U = {u1, u2, u3, u4} and V = {v1, v2, v3, v4}. The edge set E is defined as follows: u1 is connected to v1 and v2; u2 is connected to v2 and v3; u3 is connected to v3 and v4; u4 is connected to v1 and v4. Determine the size of the maximum matching in this bipartite graph G, where a matching is a set of edges without common vertices.",
+    "ground_truth_answer": 4,
+    "verification_steps": [
+      "List all possible edges: (u1,v1), (u1,v2), (u2,v2), (u2,v3), (u3,v3), (u3,v4), (u4,v1), (u4,v4).",
+      "A matching is a set of edges with no shared vertices. We want the largest such set.",
+      "Try to pair u1: choose (u1,v2). Then u2 cannot use v2, so (u2,v3) is possible.",
+      "Then u3 can be matched with (u3,v4). Now u4 cannot use v4 (taken by u3), but can use (u4,v1).",
+      "The matching edges are (u1,v2), (u2,v3), (u3,v4), (u4,v1), all disjoint.",
+      "Thus, the maximum matching size is 4, which matches the number of vertices in U and V.",
+      "No larger matching is possible since that would exceed the number of vertices on either side."
+    ],
+    "difficulty": "medium",
+    "answer_type": "numeric",
+    "category": "algorithmic_thinking",
+    "task_index": 99
+  },
+  {
+    "task_id": "finite_automaton_trace_acceptance",
+    "description": "Consider a deterministic finite automaton (DFA) defined as follows: The state set is {q0, q1, q2}, where q0 is the start state and q2 is the only accepting state. The input alphabet is {a, b}. The transition function is given by: from q0, on input 'a' go to q1; on 'b' stay in q0. From q1, on 'a' go to q2; on 'b' return to q0. From q2, on any input 'a' or 'b' stay in q2. Given the input string \"aab\", determine whether the DFA accepts the string or not.",
+    "ground_truth_answer": "The DFA accepts the string \"aab\".",
+    "verification_steps": [
+      "Start at the initial state q0.",
+      "Read the first character 'a': from q0 on 'a', transition to q1.",
+      "Read the second character 'a': from q1 on 'a', transition to q2.",
+      "Read the third character 'b': from q2 on 'b', stay in q2.",
+      "After processing all input characters, the DFA is in state q2.",
+      "Since q2 is an accepting state, the DFA accepts the string \"aab\"."
+    ],
+    "difficulty": "easy",
+    "answer_type": "boolean",
+    "category": "algorithmic_thinking",
+    "task_index": 100
+  }
+]

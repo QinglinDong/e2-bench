@@ -1,0 +1,476 @@
+[
+  {
+    "task_id": "perceptual_0001",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 3,
+    "bugs_found": [
+      "The `product-img` div has a fixed height of `400px` and `object-fit: fill`. Since there is no actual image, only text content `[Product Image: Wireless Headphones]`, this results in a large, empty-looking box with text vertically and horizontally centered, rather than a properly proportioned image. If an actual image were to be placed, `object-fit: fill` would distort the image to fit the 400px height, which is generally undesirable for product images. `object-fit: cover` or `contain` is usually preferred, and the height should be more flexible or based on the image's aspect ratio.",
+      "The `product-info h2` (Wireless Headphones title) and `product-info .category` (Electronics) have insufficient vertical spacing between them. The `margin-bottom` on `h2` is `8px` and on `.category` it's `12px`, but the `h2`'s margin only pushes it away from the category, not the other way around, leading to a tighter visual coupling than might be intended for distinct elements.",
+      "The `product-info .price` has a `color: #e44`, which is a reddish hue. While not strictly a bug, for a product price, this color choice can sometimes be associated with discounts or warnings, which might be misleading if it's the standard price. It's a stylistic choice that might not align with common e-commerce UI patterns for regular pricing."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 2,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The `product-img` div has a fixed height of `400px` and `object-fit: fill`. Since there is no actual image, only text content `[Product Image: Wireless Headphones]`, this results in a large, empty-looking box with text vertically and horizontally centered, rather than a properly proportioned image. If an actual image were to be placed, `object-fit: fill` would distort the image to fit the 400px height, which is generally undesirable for product images. `object-fit: cover` or `contain` is usually preferred, and the height should be more flexible or based on the image's aspect ratio.",
+        "The `product-info h2` (Wireless Headphones title) and `product-info .category` (Electronics) have insufficient vertical spacing between them. The `margin-bottom` on `h2` is `8px` and on `.category` it's `12px`, but the `h2`'s margin only pushes it away from the category, not the other way around, leading to a tighter visual coupling than might be intended for distinct elements.",
+        "The `product-info .price` has a `color: #e44`, which is a reddish hue. While not strictly a bug, for a product price, this color choice can sometimes be associated with discounts or warnings, which might be misleading if it's the standard price. It's a stylistic choice that might not align with common e-commerce UI patterns for regular pricing."
+      ],
+      "num_bugs_found": 3,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:35.264762"
+  },
+  {
+    "task_id": "perceptual_0002",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "The product image placeholder text `[Product Image: Running Shoes]` is visible to the user, indicating a missing or improperly loaded image. A user would expect to see an actual image of running shoes.",
+      "The `object-fit: fill;` property on `.product-img` combined with a fixed `height: 400px;` and `width: 100%;` could lead to aspect ratio distortion if an actual image were present. While currently showing placeholder text, this CSS choice is a potential bug for when an image is introduced, as it would stretch or squash the image to fit the container regardless of its original aspect ratio. A more appropriate value like `cover` or `contain` is usually preferred for product images."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image placeholder text `[Product Image: Running Shoes]` is visible to the user, indicating a missing or improperly loaded image. A user would expect to see an actual image of running shoes.",
+        "The `object-fit: fill;` property on `.product-img` combined with a fixed `height: 400px;` and `width: 100%;` could lead to aspect ratio distortion if an actual image were present. While currently showing placeholder text, this CSS choice is a potential bug for when an image is introduced, as it would stretch or squash the image to fit the container regardless of its original aspect ratio. A more appropriate value like `cover` or `contain` is usually preferred for product images."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:37.121177"
+  },
+  {
+    "task_id": "perceptual_0003",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 3,
+    "bugs_found": [
+      "The `object-fit: fill` property applied to `.product-img` will stretch or squash the image to fit the given dimensions (width: 100%, height: 400px), potentially distorting its aspect ratio. The description states 'image should be properly proportioned', suggesting `object-fit: contain` or `object-fit: cover` would be more appropriate to maintain aspect ratio, or simply allowing the image's natural aspect ratio to dictate the height.",
+      "The `product-img` div has a fixed height of `400px`. If a real image were to be placed here, this fixed height might crop the image or leave excessive whitespace if the image's natural aspect ratio doesn't align with the 400px height when combined with `width: 100%` and `object-fit: fill`.",
+      "The `product-img` div currently displays placeholder text `[Product Image: Coffee Maker]`. While this is a placeholder, its default styling (color: #999, font-size: 14px) and centering within a 400px tall box might look odd or disproportionate if a real image is not immediately available or if the image fails to load. A more robust placeholder might involve an icon or a more subtle visual cue."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 2,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The `object-fit: fill` property applied to `.product-img` will stretch or squash the image to fit the given dimensions (width: 100%, height: 400px), potentially distorting its aspect ratio. The description states 'image should be properly proportioned', suggesting `object-fit: contain` or `object-fit: cover` would be more appropriate to maintain aspect ratio, or simply allowing the image's natural aspect ratio to dictate the height.",
+        "The `product-img` div has a fixed height of `400px`. If a real image were to be placed here, this fixed height might crop the image or leave excessive whitespace if the image's natural aspect ratio doesn't align with the 400px height when combined with `width: 100%` and `object-fit: fill`.",
+        "The `product-img` div currently displays placeholder text `[Product Image: Coffee Maker]`. While this is a placeholder, its default styling (color: #999, font-size: 14px) and centering within a 400px tall box might look odd or disproportionate if a real image is not immediately available or if the image fails to load. A more robust placeholder might involve an icon or a more subtle visual cue."
+      ],
+      "num_bugs_found": 3,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:39.770904"
+  },
+  {
+    "task_id": "perceptual_0004",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "The product image placeholder text \"[Product Image: Leather Wallet]\" is stretched vertically due to `object-fit: fill` and a fixed `height: 400px;` on the `.product-img` container. This would cause an actual image to appear distorted or stretched if its aspect ratio doesn't perfectly match the container's 1:2.5 (width:height) ratio, which is highly unlikely for a product image.",
+      "The `object-fit: fill` property is generally not suitable for images where maintaining aspect ratio is crucial. `object-fit: cover` or `object-fit: contain` would be more appropriate depending on the desired cropping/fitting behavior, but `fill` will always distort."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image placeholder text \"[Product Image: Leather Wallet]\" is stretched vertically due to `object-fit: fill` and a fixed `height: 400px;` on the `.product-img` container. This would cause an actual image to appear distorted or stretched if its aspect ratio doesn't perfectly match the container's 1:2.5 (width:height) ratio, which is highly unlikely for a product image.",
+        "The `object-fit: fill` property is generally not suitable for images where maintaining aspect ratio is crucial. `object-fit: cover` or `object-fit: contain` would be more appropriate depending on the desired cropping/fitting behavior, but `fill` will always distort."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:41.263696"
+  },
+  {
+    "task_id": "perceptual_0005",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 4,
+    "bugs_found": [
+      "The product image placeholder text \"[Product Image: Yoga Mat]\" is vertically and horizontally centered, but the `object-fit: fill;` property on `.product-img` suggests an actual image would be stretched to fill the 400px height, potentially distorting its aspect ratio. A more appropriate `object-fit` value like `cover` or `contain` would be expected for maintaining image quality, or the height should be `auto` for responsive images.",
+      "The `height: 400px;` on `.product-img` is a fixed height. While it works for the placeholder, a real image might be cropped or leave empty space if its aspect ratio doesn't perfectly match the 400px height, especially on different screen sizes or for various product images. This could lead to inconsistent visual presentation.",
+      "The `max-width: 320px;` on `.product-card` with `margin: 40px auto;` makes the card centered and fixed-width. While not strictly a bug, a single product card on a large screen might appear small and isolated. There's no responsiveness for the card itself beyond its fixed `max-width`.",
+      "The `font-family` includes `-apple-system`, `BlinkMacSystemFont`, and `'Segoe UI'`, which are system fonts. While generally good for performance, relying solely on system fonts might lead to slight inconsistencies in appearance across different operating systems or browsers, and doesn't provide a unique brand aesthetic if that were desired."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 3,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image placeholder text \"[Product Image: Yoga Mat]\" is vertically and horizontally centered, but the `object-fit: fill;` property on `.product-img` suggests an actual image would be stretched to fill the 400px height, potentially distorting its aspect ratio. A more appropriate `object-fit` value like `cover` or `contain` would be expected for maintaining image quality, or the height should be `auto` for responsive images.",
+        "The `height: 400px;` on `.product-img` is a fixed height. While it works for the placeholder, a real image might be cropped or leave empty space if its aspect ratio doesn't perfectly match the 400px height, especially on different screen sizes or for various product images. This could lead to inconsistent visual presentation.",
+        "The `max-width: 320px;` on `.product-card` with `margin: 40px auto;` makes the card centered and fixed-width. While not strictly a bug, a single product card on a large screen might appear small and isolated. There's no responsiveness for the card itself beyond its fixed `max-width`.",
+        "The `font-family` includes `-apple-system`, `BlinkMacSystemFont`, and `'Segoe UI'`, which are system fonts. While generally good for performance, relying solely on system fonts might lead to slight inconsistencies in appearance across different operating systems or browsers, and doesn't provide a unique brand aesthetic if that were desired."
+      ],
+      "num_bugs_found": 4,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:44.173135"
+  },
+  {
+    "task_id": "perceptual_0006",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 5,
+    "bugs_found": [
+      "The product image placeholder has a fixed height of 40px (`.product-img { height: 40px; }`), which is extremely small for an image and will likely lead to a squashed or unviewable image, or just a very thin band with text. This contradicts the expectation of a visible product image.",
+      "The `object-fit: cover;` property on `.product-img` is applied to a `div` element, not an `img` element. While it won't cause an error, it's semantically incorrect and won't have any visual effect on the placeholder text. If an actual image were to be placed inside this div, it would need to be an `<img>` tag for `object-fit` to work as intended.",
+      "The `font-size: 14px;` and `color: #999;` for the product image placeholder text might be difficult to read against the `#f5f5f5` background, especially given the very small height of the container. This could be a contrast or legibility issue.",
+      "The `margin: 40px auto;` on `.product-card` will center the card horizontally, but it will also apply a 40px top and bottom margin. If there were multiple cards or other content, this might lead to excessive vertical spacing or unintended layout. While not strictly a 'bug' in isolation, it's a common area for layout issues in more complex pages.",
+      "The `<h2>` for the product name has `margin-bottom: 8px;` and the `.category` has `margin-bottom: 12px;`. This creates inconsistent vertical spacing between elements within the product info section, which might look visually unbalanced."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 4,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image placeholder has a fixed height of 40px (`.product-img { height: 40px; }`), which is extremely small for an image and will likely lead to a squashed or unviewable image, or just a very thin band with text. This contradicts the expectation of a visible product image.",
+        "The `object-fit: cover;` property on `.product-img` is applied to a `div` element, not an `img` element. While it won't cause an error, it's semantically incorrect and won't have any visual effect on the placeholder text. If an actual image were to be placed inside this div, it would need to be an `<img>` tag for `object-fit` to work as intended.",
+        "The `font-size: 14px;` and `color: #999;` for the product image placeholder text might be difficult to read against the `#f5f5f5` background, especially given the very small height of the container. This could be a contrast or legibility issue.",
+        "The `margin: 40px auto;` on `.product-card` will center the card horizontally, but it will also apply a 40px top and bottom margin. If there were multiple cards or other content, this might lead to excessive vertical spacing or unintended layout. While not strictly a 'bug' in isolation, it's a common area for layout issues in more complex pages.",
+        "The `<h2>` for the product name has `margin-bottom: 8px;` and the `.category` has `margin-bottom: 12px;`. This creates inconsistent vertical spacing between elements within the product info section, which might look visually unbalanced."
+      ],
+      "num_bugs_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:47.359893"
+  },
+  {
+    "task_id": "perceptual_0007",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 6,
+    "bugs_found": [
+      "The product image placeholder has a fixed height of `40px` (`height: 40px;`) which is excessively small for a product image and will likely lead to a visually unappealing and squashed appearance, making the product difficult to discern. A typical product image would be much taller.",
+      "The text \"[Product Image: Backpack]\" is intended as a placeholder but is directly visible within the `product-img` div. If this were a real product image, the text would be overlaid on top of or instead of the image, which is not the expected behavior. The text should either be removed once an actual image is present or styled to be an accessible alternative (e.g., `alt` text) rather than a visible element.",
+      "The `object-fit: cover;` property is applied to the `.product-img` div. While this is appropriate for an `<img>` tag to handle aspect ratios, it has no functional effect on a `div` containing text. This CSS property is effectively dead code in this context and indicates a potential misunderstanding of its application or an incomplete transition from a placeholder to an actual image element.",
+      "The `background: #f5f5f5;` on `.product-img` combined with `color: #999;` for the placeholder text might result in low contrast, especially if the user has any visual impairments. While not a severe contrast issue, it could be improved for better readability.",
+      "The `product-card` has `max-width: 320px;` and `margin: 40px auto;`. While this centers the card, it's a single card on the page. In a real e-commerce scenario, there would likely be multiple product cards, and this styling would need to be adapted for a grid or flex layout to prevent them from stacking vertically with large margins between them. As is, it's not a bug, but a limitation for a multi-product display.",
+      "The `buy-btn` has `border-radius: 8px;` while the `product-card` has `border-radius: 12px;`. While not a critical bug, this slight inconsistency in border-radius values between related UI elements (card and its primary action button) can sometimes lead to a less polished or harmonious visual design."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 5,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image placeholder has a fixed height of `40px` (`height: 40px;`) which is excessively small for a product image and will likely lead to a visually unappealing and squashed appearance, making the product difficult to discern. A typical product image would be much taller.",
+        "The text \"[Product Image: Backpack]\" is intended as a placeholder but is directly visible within the `product-img` div. If this were a real product image, the text would be overlaid on top of or instead of the image, which is not the expected behavior. The text should either be removed once an actual image is present or styled to be an accessible alternative (e.g., `alt` text) rather than a visible element.",
+        "The `object-fit: cover;` property is applied to the `.product-img` div. While this is appropriate for an `<img>` tag to handle aspect ratios, it has no functional effect on a `div` containing text. This CSS property is effectively dead code in this context and indicates a potential misunderstanding of its application or an incomplete transition from a placeholder to an actual image element.",
+        "The `background: #f5f5f5;` on `.product-img` combined with `color: #999;` for the placeholder text might result in low contrast, especially if the user has any visual impairments. While not a severe contrast issue, it could be improved for better readability.",
+        "The `product-card` has `max-width: 320px;` and `margin: 40px auto;`. While this centers the card, it's a single card on the page. In a real e-commerce scenario, there would likely be multiple product cards, and this styling would need to be adapted for a grid or flex layout to prevent them from stacking vertically with large margins between them. As is, it's not a bug, but a limitation for a multi-product display.",
+        "The `buy-btn` has `border-radius: 8px;` while the `product-card` has `border-radius: 12px;`. While not a critical bug, this slight inconsistency in border-radius values between related UI elements (card and its primary action button) can sometimes lead to a less polished or harmonious visual design."
+      ],
+      "num_bugs_found": 6,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:51.452926"
+  },
+  {
+    "task_id": "perceptual_0008",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 3,
+    "bugs_found": [
+      "The product image placeholder has a fixed height of 40px, which is extremely small for a product image and will likely crop or severely constrain any actual image placed there, making it visually unappealing and uninformative. This is explicitly contrary to the page description stating \"image should be visible.\"",
+      "The `object-fit: cover;` property on `.product-img` is applied to a `div` element, not an `img` tag. While it won't cause an error, it's semantically incorrect and will have no effect on the placeholder text or a background image. If an actual `img` tag were to be added, this style would need to be moved to the `img` element itself for `object-fit` to function as intended.",
+      "The `background: #f5f5f5; display: flex; align-items: center; justify-content: center; color: #999; font-size: 14px;` styles are applied to the `.product-img` div, which is intended to hold an image. These styles are for the placeholder text, but if an actual image is added, these styles (especially background, color, font-size) would either be hidden by the image or conflict with the image's display, indicating a potential oversight in how an actual image would be integrated."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 2,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image placeholder has a fixed height of 40px, which is extremely small for a product image and will likely crop or severely constrain any actual image placed there, making it visually unappealing and uninformative. This is explicitly contrary to the page description stating \"image should be visible.\"",
+        "The `object-fit: cover;` property on `.product-img` is applied to a `div` element, not an `img` tag. While it won't cause an error, it's semantically incorrect and will have no effect on the placeholder text or a background image. If an actual `img` tag were to be added, this style would need to be moved to the `img` element itself for `object-fit` to function as intended.",
+        "The `background: #f5f5f5; display: flex; align-items: center; justify-content: center; color: #999; font-size: 14px;` styles are applied to the `.product-img` div, which is intended to hold an image. These styles are for the placeholder text, but if an actual image is added, these styles (especially background, color, font-size) would either be hidden by the image or conflict with the image's display, indicating a potential oversight in how an actual image would be integrated."
+      ],
+      "num_bugs_found": 3,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:53.845910"
+  },
+  {
+    "task_id": "perceptual_0009",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "The product image placeholder text \"[Product Image: Sunglasses]\" is visible instead of an actual image. While the HTML indicates a placeholder, the `height: 40px;` for `.product-img` is extremely small for an image, suggesting a visual bug where the image is either missing or would be severely distorted/tiny if one were present. A human user would expect to see a product image, not text, and certainly not an image constrained to 40px height.",
+      "The `margin: 40px auto;` on `.product-card` will center the card horizontally, but `margin-top: 40px;` will push it down from the top of the viewport. If there were multiple product cards, they would stack vertically with large gaps, and the single card is quite far from the top. This isn't necessarily a bug for a single card, but it's a stylistic choice that might not align with typical product display expectations, especially if the intention was for it to be part of a larger layout."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image placeholder text \"[Product Image: Sunglasses]\" is visible instead of an actual image. While the HTML indicates a placeholder, the `height: 40px;` for `.product-img` is extremely small for an image, suggesting a visual bug where the image is either missing or would be severely distorted/tiny if one were present. A human user would expect to see a product image, not text, and certainly not an image constrained to 40px height.",
+        "The `margin: 40px auto;` on `.product-card` will center the card horizontally, but `margin-top: 40px;` will push it down from the top of the viewport. If there were multiple product cards, they would stack vertically with large gaps, and the single card is quite far from the top. This isn't necessarily a bug for a single card, but it's a stylistic choice that might not align with typical product display expectations, especially if the intention was for it to be part of a larger layout."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:56.395878"
+  },
+  {
+    "task_id": "perceptual_0010",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 3,
+    "bugs_found": [
+      "The product image placeholder has a fixed height of `40px` (`height: 40px;`) which is excessively small for a product image, making it appear as a thin strip rather than a proper image. This will severely distort or obscure any actual image placed there, or make the placeholder text unreadable.",
+      "The `product-img` div contains text `[Product Image: Bluetooth Speaker]` but has `object-fit: cover;` applied. `object-fit` is only applicable to `<img>` or `<video>` elements, so it has no effect here. While not a visual bug with the current placeholder, it's incorrect CSS for the intended purpose of displaying an image.",
+      "The `product-img` div has a `background: #f5f5f5;` and `color: #999;` which provides very low contrast for the placeholder text `[Product Image: Bluetooth Speaker]`, making it difficult to read. The contrast ratio is insufficient for accessibility standards."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 2,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image placeholder has a fixed height of `40px` (`height: 40px;`) which is excessively small for a product image, making it appear as a thin strip rather than a proper image. This will severely distort or obscure any actual image placed there, or make the placeholder text unreadable.",
+        "The `product-img` div contains text `[Product Image: Bluetooth Speaker]` but has `object-fit: cover;` applied. `object-fit` is only applicable to `<img>` or `<video>` elements, so it has no effect here. While not a visual bug with the current placeholder, it's incorrect CSS for the intended purpose of displaying an image.",
+        "The `product-img` div has a `background: #f5f5f5;` and `color: #999;` which provides very low contrast for the placeholder text `[Product Image: Bluetooth Speaker]`, making it difficult to read. The contrast ratio is insufficient for accessibility standards."
+      ],
+      "num_bugs_found": 3,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:58.466040"
+  },
+  {
+    "task_id": "perceptual_0011",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "The text in the banner (`<h1>` and `<p>`) has a very low contrast ratio against the banner's background. The banner background is `#1a1a2e` (dark blue/purple) and the text color is `#2a2a3e` (darker blue/purple). This makes the text extremely difficult to read, failing WCAG contrast guidelines.",
+      "The `min-height: 200px;` on the banner, combined with `display: flex; flex-direction: column; justify-content: center;`, means that if the content within the banner is very short, there will be excessive vertical white space, potentially looking unbalanced."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#2a2a3e) is nearly identical to background color (#1a1a2e), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The text in the banner (`<h1>` and `<p>`) has a very low contrast ratio against the banner's background. The banner background is `#1a1a2e` (dark blue/purple) and the text color is `#2a2a3e` (darker blue/purple). This makes the text extremely difficult to read, failing WCAG contrast guidelines.",
+        "The `min-height: 200px;` on the banner, combined with `display: flex; flex-direction: column; justify-content: center;`, means that if the content within the banner is very short, there will be excessive vertical white space, potentially looking unbalanced."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:53:59.836797"
+  },
+  {
+    "task_id": "perceptual_0012",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "The text content (<h1> and <p>) inside the .banner has a very low contrast ratio against the background. The text color is '#ffe0e0' (a very light red/pink) and the banner background is '#fff0f0' (a slightly lighter red/pink). This makes the text extremely difficult to read, failing accessibility guidelines and being a significant visual bug for any user.",
+      "The banner's minimum height of 200px might lead to excessive empty space if the content is very short, especially on larger screens, which could be considered a minor aesthetic issue depending on design intent."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#ffe0e0) is nearly identical to background color (#fff0f0), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The text content (<h1> and <p>) inside the .banner has a very low contrast ratio against the background. The text color is '#ffe0e0' (a very light red/pink) and the banner background is '#fff0f0' (a slightly lighter red/pink). This makes the text extremely difficult to read, failing accessibility guidelines and being a significant visual bug for any user.",
+        "The banner's minimum height of 200px might lead to excessive empty space if the content is very short, especially on larger screens, which could be considered a minor aesthetic issue depending on design intent."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:01.464321"
+  },
+  {
+    "task_id": "perceptual_0013",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "The text content (h1 and p elements) has a very low contrast ratio against the banner background. The text color is set to #e0ffe0 (a very light green) and the background is #f0fff0 (a slightly lighter green), making it extremely difficult to read. This is a severe accessibility and usability issue.",
+      "The `min-height: 200px;` on the banner combined with `padding: 40px;` and `justify-content: center;` might lead to excessive vertical spacing for very short content, though not strictly a bug, it's a potential UI inefficiency depending on expected content length."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#e0ffe0) is nearly identical to background color (#f0fff0), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The text content (h1 and p elements) has a very low contrast ratio against the banner background. The text color is set to #e0ffe0 (a very light green) and the background is #f0fff0 (a slightly lighter green), making it extremely difficult to read. This is a severe accessibility and usability issue.",
+        "The `min-height: 200px;` on the banner combined with `padding: 40px;` and `justify-content: center;` might lead to excessive vertical spacing for very short content, though not strictly a bug, it's a potential UI inefficiency depending on expected content length."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:03.104917"
+  },
+  {
+    "task_id": "perceptual_0014",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 1,
+    "bugs_found": [
+      "The text in the banner (h1 and p tags) has a very low contrast ratio with the background. The text color is #fff3cd and the background color is #fffbeb. This combination makes the text extremely difficult to read, especially for users with visual impairments, and violates accessibility guidelines (WCAG)."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#fff3cd) is nearly identical to background color (#fffbeb), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 0,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The text in the banner (h1 and p tags) has a very low contrast ratio with the background. The text color is #fff3cd and the background color is #fffbeb. This combination makes the text extremely difficult to read, especially for users with visual impairments, and violates accessibility guidelines (WCAG)."
+      ],
+      "num_bugs_found": 1,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:04.243064"
+  },
+  {
+    "task_id": "perceptual_0015",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gemini-2.5-flash",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "**Low Contrast Text in Banner:** The text in the banner (h1 and p tags) has a color of `#374151` which is a dark gray. The banner's background color is `#1f2937`, which is also a very dark gray/blue. This results in extremely low contrast, making the text difficult to read, especially for users with visual impairments. This violates WCAG guidelines for contrast ratio. A human user would immediately notice that the text is hard to see.",
+      "**Inconsistent Color Scheme/Branding:** The `h1` and `p` elements within the banner have a color `#374151`, which is the same as the banner's background color. This is a visual bug where the text practically blends into the background, making it unreadable. This is likely an oversight where the text color was intended to be a lighter, contrasting color."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#374151) is nearly identical to background color (#1f2937), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "**Low Contrast Text in Banner:** The text in the banner (h1 and p tags) has a color of `#374151` which is a dark gray. The banner's background color is `#1f2937`, which is also a very dark gray/blue. This results in extremely low contrast, making the text difficult to read, especially for users with visual impairments. This violates WCAG guidelines for contrast ratio. A human user would immediately notice that the text is hard to see.",
+        "**Inconsistent Color Scheme/Branding:** The `h1` and `p` elements within the banner have a color `#374151`, which is the same as the banner's background color. This is a visual bug where the text practically blends into the background, making it unreadable. This is likely an oversight where the text color was intended to be a lighter, contrasting color."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:06.386743"
+  }
+]

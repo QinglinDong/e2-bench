@@ -1,0 +1,14 @@
+{
+  "model": "gemini-2.5-flash",
+  "domain": "data_analysis",
+  "total_tasks": 20,
+  "true_positives": 5,
+  "true_negatives": 0,
+  "false_positives": 15,
+  "false_negatives": 0,
+  "parse_errors": 0,
+  "self_validation_accuracy": 0.25,
+  "false_positive_rate": 1.0,
+  "false_negative_rate": 0.0,
+  "task_pass_rate": 0.25
+}

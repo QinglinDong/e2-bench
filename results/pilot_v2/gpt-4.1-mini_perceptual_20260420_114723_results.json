@@ -1,0 +1,508 @@
+[
+  {
+    "task_id": "perceptual_0001",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 8,
+    "bugs_found": [
+      "The product image uses 'object-fit: fill', which distorts the image by stretching it to fill the container rather than preserving aspect ratio; 'object-fit: cover' would be better to maintain proper proportions.",
+      "The product image is currently a div with text placeholder rather than an actual img element, which is not semantically correct and may not be accessible or provide the expected user experience.",
+      "The product image container has a fixed height of 400px, which might be too tall relative to the width (320px), causing an unbalanced card appearance on many screen sizes.",
+      "The placeholder text '[Product Image: Wireless Headphones]' is not visually styled as an image and may confuse users; it also lacks alt text and semantics.",
+      "The text color '#e44' for the price is a low contrast color against white, which might not meet accessibility contrast standards.",
+      "The 'buy-btn' button has no focus style for keyboard navigation which impacts accessibility.",
+      "No alt attribute or any accessible label is provided for the product image (currently text in a div), which hurts screen reader users.",
+      "The product card is centered with margin: 40px auto but no padding on the body or container, so on very small screens the card might extend too close to the edges."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 7,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image uses 'object-fit: fill', which distorts the image by stretching it to fill the container rather than preserving aspect ratio; 'object-fit: cover' would be better to maintain proper proportions.",
+        "The product image is currently a div with text placeholder rather than an actual img element, which is not semantically correct and may not be accessible or provide the expected user experience.",
+        "The product image container has a fixed height of 400px, which might be too tall relative to the width (320px), causing an unbalanced card appearance on many screen sizes.",
+        "The placeholder text '[Product Image: Wireless Headphones]' is not visually styled as an image and may confuse users; it also lacks alt text and semantics.",
+        "The text color '#e44' for the price is a low contrast color against white, which might not meet accessibility contrast standards.",
+        "The 'buy-btn' button has no focus style for keyboard navigation which impacts accessibility.",
+        "No alt attribute or any accessible label is provided for the product image (currently text in a div), which hurts screen reader users.",
+        "The product card is centered with margin: 40px auto but no padding on the body or container, so on very small screens the card might extend too close to the edges."
+      ],
+      "num_bugs_found": 8,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:46:38.304179"
+  },
+  {
+    "task_id": "perceptual_0002",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 5,
+    "bugs_found": [
+      "The product image div uses 'object-fit: fill' which can distort the image aspect ratio, making the running shoes appear stretched or squished if an actual image is used.",
+      "The product image is currently a div with text placeholder instead of an img tag, so the object-fit property does not apply; this may confuse future developers or lead to inconsistent UI behavior when replaced with an actual image.",
+      "The fixed height of 400px on the product image may cause cropping or excessive space on different screen sizes or image proportions, reducing responsiveness.",
+      "The product image placeholder text '[Product Image: Running Shoes]' is not styled for readability or accessibility and may appear awkward or unprofessional to users.",
+      "Button color contrast is adequate, but the button hover color change might not be visually distinct enough for some users, potentially affecting usability."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 4,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image div uses 'object-fit: fill' which can distort the image aspect ratio, making the running shoes appear stretched or squished if an actual image is used.",
+        "The product image is currently a div with text placeholder instead of an img tag, so the object-fit property does not apply; this may confuse future developers or lead to inconsistent UI behavior when replaced with an actual image.",
+        "The fixed height of 400px on the product image may cause cropping or excessive space on different screen sizes or image proportions, reducing responsiveness.",
+        "The product image placeholder text '[Product Image: Running Shoes]' is not styled for readability or accessibility and may appear awkward or unprofessional to users.",
+        "Button color contrast is adequate, but the button hover color change might not be visually distinct enough for some users, potentially affecting usability."
+      ],
+      "num_bugs_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:46:42.286596"
+  },
+  {
+    "task_id": "perceptual_0003",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 6,
+    "bugs_found": [
+      "The product image uses object-fit: fill, which distorts the image aspect ratio instead of preserving it; it should use object-fit: cover or contain for proper proportion.",
+      "The product image div has no actual image element (<img>), only placeholder text '[Product Image: Coffee Maker]', which is not a real image and might confuse users or screen readers.",
+      "The placeholder text inside the product-img div is centered but uses a small font size (14px) and a low contrast color (#999) on a light background (#f5f5f5), making it difficult to read.",
+      "The product card is centered with max-width: 320px and margin: 40px auto, which may cause a large amount of whitespace on larger screens, resulting in a minimalistic but possibly sparse layout.",
+      "There is no alt text or real image for accessibility, which affects screen reader users.",
+      "The buy button is fully clickable but does not have any focus styles for keyboard navigation, which is a minor accessibility concern."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 5,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image uses object-fit: fill, which distorts the image aspect ratio instead of preserving it; it should use object-fit: cover or contain for proper proportion.",
+        "The product image div has no actual image element (<img>), only placeholder text '[Product Image: Coffee Maker]', which is not a real image and might confuse users or screen readers.",
+        "The placeholder text inside the product-img div is centered but uses a small font size (14px) and a low contrast color (#999) on a light background (#f5f5f5), making it difficult to read.",
+        "The product card is centered with max-width: 320px and margin: 40px auto, which may cause a large amount of whitespace on larger screens, resulting in a minimalistic but possibly sparse layout.",
+        "There is no alt text or real image for accessibility, which affects screen reader users.",
+        "The buy button is fully clickable but does not have any focus styles for keyboard navigation, which is a minor accessibility concern."
+      ],
+      "num_bugs_found": 6,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:46:47.120373"
+  },
+  {
+    "task_id": "perceptual_0004",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 5,
+    "bugs_found": [
+      "The product image uses 'object-fit: fill', which distorts the image by forcing it to fill the 320x400px container regardless of original aspect ratio, leading to an unnatural and stretched appearance.",
+      "The product image area uses a fixed height of 400px which may cause excessive vertical space if the image has a different aspect ratio; this fixed height without maintaining aspect ratio can harm responsiveness and visual balance.",
+      "The product image is not an actual image element but a div with text '[Product Image: Leather Wallet]', which is a placeholder and can be confusing or appear as broken/missing image to users.",
+      "Color contrast for the price text (#e44) on white background might be borderline accessible; it is a red shade (#e44) that may not have sufficient contrast for all users, especially those with visual impairments.",
+      "The font size for the category (13px) and the placeholder text inside the product image (14px) is quite small and might be harder to read on some displays or for some users."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 4,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image uses 'object-fit: fill', which distorts the image by forcing it to fill the 320x400px container regardless of original aspect ratio, leading to an unnatural and stretched appearance.",
+        "The product image area uses a fixed height of 400px which may cause excessive vertical space if the image has a different aspect ratio; this fixed height without maintaining aspect ratio can harm responsiveness and visual balance.",
+        "The product image is not an actual image element but a div with text '[Product Image: Leather Wallet]', which is a placeholder and can be confusing or appear as broken/missing image to users.",
+        "Color contrast for the price text (#e44) on white background might be borderline accessible; it is a red shade (#e44) that may not have sufficient contrast for all users, especially those with visual impairments.",
+        "The font size for the category (13px) and the placeholder text inside the product image (14px) is quite small and might be harder to read on some displays or for some users."
+      ],
+      "num_bugs_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:46:51.648139"
+  },
+  {
+    "task_id": "perceptual_0005",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 1,
+    "bugs_found": [
+      "The product image uses 'object-fit: fill' which distorts the image aspect ratio, resulting in a stretched or squished appearance instead of preserving proportions."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 0,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image uses 'object-fit: fill' which distorts the image aspect ratio, resulting in a stretched or squished appearance instead of preserving proportions."
+      ],
+      "num_bugs_found": 1,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:46:53.325404"
+  },
+  {
+    "task_id": "perceptual_0006",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 3,
+    "bugs_found": [
+      "The product image container has a fixed height of only 40px, which is too small to display the product image clearly, resulting in poor visibility or a cramped appearance.",
+      "The product image is currently a div with placeholder text '[Product Image: Desk Lamp]' instead of an actual img element, so no real product image will be visible to the user.",
+      "The placeholder text inside the product image container is center-aligned and styled as flex, but since it's text and not an image, this does not simulate a real image well and is not visually appealing."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 2,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image container has a fixed height of only 40px, which is too small to display the product image clearly, resulting in poor visibility or a cramped appearance.",
+        "The product image is currently a div with placeholder text '[Product Image: Desk Lamp]' instead of an actual img element, so no real product image will be visible to the user.",
+        "The placeholder text inside the product image container is center-aligned and styled as flex, but since it's text and not an image, this does not simulate a real image well and is not visually appealing."
+      ],
+      "num_bugs_found": 3,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:46:56.743472"
+  },
+  {
+    "task_id": "perceptual_0007",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 7,
+    "bugs_found": [
+      "The product image container (.product-img) has a fixed height of 40px, which is too small for displaying a visible image of a backpack, making the image area nearly invisible or unreadable to users.",
+      "The product image is currently just text '[Product Image: Backpack]' instead of an actual image, resulting in no real product image being shown.",
+      "The text color of the placeholder '[Product Image: Backpack]' in the product image area (#999) on a light gray background (#f5f5f5) may have insufficient contrast, making the placeholder text hard to read.",
+      "The product image container uses display:flex with align-items and justify-content center, which is unnecessary if the image is replaced by an actual <img> and may affect layout if changed.",
+      "No alt attribute or actual <img> tag is used for the product image, affecting accessibility and SEO.",
+      "Overall the product card centers on the page with max-width 320px and margin auto which is fine, no layout or overflow issues present.",
+      "Button styles and text contrast are good, button is clickable and visible."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 6,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image container (.product-img) has a fixed height of 40px, which is too small for displaying a visible image of a backpack, making the image area nearly invisible or unreadable to users.",
+        "The product image is currently just text '[Product Image: Backpack]' instead of an actual image, resulting in no real product image being shown.",
+        "The text color of the placeholder '[Product Image: Backpack]' in the product image area (#999) on a light gray background (#f5f5f5) may have insufficient contrast, making the placeholder text hard to read.",
+        "The product image container uses display:flex with align-items and justify-content center, which is unnecessary if the image is replaced by an actual <img> and may affect layout if changed.",
+        "No alt attribute or actual <img> tag is used for the product image, affecting accessibility and SEO.",
+        "Overall the product card centers on the page with max-width 320px and margin auto which is fine, no layout or overflow issues present.",
+        "Button styles and text contrast are good, button is clickable and visible."
+      ],
+      "num_bugs_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:47:01.108217"
+  },
+  {
+    "task_id": "perceptual_0008",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 5,
+    "bugs_found": [
+      "The product image container has a fixed height of 40px, which is too small to display a meaningful image, resulting in poor visual impact and likely making the image or placeholder text hard to see.",
+      "The 'product-img' div uses flexbox alignment properties (display: flex; align-items: center; justify-content: center;) for centering text inside an image container, which is uncommon and semantically incorrect if an actual <img> element is expected here, possibly causing confusion or accessibility issues.",
+      "There is no actual img tag for the product image; instead a placeholder text '[Product Image: Water Bottle]' is used, so no image will be displayed.",
+      "The placeholder text inside the image container has low contrast (#999 on #f5f5f5), which might be hard to read.",
+      "The product card is centered with margin auto and max-width: 320px, which may look narrow or too small on wider screens but is not necessarily a bug unless design calls for wider."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 4,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image container has a fixed height of 40px, which is too small to display a meaningful image, resulting in poor visual impact and likely making the image or placeholder text hard to see.",
+        "The 'product-img' div uses flexbox alignment properties (display: flex; align-items: center; justify-content: center;) for centering text inside an image container, which is uncommon and semantically incorrect if an actual <img> element is expected here, possibly causing confusion or accessibility issues.",
+        "There is no actual img tag for the product image; instead a placeholder text '[Product Image: Water Bottle]' is used, so no image will be displayed.",
+        "The placeholder text inside the image container has low contrast (#999 on #f5f5f5), which might be hard to read.",
+        "The product card is centered with margin auto and max-width: 320px, which may look narrow or too small on wider screens but is not necessarily a bug unless design calls for wider."
+      ],
+      "num_bugs_found": 4,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:47:04.865132"
+  },
+  {
+    "task_id": "perceptual_0009",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 5,
+    "bugs_found": [
+      "The product image container has a fixed height of only 40px, which is too small and will make the product image barely visible or unusable as an image container.",
+      "The product image is represented as plain text '[Product Image: Sunglasses]' inside a div instead of using an actual <img> element, so no real image will be shown.",
+      "The product image container uses display: flex, align-items, and justify-content properties intended for flex containers, but since there's only text inside and no real image, this layout is ineffective.",
+      "The contrast and font size of the placeholder text in the product image container may be too small and low contrast for visibility.",
+      "Overall, the product image display is not user-friendly or visually clear because the actual image is missing and the container height is too small to showcase an image properly."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 4,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image container has a fixed height of only 40px, which is too small and will make the product image barely visible or unusable as an image container.",
+        "The product image is represented as plain text '[Product Image: Sunglasses]' inside a div instead of using an actual <img> element, so no real image will be shown.",
+        "The product image container uses display: flex, align-items, and justify-content properties intended for flex containers, but since there's only text inside and no real image, this layout is ineffective.",
+        "The contrast and font size of the placeholder text in the product image container may be too small and low contrast for visibility.",
+        "Overall, the product image display is not user-friendly or visually clear because the actual image is missing and the container height is too small to showcase an image properly."
+      ],
+      "num_bugs_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:47:09.296996"
+  },
+  {
+    "task_id": "perceptual_0010",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 5,
+    "bugs_found": [
+      "The product image container (.product-img) has a fixed height of only 40px, which is too small to display an actual product image properly, resulting in poor visual representation.",
+      "The product image is currently just a text placeholder '[Product Image: Bluetooth Speaker]' inside the .product-img div, so no real image is shown, which fails to meet user expectations for a product image.",
+      "Using flexbox properties (display: flex; align-items: center; justify-content: center;) on the .product-img div with a fixed height of 40px may cause vertical alignment or clipping issues depending on actual image content or fallback text.",
+      "The placeholder text inside the .product-img has a low contrast (#999) on a light grey (#f5f5f5) background, which might be hard to read.",
+      "No alt attribute or actual <img> tag is present for the product image, which is a usability and accessibility issue."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 4,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image container (.product-img) has a fixed height of only 40px, which is too small to display an actual product image properly, resulting in poor visual representation.",
+        "The product image is currently just a text placeholder '[Product Image: Bluetooth Speaker]' inside the .product-img div, so no real image is shown, which fails to meet user expectations for a product image.",
+        "Using flexbox properties (display: flex; align-items: center; justify-content: center;) on the .product-img div with a fixed height of 40px may cause vertical alignment or clipping issues depending on actual image content or fallback text.",
+        "The placeholder text inside the .product-img has a low contrast (#999) on a light grey (#f5f5f5) background, which might be hard to read.",
+        "No alt attribute or actual <img> tag is present for the product image, which is a usability and accessibility issue."
+      ],
+      "num_bugs_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:47:15.068367"
+  },
+  {
+    "task_id": "perceptual_0011",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 1,
+    "bugs_found": [
+      "Text color in the banner (color: #2a2a3e) is very close to the banner background color (#1a1a2e), causing poor contrast and making the text hard to read."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#2a2a3e) is nearly identical to background color (#1a1a2e), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 0,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "Text color in the banner (color: #2a2a3e) is very close to the banner background color (#1a1a2e), causing poor contrast and making the text hard to read."
+      ],
+      "num_bugs_found": 1,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:47:16.559846"
+  },
+  {
+    "task_id": "perceptual_0012",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "The text color (#ffe0e0) in .banner h1 and .banner p has very low contrast against the background (#fff0f0), making the text difficult to read.",
+      "The .banner text uses a very light pink color on a very light pink background, which fails accessibility contrast guidelines for readability."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#ffe0e0) is nearly identical to background color (#fff0f0), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The text color (#ffe0e0) in .banner h1 and .banner p has very low contrast against the background (#fff0f0), making the text difficult to read.",
+        "The .banner text uses a very light pink color on a very light pink background, which fails accessibility contrast guidelines for readability."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:47:18.437866"
+  },
+  {
+    "task_id": "perceptual_0013",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 1,
+    "bugs_found": [
+      "The text color (#e0ffe0) of the h1 and p elements in the banner is very light and has insufficient contrast against the light green background (#f0fff0), making the text difficult to read."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#e0ffe0) is nearly identical to background color (#f0fff0), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 0,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The text color (#e0ffe0) of the h1 and p elements in the banner is very light and has insufficient contrast against the light green background (#f0fff0), making the text difficult to read."
+      ],
+      "num_bugs_found": 1,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:47:20.058627"
+  },
+  {
+    "task_id": "perceptual_0014",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 1,
+    "bugs_found": [
+      "Text color in the banner (color: #fff3cd) is very light and has poor contrast against the light yellow background (#fffbeb), making the text difficult to read."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#fff3cd) is nearly identical to background color (#fffbeb), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 0,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "Text color in the banner (color: #fff3cd) is very light and has poor contrast against the light yellow background (#fffbeb), making the text difficult to read."
+      ],
+      "num_bugs_found": 1,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:47:21.501749"
+  },
+  {
+    "task_id": "perceptual_0015",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-mini",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 3,
+    "bugs_found": [
+      "The text color (#374151) in the banner has low contrast against the dark background (#1f2937), making the text hard to read for users with normal vision.",
+      "Using an h1 for copyright text is semantically inappropriate; copyright notices should typically not use heading tags which affect accessibility and SEO.",
+      "The banner text is centered with no spacing or clickable styles for the links in 'Privacy Policy | Terms of Service | Contact Us' which look like links but are plain text, potentially confusing users expecting clickable items."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#374151) is nearly identical to background color (#1f2937), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 2,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The text color (#374151) in the banner has low contrast against the dark background (#1f2937), making the text hard to read for users with normal vision.",
+        "Using an h1 for copyright text is semantically inappropriate; copyright notices should typically not use heading tags which affect accessibility and SEO.",
+        "The banner text is centered with no spacing or clickable styles for the links in 'Privacy Policy | Terms of Service | Contact Us' which look like links but are plain text, potentially confusing users expecting clickable items."
+      ],
+      "num_bugs_found": 3,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:47:23.984593"
+  }
+]

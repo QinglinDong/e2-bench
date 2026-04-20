@@ -1,0 +1,375 @@
+[
+  {
+    "task_id": "consistency_0001",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "report_vs_data",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 3,
+    "num_contradictions_found": 2,
+    "contradictions_found": [
+      "The Executive Summary states that the Asia-Pacific region contributed $0.8 million in sales, while the Data Table shows Asia-Pacific sales as $0.6 million.",
+      "The Executive Summary states that the customer retention rate improved to 94%, while the Data Table shows the Retention Rate as 92%."
+    ],
+    "ground_truth_contradictions": [
+      "Executive summary says Europe revenue is $1.3M but data table shows $1.5M",
+      "Executive summary says Asia-Pacific revenue is $0.8M but data table shows $0.6M",
+      "Executive summary says retention rate is 94% but data table shows 92%"
+    ],
+    "detection_rate": 0.6667,
+    "precision": 1.0,
+    "false_alarm_count": 0,
+    "matched_contradictions": 2,
+    "raw_response": {
+      "contradictions_found": [
+        "The Executive Summary states that the Asia-Pacific region contributed $0.8 million in sales, while the Data Table shows Asia-Pacific sales as $0.6 million.",
+        "The Executive Summary states that the customer retention rate improved to 94%, while the Data Table shows the Retention Rate as 92%."
+      ],
+      "num_contradictions_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:07.219710"
+  },
+  {
+    "task_id": "consistency_0002",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "report_vs_data",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 2,
+    "num_contradictions_found": 3,
+    "contradictions_found": [
+      "The 'Summary' states that Compensation & Benefits scored lowest at 3.6, but the 'Detailed Results' table shows Compensation & Benefits scored 3.9.",
+      "The 'Summary' states that the Sales department reported the lowest satisfaction at 3.5, but the 'Detailed Results' table shows the Sales department scored 3.9.",
+      "The 'Summary' states a response rate of 71%, while the 'Detailed Results' section calculates it as 70.6% (847 / 1,200)."
+    ],
+    "ground_truth_contradictions": [
+      "Summary says Compensation & Benefits scored lowest at 3.6, but data table shows it scored 3.9",
+      "Summary says Sales department reported lowest at 3.5, but data table shows Sales scored 3.9 (Operations at 3.7 is actually lowest)"
+    ],
+    "detection_rate": 1.0,
+    "precision": 0.6667,
+    "false_alarm_count": 1,
+    "matched_contradictions": 2,
+    "raw_response": {
+      "contradictions_found": [
+        "The 'Summary' states that Compensation & Benefits scored lowest at 3.6, but the 'Detailed Results' table shows Compensation & Benefits scored 3.9.",
+        "The 'Summary' states that the Sales department reported the lowest satisfaction at 3.5, but the 'Detailed Results' table shows the Sales department scored 3.9.",
+        "The 'Summary' states a response rate of 71%, while the 'Detailed Results' section calculates it as 70.6% (847 / 1,200)."
+      ],
+      "num_contradictions_found": 3,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:08.244187"
+  },
+  {
+    "task_id": "consistency_0003",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "report_vs_data",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 2,
+    "num_contradictions_found": 2,
+    "contradictions_found": [
+      "The 'Highlights' section states that social media was 28% of traffic, while the 'Analytics Data' table lists social media at 22%.",
+      "The 'Highlights' section states that the blog section drove 35% of all page views, while the 'Analytics Data' note states that the blog section accounted for 28% of total page views."
+    ],
+    "ground_truth_contradictions": [
+      "Highlights say social media traffic share is 28%, but analytics data shows 22%",
+      "Highlights say blog drove 35% of page views, but analytics note says blog accounted for 28%"
+    ],
+    "detection_rate": 1.0,
+    "precision": 1.0,
+    "false_alarm_count": 0,
+    "matched_contradictions": 2,
+    "raw_response": {
+      "contradictions_found": [
+        "The 'Highlights' section states that social media was 28% of traffic, while the 'Analytics Data' table lists social media at 22%.",
+        "The 'Highlights' section states that the blog section drove 35% of all page views, while the 'Analytics Data' note states that the blog section accounted for 28% of total page views."
+      ],
+      "num_contradictions_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:09.301965"
+  },
+  {
+    "task_id": "consistency_0004",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "readme_vs_code",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 5,
+    "num_contradictions_found": 5,
+    "contradictions_found": [
+      "The README states that `Pipeline.run(verbose=False)` executes the pipeline, but the code defines the method as `Pipeline.execute(self, verbose=False)`. The method name is different.",
+      "The README's 'Features' section states 'Parallel processing with up to 8 worker threads', but the `Pipeline` class in the code initializes `max_workers` with a default value of 4 (`self.max_workers = max_workers # Default 4, not 8`).",
+      "The README's 'API Reference' section lists `Pipeline.validate()` as a method to validate pipeline configuration, but there is no `validate()` method defined in the `Pipeline` class in the code.",
+      "The README's 'API Reference' for `CSVLoader` specifies the parameter `delimiter` (`CSVLoader(path, delimiter=\",\", encoding=\"utf-8\")`), but the `CSVLoader` class in the code defines this parameter as `separator` (`def __init__(self, path, separator=\",\", encoding=\"utf-8\")`).",
+      "The README's 'API Reference' for `JSONExporter` specifies `indent=2` and `ensure_ascii=True` as default parameters (`JSONExporter(path, indent=2, ensure_ascii=True)`), but the `JSONExporter` class in the code defines the defaults as `indent=4` and `ensure_ascii=False` (`def __init__(self, path, indent=4, ensure_ascii=False)`)."
+    ],
+    "ground_truth_contradictions": [
+      "README says Pipeline.run() but code defines Pipeline.execute() - method name mismatch",
+      "README says 'up to 8 worker threads' but code defaults to max_workers=4",
+      "README documents Pipeline.validate() but this method does not exist in the code",
+      "README says CSVLoader parameter is 'delimiter' but code uses 'separator'",
+      "README says JSONExporter defaults are indent=2, ensure_ascii=True but code has indent=4, ensure_ascii=False"
+    ],
+    "detection_rate": 1.0,
+    "precision": 1.0,
+    "false_alarm_count": 0,
+    "matched_contradictions": 5,
+    "raw_response": {
+      "contradictions_found": [
+        "The README states that `Pipeline.run(verbose=False)` executes the pipeline, but the code defines the method as `Pipeline.execute(self, verbose=False)`. The method name is different.",
+        "The README's 'Features' section states 'Parallel processing with up to 8 worker threads', but the `Pipeline` class in the code initializes `max_workers` with a default value of 4 (`self.max_workers = max_workers # Default 4, not 8`).",
+        "The README's 'API Reference' section lists `Pipeline.validate()` as a method to validate pipeline configuration, but there is no `validate()` method defined in the `Pipeline` class in the code.",
+        "The README's 'API Reference' for `CSVLoader` specifies the parameter `delimiter` (`CSVLoader(path, delimiter=\",\", encoding=\"utf-8\")`), but the `CSVLoader` class in the code defines this parameter as `separator` (`def __init__(self, path, separator=\",\", encoding=\"utf-8\")`).",
+        "The README's 'API Reference' for `JSONExporter` specifies `indent=2` and `ensure_ascii=True` as default parameters (`JSONExporter(path, indent=2, ensure_ascii=True)`), but the `JSONExporter` class in the code defines the defaults as `indent=4` and `ensure_ascii=False` (`def __init__(self, path, indent=4, ensure_ascii=False)`)."
+      ],
+      "num_contradictions_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:11.437248"
+  },
+  {
+    "task_id": "consistency_0005",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "readme_vs_code",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 5,
+    "num_contradictions_found": 6,
+    "contradictions_found": [
+      "The API documentation states the GET endpoint is `/api/users`, but the code implements it as `/api/v2/users`.",
+      "The API documentation states the POST endpoint is `/api/users`, but the code implements it as `/api/v2/users`.",
+      "The API documentation for GET /api/users specifies a query parameter `limit` with a default of 20 and a max of 100. The code for `/api/v2/users` uses a query parameter `per_page` with a default of 50 and a max of 50.",
+      "The API documentation for GET /api/users specifies the response key for the list of users as `users`. The code for `/api/v2/users` uses the key `data`.",
+      "The API documentation for POST /api/users specifies valid roles as `\"admin\" | \"user\" | \"viewer\"`. The code for `/api/v2/users` validates roles as `('admin', 'member')`, which excludes 'user' and 'viewer' and includes 'member'.",
+      "The API documentation includes a DELETE /api/users/:id endpoint, but the provided code does not contain any implementation for a DELETE endpoint."
+    ],
+    "ground_truth_contradictions": [
+      "API docs say endpoint is /api/users but code uses /api/v2/users",
+      "API docs say pagination param is 'limit' (default 20, max 100) but code uses 'per_page' (default 50, max 50)",
+      "API docs say response key is 'users' but code returns 'data'",
+      "API docs say valid roles are 'admin', 'user', 'viewer' but code only accepts 'admin', 'member'",
+      "API docs document DELETE /api/users/:id but this endpoint is not implemented in the code"
+    ],
+    "detection_rate": 1.0,
+    "precision": 0.8333,
+    "false_alarm_count": 1,
+    "matched_contradictions": 5,
+    "raw_response": {
+      "contradictions_found": [
+        "The API documentation states the GET endpoint is `/api/users`, but the code implements it as `/api/v2/users`.",
+        "The API documentation states the POST endpoint is `/api/users`, but the code implements it as `/api/v2/users`.",
+        "The API documentation for GET /api/users specifies a query parameter `limit` with a default of 20 and a max of 100. The code for `/api/v2/users` uses a query parameter `per_page` with a default of 50 and a max of 50.",
+        "The API documentation for GET /api/users specifies the response key for the list of users as `users`. The code for `/api/v2/users` uses the key `data`.",
+        "The API documentation for POST /api/users specifies valid roles as `\"admin\" | \"user\" | \"viewer\"`. The code for `/api/v2/users` validates roles as `('admin', 'member')`, which excludes 'user' and 'viewer' and includes 'member'.",
+        "The API documentation includes a DELETE /api/users/:id endpoint, but the provided code does not contain any implementation for a DELETE endpoint."
+      ],
+      "num_contradictions_found": 6,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:13.447609"
+  },
+  {
+    "task_id": "consistency_0006",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "readme_vs_code",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 11,
+    "num_contradictions_found": 11,
+    "contradictions_found": [
+      "Server Port: The 'config.yaml' specifies 'port: 8080' for the server, while the 'Deployment Guide' states 'The application runs on port **3000** by default'.",
+      "Server Max Connections: The 'config.yaml' specifies 'max_connections: 1000', while the 'Deployment Guide' states 'supports up to **500 concurrent connections**'.",
+      "Server Timeout: The 'config.yaml' specifies 'timeout: 30 # seconds', while the 'Deployment Guide' states 'Connection timeout is set to **60 seconds**'.",
+      "Database Engine: The 'config.yaml' specifies 'engine: postgresql', while the 'Deployment Guide' states 'We use **MySQL** as our primary database'.",
+      "Database Pool Size: The 'config.yaml' specifies 'pool_size: 20', while the 'Deployment Guide' states 'The connection pool maintains **10 connections** by default'.",
+      "Database SSL: The 'config.yaml' specifies 'ssl: true', while the 'Deployment Guide' states 'SSL is disabled for internal network communication'.",
+      "Cache TTL: The 'config.yaml' specifies 'ttl: 3600 # 1 hour', while the 'Deployment Guide' states 'with a default TTL of **30 minutes** (1800 seconds)'.",
+      "Cache Max Memory: The 'config.yaml' specifies 'max_memory: 512mb', while the 'Deployment Guide' states 'with a memory limit of **1GB**'.",
+      "Logging Format: The 'config.yaml' specifies 'format: json', while the 'Deployment Guide' states 'Application logs are written in **plain text** format'.",
+      "Logging Rotation: The 'config.yaml' specifies 'rotation: daily', while the 'Deployment Guide' states 'with **weekly** rotation'.",
+      "Logging Level: The 'config.yaml' specifies 'level: INFO', while the 'Deployment Guide' states 'Default log level is **DEBUG**'."
+    ],
+    "ground_truth_contradictions": [
+      "Config says port 8080 but deployment guide says port 3000",
+      "Config says max_connections 1000 but guide says 500 concurrent connections",
+      "Config says timeout 30s but guide says 60 seconds",
+      "Config says engine postgresql but guide says MySQL",
+      "Config says pool_size 20 but guide says 10 connections",
+      "Config says ssl true but guide says SSL is disabled",
+      "Config says cache ttl 3600 (1 hour) but guide says 30 minutes (1800 seconds)",
+      "Config says max_memory 512mb but guide says 1GB",
+      "Config says logging format json but guide says plain text",
+      "Config says rotation daily but guide says weekly",
+      "Config says logging level INFO but guide says DEBUG"
+    ],
+    "detection_rate": 1.0,
+    "precision": 1.0,
+    "false_alarm_count": 0,
+    "matched_contradictions": 11,
+    "raw_response": {
+      "contradictions_found": [
+        "Server Port: The 'config.yaml' specifies 'port: 8080' for the server, while the 'Deployment Guide' states 'The application runs on port **3000** by default'.",
+        "Server Max Connections: The 'config.yaml' specifies 'max_connections: 1000', while the 'Deployment Guide' states 'supports up to **500 concurrent connections**'.",
+        "Server Timeout: The 'config.yaml' specifies 'timeout: 30 # seconds', while the 'Deployment Guide' states 'Connection timeout is set to **60 seconds**'.",
+        "Database Engine: The 'config.yaml' specifies 'engine: postgresql', while the 'Deployment Guide' states 'We use **MySQL** as our primary database'.",
+        "Database Pool Size: The 'config.yaml' specifies 'pool_size: 20', while the 'Deployment Guide' states 'The connection pool maintains **10 connections** by default'.",
+        "Database SSL: The 'config.yaml' specifies 'ssl: true', while the 'Deployment Guide' states 'SSL is disabled for internal network communication'.",
+        "Cache TTL: The 'config.yaml' specifies 'ttl: 3600 # 1 hour', while the 'Deployment Guide' states 'with a default TTL of **30 minutes** (1800 seconds)'.",
+        "Cache Max Memory: The 'config.yaml' specifies 'max_memory: 512mb', while the 'Deployment Guide' states 'with a memory limit of **1GB**'.",
+        "Logging Format: The 'config.yaml' specifies 'format: json', while the 'Deployment Guide' states 'Application logs are written in **plain text** format'.",
+        "Logging Rotation: The 'config.yaml' specifies 'rotation: daily', while the 'Deployment Guide' states 'with **weekly** rotation'.",
+        "Logging Level: The 'config.yaml' specifies 'level: INFO', while the 'Deployment Guide' states 'Default log level is **DEBUG**'."
+      ],
+      "num_contradictions_found": 11,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:16.057375"
+  },
+  {
+    "task_id": "consistency_0007",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "chart_vs_data",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 3,
+    "num_contradictions_found": 2,
+    "contradictions_found": [
+      "The chart description states that MAU reached a peak of 285K in December, but the chart data shows December MAU as 265K.",
+      "The chart description states that there were no months with declining MAU, but the chart data shows a decline from August (210K) to September (198K)."
+    ],
+    "ground_truth_contradictions": [
+      "Description says peak of 285K in December but data shows 265K",
+      "Description says 'no months with declining MAU' but September (198K) declined from August (210K)",
+      "Description says Q3 had 40% QoQ increase: Q2 end=168K, Q3 end=198K, actual increase is only 17.9%"
+    ],
+    "detection_rate": 0.6667,
+    "precision": 1.0,
+    "false_alarm_count": 0,
+    "matched_contradictions": 2,
+    "raw_response": {
+      "contradictions_found": [
+        "The chart description states that MAU reached a peak of 285K in December, but the chart data shows December MAU as 265K.",
+        "The chart description states that there were no months with declining MAU, but the chart data shows a decline from August (210K) to September (198K)."
+      ],
+      "num_contradictions_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:17.054347"
+  },
+  {
+    "task_id": "consistency_0008",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "chart_vs_data",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 5,
+    "num_contradictions_found": 5,
+    "contradictions_found": [
+      "The narrative states 'Marketing at 25%' for 2026, but the Budget Data table shows 'Marketing' at '22%' for '2026 %'.",
+      "The narrative states 'Operations at 12%' for 2026, but the Budget Data table shows 'Operations' at '13%' for '2026 %'.",
+      "The narrative states 'HR at 8%' for 2026, but the Budget Data table shows 'HR' at '10%' for '2026 %'.",
+      "The narrative states 'Marketing's decreased by 3 percentage points' compared to 2025. The 2025 % for Marketing is 25% and the 2026 % is 22%, which is a decrease of 3 percentage points (25% - 22% = 3%). This is not a contradiction.",
+      "The narrative states 'Engineering's share increased by 5 percentage points' compared to 2025. The 2025 % for Engineering is 28% and the 2026 % is 35%, which is an increase of 7 percentage points (35% - 28% = 7%). This contradicts the narrative's claim of a 5 percentage point increase."
+    ],
+    "ground_truth_contradictions": [
+      "Narrative says Marketing is 25% but data shows 22%",
+      "Narrative says Operations is 12% but data shows 13%",
+      "Narrative says HR is 8% but data shows 10%",
+      "Narrative says Engineering increased by 5pp (from 30% to 35%) but data shows increase from 28% to 35% = 7pp",
+      "Narrative says Marketing decreased by 3pp but data shows decrease from 25% to 22% = 3pp (this one is actually correct)"
+    ],
+    "detection_rate": 1.0,
+    "precision": 1.0,
+    "false_alarm_count": 0,
+    "matched_contradictions": 5,
+    "raw_response": {
+      "contradictions_found": [
+        "The narrative states 'Marketing at 25%' for 2026, but the Budget Data table shows 'Marketing' at '22%' for '2026 %'.",
+        "The narrative states 'Operations at 12%' for 2026, but the Budget Data table shows 'Operations' at '13%' for '2026 %'.",
+        "The narrative states 'HR at 8%' for 2026, but the Budget Data table shows 'HR' at '10%' for '2026 %'.",
+        "The narrative states 'Marketing's decreased by 3 percentage points' compared to 2025. The 2025 % for Marketing is 25% and the 2026 % is 22%, which is a decrease of 3 percentage points (25% - 22% = 3%). This is not a contradiction.",
+        "The narrative states 'Engineering's share increased by 5 percentage points' compared to 2025. The 2025 % for Engineering is 28% and the 2026 % is 35%, which is an increase of 7 percentage points (35% - 28% = 7%). This contradicts the narrative's claim of a 5 percentage point increase."
+      ],
+      "num_contradictions_found": 4,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:19.002027"
+  },
+  {
+    "task_id": "consistency_0009",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "chart_vs_data",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 5,
+    "num_contradictions_found": 5,
+    "contradictions_found": [
+      "The Summary Paragraph states the overall NPS score is +45, but the Raw Data table shows the Total NPS as +44.",
+      "The Summary Paragraph states the Enterprise segment had the highest NPS at +58, but the Raw Data table shows the Enterprise NPS as +54.",
+      "The Summary Paragraph states the SMB segment scored +32, but the Raw Data table shows the SMB NPS as +40.",
+      "The Summary Paragraph states the overall Promoters percentage is 62%, but the Raw Data table shows the Total Promoters as 61%.",
+      "The Summary Paragraph states the overall Passives percentage is 21%, but the Raw Data table shows the Total Passives as 22%."
+    ],
+    "ground_truth_contradictions": [
+      "Summary says overall NPS is +45 but data shows +44",
+      "Summary says 62% Promoters but data shows 61%",
+      "Summary says 21% Passives but data shows 22%",
+      "Summary says Enterprise NPS is +58 but data shows +54",
+      "Summary says SMB NPS is +32 but data shows +40"
+    ],
+    "detection_rate": 1.0,
+    "precision": 1.0,
+    "false_alarm_count": 0,
+    "matched_contradictions": 5,
+    "raw_response": {
+      "contradictions_found": [
+        "The Summary Paragraph states the overall NPS score is +45, but the Raw Data table shows the Total NPS as +44.",
+        "The Summary Paragraph states the Enterprise segment had the highest NPS at +58, but the Raw Data table shows the Enterprise NPS as +54.",
+        "The Summary Paragraph states the SMB segment scored +32, but the Raw Data table shows the SMB NPS as +40.",
+        "The Summary Paragraph states the overall Promoters percentage is 62%, but the Raw Data table shows the Total Promoters as 61%.",
+        "The Summary Paragraph states the overall Passives percentage is 21%, but the Raw Data table shows the Total Passives as 22%."
+      ],
+      "num_contradictions_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:20.199500"
+  },
+  {
+    "task_id": "consistency_0010",
+    "level": "L3_consistency",
+    "domain": "consistency",
+    "category": "slide_deck",
+    "model": "gemini-2.5-flash",
+    "num_planted_contradictions": 4,
+    "num_contradictions_found": 3,
+    "contradictions_found": [
+      "Slide 5 states that TechFlow currently serves 340 enterprise customers, while Slide 7 states that TechFlow has 280 enterprise customers.",
+      "Slide 7 states that TechFlow has active users in 15 countries, while Slide 5 states that TechFlow serves customers across 12 countries.",
+      "Slide 9 states the 2025 ARR is $4.2M, while Slide 10 projects reaching $20M ARR by end of 2027, which contradicts the 2027 projection of $18M ARR on Slide 9."
+    ],
+    "ground_truth_contradictions": [
+      "Slide 5 says 340 enterprise customers but Slide 7 says 280 enterprise customers",
+      "Slide 5 says 12 countries but Slide 7 says 15 countries",
+      "Slide 7 says 120% YoY growth but Slide 9 projects 2025-2026 growth at only 102%",
+      "Slide 9 says $18M ARR by 2027 but Slide 10 says $20M ARR by end of 2027"
+    ],
+    "detection_rate": 0.75,
+    "precision": 1.0,
+    "false_alarm_count": 0,
+    "matched_contradictions": 3,
+    "raw_response": {
+      "contradictions_found": [
+        "Slide 5 states that TechFlow currently serves 340 enterprise customers, while Slide 7 states that TechFlow has 280 enterprise customers.",
+        "Slide 7 states that TechFlow has active users in 15 countries, while Slide 5 states that TechFlow serves customers across 12 countries.",
+        "Slide 9 states the 2025 ARR is $4.2M, while Slide 10 projects reaching $20M ARR by end of 2027, which contradicts the 2027 projection of $18M ARR on Slide 9."
+      ],
+      "num_contradictions_found": 3,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-20T11:54:21.432738"
+  }
+]

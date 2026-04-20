@@ -1,0 +1,14 @@
+{
+  "model": "gemini-2.5-flash",
+  "domain": "reasoning",
+  "total_tasks": 30,
+  "true_positives": 20,
+  "true_negatives": 2,
+  "false_positives": 3,
+  "false_negatives": 5,
+  "parse_errors": 3,
+  "self_validation_accuracy": 0.7333,
+  "false_positive_rate": 0.6,
+  "false_negative_rate": 0.2,
+  "task_pass_rate": 0.8333
+}

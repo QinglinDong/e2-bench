@@ -1,0 +1,29 @@
+{
+  "level": "L2_perceptual",
+  "model": "gemini-2.5-flash",
+  "domain": "perceptual",
+  "total_tasks": 15,
+  "total_planted_bugs": 15,
+  "total_bugs_found": 42,
+  "total_bugs_matched": 15,
+  "total_false_alarms": 27,
+  "avg_detection_rate": 1.0,
+  "overall_recall": 1.0,
+  "overall_precision": 0.3571,
+  "by_category": {
+    "image_sizing": {
+      "total": 10,
+      "planted": 10,
+      "matched": 10,
+      "found": 33,
+      "detection_rate": 1.0
+    },
+    "text_contrast": {
+      "total": 5,
+      "planted": 5,
+      "matched": 5,
+      "found": 9,
+      "detection_rate": 1.0
+    }
+  }
+}
