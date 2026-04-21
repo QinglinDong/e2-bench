@@ -1,0 +1,43 @@
+{
+  "level": "L3_consistency",
+  "model": "gpt-4.1-nano",
+  "domain": "consistency",
+  "total_tasks": 10,
+  "total_planted_contradictions": 45,
+  "total_contradictions_found": 34,
+  "total_contradictions_matched": 28,
+  "total_false_alarms": 6,
+  "avg_detection_rate": 0.6017,
+  "overall_recall": 0.6222,
+  "overall_precision": 0.8235,
+  "by_category": {
+    "report_vs_data": {
+      "total": 3,
+      "planted": 7,
+      "matched": 6,
+      "found": 11,
+      "detection_rate": 0.8571
+    },
+    "readme_vs_code": {
+      "total": 3,
+      "planted": 21,
+      "matched": 14,
+      "found": 14,
+      "detection_rate": 0.6667
+    },
+    "chart_vs_data": {
+      "total": 3,
+      "planted": 13,
+      "matched": 7,
+      "found": 8,
+      "detection_rate": 0.5385
+    },
+    "slide_deck": {
+      "total": 1,
+      "planted": 4,
+      "matched": 1,
+      "found": 1,
+      "detection_rate": 0.25
+    }
+  }
+}

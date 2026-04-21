@@ -1,120 +1,86 @@
 # E²-Bench: Eval of Eval for Measuring Self-Validation Reliability in LLM Agents
 
-## Overview
+![E²-Bench Overview](paper/figures/fig5_cross_level.png)
 
-E²-Bench is a novel benchmark that systematically measures the **self-validation reliability** of LLM agents. While existing benchmarks evaluate whether an agent can solve a task (Task Completion Accuracy), E²-Bench evaluates whether the agent can **accurately judge its own work** (Self-Validation Accuracy).
+As Large Language Models (LLMs) are increasingly deployed as autonomous agents, their ability to self-validate outputs has become a critical bottleneck. While existing benchmarks evaluate whether an agent can *complete* a task, they rarely measure whether the agent *knows* if it has completed the task correctly.
 
-The key insight is that when an LLM agent says "I have verified this is correct," that verification itself may be unreliable. We call this the **"Yes Man" bias** — the tendency of LLMs to approve their own outputs even when they contain errors.
+**E²-Bench (Eval of Eval)** is a comprehensive benchmark that measures self-validation reliability across three cognitive levels, mirroring the cognitive hierarchy of human quality assurance.
+
+## The Three-Level Validation Framework
+
+E²-Bench evaluates agents across 653 tasks in three distinct levels:
+
+### Level 1: Logical Validation (500 tasks)
+Can the agent verify objective correctness where a definitive ground truth exists?
+- **Code Generation** (200 tasks): Hidden test suites
+- **Logical Reasoning** (150 tasks): Deterministic answers (e.g., Game of 24)
+- **Data Analysis** (150 tasks): Pre-computed numerical results
+
+### Level 2: Perceptual Validation (53 tasks)
+Can the agent detect "common sense" quality issues that a human would notice in seconds?
+- **UI/UX Defect Detection**: We programmatically generate valid HTML/CSS web pages and inject common UI/UX defects (image distortion, low contrast, layout overflow, etc.).
+- *Note: Visual renderings (screenshots) of all planted bugs are available in `eval_set/perceptual_validation/screenshots/`.*
+
+### Level 3: Consistency Validation (100 tasks)
+Can the agent ensure that different parts of a complex artifact do not contradict each other?
+- **Cross-Context Contradictions**: We generate multi-part documents (financial reports, technical docs) and inject subtle but critical contradictions between components.
+
+## Key Findings
+
+We evaluated three frontier models: **GPT-4.1-mini**, **Gemini 2.5 Flash**, and **GPT-4.1-nano**.
+
+1. **The "Yes Man" Bias (Level 1)**: Models are maximally unreliable as self-judges. The False Positive Rate (incorrectly approving wrong solutions) ranges from 66% to 100%. When an agent says "my code is correct," this claim carries almost no information.
+2. **The Over-Reporting Problem (Level 2)**: Models exhibit the opposite failure mode here—they are *too critical*. While they achieve 100% recall in finding planted UI bugs, they hallucinate many non-existent ones, yielding only 26-36% precision.
+3. **Native Modality Advantage (Level 3)**: Models are most reliable at consistency checking (82-93% recall), likely because cross-referencing text operates entirely within their strongest modality.
 
 ## Repository Structure
 
 ```
 e2_bench/
-├── README.md                          # This file
-├── eval_set/                          # The benchmark dataset (500 tasks)
-│   ├── code_generation/
-│   │   └── tasks.json                 # 200 code generation tasks
-│   ├── data_analysis/
-│   │   └── tasks.json                 # 150 data analysis tasks
-│   └── logical_reasoning/
-│       └── tasks.json                 # 150 logical reasoning tasks
-├── harness/
-│   └── e2_bench.py                    # Core evaluation framework
-├── scripts/
-│   ├── generate_code_tasks.py         # Code task generator
-│   ├── generate_data_analysis_tasks.py # Data analysis task generator
-│   ├── generate_reasoning_tasks.py    # Reasoning task generator
-│   ├── run_pilot.py                   # Pilot evaluation runner
-│   └── analyze_results.py            # Results analysis & figure generation
-├── results/                           # Pilot evaluation results
-│   ├── *_metrics.json                 # Per-model per-domain metrics
-│   ├── *_results.json                 # Detailed per-task results
-│   └── pilot_summary.md              # Summary of pilot findings
-└── paper/
-    ├── main.tex                       # LaTeX paper source
-    ├── main.pdf                       # Compiled paper (8 pages)
-    └── figures/                       # Generated figures
-        ├── fig1_sva_vs_tca.png
-        ├── fig2_fpr_heatmap.png
-        ├── fig3_confusion_matrices.png
-        ├── fig4_validation_gap.png
-        └── fig5_outcome_distribution.png
+├── eval_set/                  # The complete dataset (653 tasks)
+│   ├── code_generation/       # Level 1: Code tasks
+│   ├── data_analysis/         # Level 1: Data tasks
+│   ├── reasoning/             # Level 1: Logic tasks
+│   ├── perceptual_validation/ # Level 2: UI/UX tasks (includes HTML and screenshots)
+│   └── consistency_validation/# Level 3: Contradiction tasks
+├── harness/                   # Evaluation framework
+│   └── e2_bench.py            # Core evaluation logic for all 3 levels
+├── scripts/                   # Task generation and analysis scripts
+├── results/                   # Raw evaluation results for all models
+└── paper/                     # LaTeX source and compiled PDF of the paper
+    └── figures/               # All generated charts and heatmaps
 ```
 
-## Key Metrics
+## Running the Evaluation
 
-E²-Bench introduces four key metrics for measuring self-validation reliability:
-
-| Metric | Definition | What It Measures |
-|--------|-----------|-----------------|
-| **SVA** (Self-Validation Accuracy) | Accuracy of the agent's self-assessment | Overall reliability of self-validation |
-| **FPR** (False Positive Rate) | Rate of approving incorrect outputs | "Yes Man" bias severity |
-| **FNR** (False Negative Rate) | Rate of rejecting correct outputs | "Over-thinker" bias severity |
-| **TCA** (Task Completion Accuracy) | Rate of actually correct solutions | Baseline task performance |
-
-## Pilot Results (GPT-4.1-mini, Gemini 2.5 Flash)
-
-| Model | Domain | SVA | FPR | FNR | TCA |
-|-------|--------|-----|-----|-----|-----|
-| GPT-4.1-mini | Code Generation | 46.7% | **88.9%** | 0.0% | 40.0% |
-| GPT-4.1-mini | Logical Reasoning | 90.0% | **100.0%** | 0.0% | 90.0% |
-| Gemini 2.5 Flash | Code Generation | 46.7% | **88.9%** | 0.0% | 40.0% |
-| Gemini 2.5 Flash | Logical Reasoning | 73.3% | **60.0%** | 20.0% | 83.3% |
-| Gemini 2.5 Flash | Data Analysis | 25.0% | **100.0%** | 0.0% | 25.0% |
-
-**Key Finding**: Both models exhibit extreme "Yes Man" bias with FPR of 60-100%, meaning they almost always approve their own outputs regardless of correctness.
-
-## Quick Start
-
-### Running an Evaluation
-
-```python
-from harness.e2_bench import E2BenchEvaluator
-
-evaluator = E2BenchEvaluator(model="gpt-4.1-mini", output_dir="./results")
-
-# Run code generation evaluation (30 task sample)
-results = evaluator.run_evaluation("code", num_tasks=30)
-metrics = evaluator.compute_metrics(results)
-evaluator.save_results(results, metrics, "code")
-
-print(f"SVA: {metrics['self_validation_accuracy']:.1%}")
-print(f"FPR: {metrics['false_positive_rate']:.1%}")
-```
-
-### Generating Figures
+The evaluation harness supports any OpenAI-compatible API model.
 
 ```bash
-python scripts/analyze_results.py
+# Install dependencies
+pip install openai
+
+# Set your API key
+export OPENAI_API_KEY="your-api-key"
+
+# Run the evaluation (see scripts/run_pilot_v3_extra_models.py for an example)
+python scripts/run_pilot_v3_extra_models.py
 ```
 
-## Two-Stage Forced Verification Protocol
+## Future Work
 
-E²-Bench uses a novel evaluation protocol that decouples generation from verification:
-
-1. **Stage 1 (Generation)**: The agent generates a solution to the task.
-2. **Stage 2 (Forced Verification)**: The agent is explicitly asked to verify its own solution and output a binary verdict (`VERIFIED_PASS` or `VERIFIED_FAIL`).
-3. **Ground Truth Check**: The solution is independently verified against hidden test suites / pre-computed answers.
-
-The agent's verdict is then compared to ground truth to classify the outcome as TP, TN, FP, or FN.
-
-## Requirements
-
-- Python 3.11+
-- `openai` package (for API access)
-- Environment variable: `OPENAI_API_KEY`
+- **Expand Model Coverage**: Evaluate Claude 3.5 Sonnet, GPT-4o, Llama 3, and other frontier models.
+- **Multimodal Perceptual Validation**: Currently, Level 2 uses HTML source code as input. Future work will incorporate the rendered screenshots for true multimodal evaluation.
+- **Cross-Evaluation**: Have Model A evaluate Model B's outputs to quantify "Self-Bias" vs. general evaluation capability.
 
 ## Citation
 
+If you use E²-Bench in your research, please cite our paper:
+
 ```bibtex
-@article{e2bench2026,
+@misc{dong2026e2bench,
   title={E$^2$-Bench: Eval of Eval for Measuring Self-Validation Reliability in LLM Agents},
-  author={Anonymous},
-  journal={arXiv preprint},
-  year={2026}
+  author={Qinglin Dong},
+  year={2026},
+  url={https://github.com/QinglinDong/e2-bench}
 }
 ```
-
-## License
-
-MIT License

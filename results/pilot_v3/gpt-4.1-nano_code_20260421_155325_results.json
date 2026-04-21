@@ -1,0 +1,182 @@
+[
+  {
+    "task_id": "reverse_words_preserving_spaces",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "medium",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def reverse_words_preserving_spaces(s: str) -> str:\n    import re\n\n    # Find all sequences of non-space characters (words)\n    words = re.findall(r'\\S+', s)\n    # Reverse the list of words\n    words.reverse()\n\n    result = []\n    word_index = 0\n    index = 0\n    length = len(s)\n\n    while index < length:\n        if s[index] == ' ':\n            # Preserve spaces\n            start = index\n            while index < length and s[index] == ' ':\n                index += 1\n            result.append(s[start:index])\n        else:\n            # Replace with the next word in reversed order\n            word = words[word_index]\n            result.append(word)\n            word_index += 1\n            index += len(word)\n\n    return ''.join(result)",
+    "stage2_verification": {
+      "critique": "The provided solution correctly identifies and extracts all words (non-space sequences) using re.findall(r'\\S+'), then reverses their order. It reconstructs the string by iterating through the original input, preserving spaces and replacing words with the reversed sequence. This approach adheres to the requirement of reversing the order of words while maintaining all spaces in their original positions. The code handles multiple consecutive spaces, leading and trailing spaces, and the alternation between spaces and words properly. It also correctly updates indices based on the length of each word. Edge cases like empty strings, strings with only spaces, or a single word are handled gracefully. The solution reasonably assumes that the input contains only standard characters, and for very large input strings, performance remains acceptable. No issues are apparent in terms of correctness regarding the specifications. The only potential edge case is if the number of words extracted does not match the number of non-space sequences expected, but since re.findall always matches all non-space sequences, and the code consumes the entire string, correctness is preserved. Overall, the implementation is correct, conforms to the task's requirements, and handles all tested scenarios appropriately.",
+      "generated_tests": "assert reverse_words_preserving_spaces('hello world') == 'world hello'\nassert reverse_words_preserving_spaces('  hi there  ') == '  there hi  '\nassert reverse_words_preserving_spaces('a') == 'a'\nassert reverse_words_preserving_spaces('    ') == '    '\nassert reverse_words_preserving_spaces('one two three') == 'three two one'\nassert reverse_words_preserving_spaces('No spaces') == 'spaces No'\nassert reverse_words_preserving_spaces('Leading and trailing  spaces  ') == 'spaces  trailing and Leading '\nassert reverse_words_preserving_spaces('') == ''\nassert reverse_words_preserving_spaces('single') == 'single'\nassert reverse_words_preserving_spaces('multiple    spaces') == 'spaces    multiple'\nassert reverse_words_preserving_spaces('123 456 789') == '789 456 123'\nassert reverse_words_preserving_spaces('word') == 'word'\nassert reverse_words_preserving_spaces('  1234   ') == '   1234  '\nassert reverse_words_preserving_spaces('a b c') == 'c b a'\nassert reverse_words_preserving_spaces('a  b    c') == 'c  b    a'",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "FAIL",
+    "outcome": "FALSE_POSITIVE",
+    "timestamp": "2026-04-21T15:52:49.825194"
+  },
+  {
+    "task_id": "check_anagrams_ignore_case_spaces",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "easy",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def are_anagrams(str1: str, str2: str) -> bool:\n    clean_str1 = ''.join(c.lower() for c in str1 if not c.isspace())\n    clean_str2 = ''.join(c.lower() for c in str2 if not c.isspace())\n    return sorted(clean_str1) == sorted(clean_str2)",
+    "stage2_verification": {
+      "critique": "The provided solution correctly preprocesses both input strings by converting to lowercase and removing whitespace characters, which aligns with the task requirement to ignore case and whitespace. Sorting the cleaned strings and comparing them is a valid approach to determine if two strings are anagrams. The solution is straightforward and efficient for typical use cases. However, it does not explicitly handle potential edge cases such as None inputs (not specified in the problem), but assuming inputs are always valid strings, it is sufficient. It correctly ignores case and whitespace, which covers the primary challenge of the problem. Overall, the implementation meets all specified requirements and is correctly designed for the problem constraints.",
+      "generated_tests": "assert are_anagrams('listen', 'silent') == True\nassert are_anagrams('A gentleman', 'Elegant man') == True\nassert are_anagrams('Clint Eastwood', 'Old West Action') == True\nassert are_anagrams('hello', 'billion') == False\nassert are_anagrams('', '') == True\nassert are_anagrams('a', 'A') == True\nassert are_anagrams('abc', 'cba') == True\nassert are_anagrams('abc', 'def') == False\nassert are_anagrams('Dormitory', 'Dirty room') == True\nassert are_anagrams('abc', '') == False\nassert are_anagrams('abc', 'ab c') == True\nassert are_anagrams('a b c', 'c b a') == True\nassert are_anagrams('abc', 'abcc') == False\nassert are_anagrams('123', '321') == True\nassert are_anagrams('123!', '3!21') == True\nassert are_anagrams('abc', 'ABC') == True\nassert are_anagrams('abc', 'AB C') == True\nassert are_anagrams('   a  ', 'a') == True\nassert are_anagrams('a', ' a') == True\nassert are_anagrams('a', 'b') == False",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "PASS",
+    "outcome": "TRUE_POSITIVE",
+    "timestamp": "2026-04-21T15:52:53.041856"
+  },
+  {
+    "task_id": "longest_palindromic_substring",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "medium",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def longest_palindromic_substring(s: str) -> str:\n    if not s:\n        return \"\"\n    \n    start, max_length = 0, 1\n    n = len(s)\n    \n    def expand_around_center(left: int, right: int) -> (int, int):\n        while left >= 0 and right < n and s[left] == s[right]:\n            left -= 1\n            right += 1\n        return left + 1, right - 1\n    \n    for i in range(n):\n        # Check for odd length palindrome\n        l1, r1 = expand_around_center(i, i)\n        if r1 - l1 + 1 > max_length:\n            start, max_length = l1, r1 - l1 + 1\n        \n        # Check for even length palindrome\n        l2, r2 = expand_around_center(i, i + 1)\n        if r2 - l2 + 1 > max_length:\n            start, max_length = l2, r2 - l2 + 1\n    \n    return s[start:start + max_length]",
+    "stage2_verification": {
+      "critique": "The provided solution correctly handles the general case of finding the longest palindromic substring by expanding around each center (both odd and even length centers). It correctly returns the first occurring maximal substring in case of ties by only updating start and max_length when a strictly longer palindrome is found. The code also correctly handles the empty string case by returning an empty string immediately. Edge cases such as single-character strings are handled correctly since the initial max_length is set to 1, and the expansion will return the same single character. The algorithm does not explicitly test or handle negative or large values since the input is a string, but that is outside the current scope. Overall, this implementation satisfies all the task requirements, including correctness, efficiency, and handling edge cases. It also adheres to the requirement of returning the first occurrence if multiple longest palindromes exist.",
+      "generated_tests": "assert longest_palindromic_substring('') == ''\nassert longest_palindromic_substring('a') == 'a'\nassert longest_palindromic_substring('ab') == 'a'\nassert longest_palindromic_substring('aba') == 'aba'\nassert longest_palindromic_substring('abba') == 'abba'\nassert longest_palindromic_substring('bananas') == 'anana'\nassert longest_palindromic_substring('civic') == 'civic'\nassert longest_palindromic_substring('racecar') == 'racecar'\nassert longest_palindromic_substring('xyz') == 'x'\nassert longest_palindromic_substring('aaa') == 'aaa'\nassert longest_palindromic_substring('abcddcba') == 'abcddcba'\nassert longest_palindromic_substring('abacdfgdcaba') == 'aba'\nassert longest_palindromic_substring('abcba') == 'abcba'\nassert longest_palindromic_substring('abcbad') == 'bcb'\nassert longest_palindromic_substring('abcdee') == 'ee'\nassert longest_palindromic_substring('abcde') == 'a'\nassert longest_palindromic_substring('a?') == 'a'",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "FAIL",
+    "outcome": "FALSE_POSITIVE",
+    "timestamp": "2026-04-21T15:52:57.860655"
+  },
+  {
+    "task_id": "run_length_encoding_compression",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "easy",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def run_length_encoding(s: str) -> str:\n    if not s:\n        return ''\n    result = []\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            result.append(str(count))\n            result.append(s[i - 1])\n            count = 1\n    result.append(str(count))\n    result.append(s[-1])\n    return ''.join(result)",
+    "stage2_verification": {
+      "critique": "The provided solution accurately implements run-length encoding by iterating through the string and counting consecutive identical characters, then appending the count and character to the result list. It correctly handles empty strings by returning an empty string. The implementation is case-sensitive, as it treats uppercase and lowercase characters as distinct. The approach works well for typical inputs and handles sequences of varying lengths, including single characters, as it always appends the count and the character. Edge cases such as empty input and single-character input are correctly handled. However, the function does not explicitly handle non-string inputs; assuming input is always a string, it conforms to the task requirements. Furthermore, there are no issues with large counts or unusual characters, since counts are converted to strings without restrictions. Overall, the code seems correct and complete for the specified task.",
+      "generated_tests": "assert run_length_encoding('') == ''\nassert run_length_encoding('a') == '1a'\nassert run_length_encoding('aa') == '2a'\nassert run_length_encoding('aaa') == '3a'\nassert run_length_encoding('abc') == '1a1b1c'\nassert run_length_encoding('aabcc') == '2a1b2c'\nassert run_length_encoding('AAAaaa') == '3A3a'\nassert run_length_encoding('ABABAB') == '1A1B1A1B1A1B'\nassert run_length_encoding('ccccCC') == '4c2C'\nassert run_length_encoding('a!@#') == '1a1!1@1#'\nassert run_length_encoding('111222333') == '3312312133'\nassert run_length_encoding('abcde') == '1a1b1c1d1e'\nassert run_length_encoding('ZZZZZ') == '5Z'\nassert run_length_encoding('Mississippi') == '1M1i1s2s1i2s1s1i'\nassert run_length_encoding('yyyyy') == '5y'\nassert run_length_encoding('a'*1000) == '1000a'",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "FAIL",
+    "outcome": "FALSE_POSITIVE",
+    "timestamp": "2026-04-21T15:53:02.127306"
+  },
+  {
+    "task_id": "decode_run_length_encoded_string",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "medium",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def decode_run_length(encoded_str: str) -> str:\n    decoded_str = ''\n    count_str = ''\n    for char in encoded_str:\n        if char.isdigit():\n            count_str += char\n        else:\n            decoded_str += char * int(count_str)\n            count_str = ''\n    return decoded_str",
+    "stage2_verification": {
+      "critique": "The solution correctly processes well-formed run-length encoded strings consisting of positive integer counts followed by single characters. It accumulates digit characters in count_str until a non-digit (a character) is encountered, then appends the character repeated count times to decoded_str, and resets count_str. It assumes the input is always well-formed, as per the problem statement, so no error handling for malformed inputs is present. It does not handle empty input explicitly; in that case, the loop simply doesn't run, returning an empty string, which is appropriate. Edge cases like large counts (e.g., '1000A') will be handled correctly because int(count_str) can process any size of integer string. Negative or zero counts are not relevant here since the problem states the input is well-formed and counts are positive integers; no need to handle zero or negative counts. Overall, the code appears correct and efficient for the specified task.",
+      "generated_tests": "assert decode_run_length('3A2B') == 'AAABB'\nassert decode_run_length('1A') == 'A'\nassert decode_run_length('10A') == 'A' * 10\nassert decode_run_length('') == ''\nassert decode_run_length('5Z0A') == 'ZZZZZ'\n# For a large count\nassert decode_run_length('1000A') == 'A' * 1000\n# Edge case with multiple digit counts\nassert decode_run_length('12B3C') == 'BBBBBBBBBBBCCC'\n# Single element\nassert decode_run_length('1Z') == 'Z'\n# Repeating sequence\nassert decode_run_length('2X4Y') == 'XXYYYY'\n# Long sequence with multiple repeats\nassert decode_run_length('2A2B2C') == 'AABBCC'\n",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "FAIL",
+    "outcome": "FALSE_POSITIVE",
+    "timestamp": "2026-04-21T15:53:05.851548"
+  },
+  {
+    "task_id": "regex_match_dot_star",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "hard",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def is_match(s: str, p: str) -> bool:\n    from functools import lru_cache\n\n    @lru_cache(None)\n    def match(i: int, j: int) -> bool:\n        if j == len(p):\n            return i == len(s)\n        first_match = i < len(s) and p[j] in {s[i], '.'}\n        if j + 1 < len(p) and p[j + 1] == '*':\n            return match(i, j + 2) or (first_match and match(i + 1, j))\n        else:\n            return first_match and match(i + 1, j + 1)\n\n    return match(0, 0)",
+    "stage2_verification": {
+      "critique": "The provided solution correctly implements pattern matching with '.' and '*' as specified, using a recursive approach with memoization (lru_cache) for efficiency. It handles matching the entire string and pattern, including the case where '*' can match zero or more of the preceding element. The logic checks for a '*' following the current pattern character and explores both possibilities: skipping the '*' pattern segment or consuming characters in the input string if matched. It also correctly handles the base case when the pattern is exhausted, ensuring the input string is fully matched. Additionally, the approach correctly accounts for edge cases such as empty strings or patterns. The function is well-structured, clear, and adheres to the problem's requirements. \n\nPotential improvements might include explicit comments or alternative iterative implementation, but the current recursive memoized approach is correct and efficient for typical constraints. The solution is sufficiently thorough to handle all valid input scenarios, including edge cases like empty inputs or patterns with multiple '*' characters.\n\nOverall, the provided code passes all typical pattern matching tests, handles edge cases, and uses a correct algorithmic approach. It appears to be correct and complete.\n\nNote: Since mental testing is requested, no actual execution is performed, but the logic aligns with standard regex matching solutions and tasks requirements.",
+      "generated_tests": "assert is_match('aa', 'a') == False\nassert is_match('aa', 'a*') == True\nassert is_match('ab', '.*') == True\nassert is_match('aab', 'c*a*b') == True\nassert is_match('mississippi', 'mis*is*p*.') == False\nassert is_match('', 'c*') == True\nassert is_match('', '') == True\nassert is_match('abc', 'abc') == True\nassert is_match('abc', 'a.c') == True\nassert is_match('abc', 'a.*c') == True\nassert is_match('ab', '.*c') == False\nassert is_match('aaa', 'ab*a') == False\nassert is_match('a', 'ab*') == True\nassert is_match('a', '.') == True\nassert is_match('ab', '.*..') == True\nassert is_match('a'*1000, 'a*'*1000) == True\nassert is_match('abc', 'abc*') == True\nassert is_match('abc', 'ab.*') == True\nassert is_match('abbc', 'ab*c') == False\nassert is_match('abbbc', 'ab*c') == True\nassert is_match('xyz', 'x.*z') == True\nassert is_match('xyz', 'x..z') == True\nassert is_match('xyz', 'x.*d') == False\nassert is_match('abc', 'a.b') == True\nassert is_match('abc', 'a.*b') == True\nassert is_match('abc', 'a.*c') == True\nassert is_match('abc', 'a.*d') == False\nassert is_match('abc', 'a.*b.*c') == True\nassert is_match('abc', 'a.*b.*d') == False\nassert is_match('abc', 'a*bc') == True\nassert is_match('abcc', 'ab*c') == False\nassert is_match('abcc', 'ab*c*') == True\nassert is_match('abcc', 'ab*c*c') == True",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "FAIL",
+    "outcome": "FALSE_POSITIVE",
+    "timestamp": "2026-04-21T15:53:11.144071"
+  },
+  {
+    "task_id": "string_permutations_unique",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "medium",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def string_permutations_unique(s: str) -> list[str]:\n    from itertools import permutations\n    \n    # Generate all permutations of the characters in the string\n    perms = set(''.join(p) for p in permutations(s))\n    return list(perms)",
+    "stage2_verification": {
+      "critique": "The provided solution correctly generates all permutations of the input string using itertools.permutations. By converting the permutations into a set, it automatically filters out duplicate permutations resulting from repeated characters. The solution handles edge cases such as empty strings (returning an empty list), single-character strings (returning a list with that single character), and strings with duplicate characters effectively. However, it needs to explicitly convert the set back to a list before returning, which it does. The order of output permutations is not guaranteed but that is acceptable as per the problem statement. The approach is efficient enough for small to medium-sized inputs but may not be optimal for very large inputs due to factorial growth. Overall, the solution fulfills all task requirements correctly and handles common edge cases properly.",
+      "generated_tests": "assert sorted(string_permutations_unique('')) == ['']\nassert sorted(string_permutations_unique('a')) == ['a']\nassert sorted(string_permutations_unique('ab')) == sorted(['ab', 'ba'])\nassert sorted(string_permutations_unique('aab')) == sorted(['aab', 'aba', 'baa'])\nassert sorted(string_permutations_unique('abc')) == sorted(['abc', 'acb', 'bac', 'bca', 'cab', 'cba'])\nassert sorted(string_permutations_unique('aaa')) == ['aaa']\nassert sorted(string_permutations_unique('aba')) == sorted(['aba', 'aab', 'baa'])\nassert sorted(string_permutations_unique('aabc')) == sorted(['aabc', 'aacb', 'abac', 'abca', 'acab', 'acba', 'baac', 'baca', 'bcaa', 'caab', 'caba', 'cbaa'])",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "FAIL",
+    "outcome": "FALSE_POSITIVE",
+    "timestamp": "2026-04-21T15:53:14.575702"
+  },
+  {
+    "task_id": "roman_numeral_to_integer",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "medium",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def roman_to_int(s: str) -> int:\n    roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}\n    total = 0\n    for i in range(len(s)):\n        value = roman_map[s[i]]\n        if i + 1 < len(s) and roman_map[s[i + 1]] > value:\n            total -= value\n        else:\n            total += value\n    return total",
+    "stage2_verification": {
+      "critique": "The provided solution correctly implements the Roman numeral to integer conversion using a standard approach: iterating through the string, comparing current and next symbols to determine whether to add or subtract values based on Roman numeral rules. It correctly handles subtractive notation by subtracting a value when a smaller numeral precedes a larger one. The implementation is straightforward and efficient. Regarding edge cases: it handles single-character inputs correctly, and since the input is guaranteed to be valid Roman numerals, cases like empty strings or invalid characters are not within scope. The code does not explicitly handle empty strings, but as per the problem statement, the input is valid, so no issues there. It also deals well with large values and standard subtractive cases. Negative numbers are invalid in Roman numerals and are not expected. Overall, the logic is correct and complete within the specified task requirements.",
+      "generated_tests": "assert roman_to_int('I') == 1\nassert roman_to_int('III') == 3\nassert roman_to_int('IV') == 4\nassert roman_to_int('IX') == 9\nassert roman_to_int('LVIII') == 58\nassert roman_to_int('MCMXCIV') == 1994\nassert roman_to_int('MMMCMXCIV') == 3994\nassert roman_to_int('CDXLIV') == 444\nassert roman_to_int('CMXCIX') == 999\nassert roman_to_int('MMM') == 3000",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "PASS",
+    "outcome": "TRUE_POSITIVE",
+    "timestamp": "2026-04-21T15:53:18.292549"
+  },
+  {
+    "task_id": "integer_to_roman_numeral",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "medium",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def int_to_roman(num: int) -> str:\n    val = [\n        1000, 900, 500, 400,\n        100, 90, 50, 40,\n        10, 9, 5, 4,\n        1\n    ]\n    syb = [\n        \"M\", \"CM\", \"D\", \"CD\",\n        \"C\", \"XC\", \"L\", \"XL\",\n        \"X\", \"IX\", \"V\", \"IV\",\n        \"I\"\n    ]\n    roman_numeral = \"\"\n    for i in range(len(val)):\n        while num >= val[i]:\n            num -= val[i]\n            roman_numeral += syb[i]\n    return roman_numeral",
+    "stage2_verification": {
+      "critique": "The provided implementation correctly maps integer values to their Roman numeral counterparts using parallel lists and iteratively subtracts values while appending symbols. It adheres to standard Roman notation with subtractive pairs and covers the range 1 to 3999 accurately. The algorithm is straightforward, efficient, and correctly handles multiple occurrences of the same numeral. However, it does not explicitly handle invalid inputs such as zero, negative numbers, or numbers greater than 3999. The prompt specifies input in the range 1 to 3999, so the function's behavior for out-of-range values isn't strictly defined, but it might be prudent to add validation. Since the input constraints are stated, and the implementation relies on correct input, the code is correct under the given assumptions. The code is clean, with no obvious bugs or logical errors. It is fully capable of converting all valid inputs in the specified range to their Roman numeral forms correctly.",
+      "generated_tests": "assert int_to_roman(1) == 'I'\nassert int_to_roman(4) == 'IV'\nassert int_to_roman(9) == 'IX'\nassert int_to_roman(58) == 'LVIII'\nassert int_to_roman(1994) == 'MCMXCIV'\nassert int_to_roman(3999) == 'MMMCMXCIX'",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "PASS",
+    "outcome": "TRUE_POSITIVE",
+    "timestamp": "2026-04-21T15:53:21.852092"
+  },
+  {
+    "task_id": "caesar_cipher_encode_decode",
+    "level": "L1_logical",
+    "domain": "code",
+    "category": "string_manipulation",
+    "difficulty": "medium",
+    "model": "gpt-4.1-nano",
+    "stage1_solution": "def caesar_cipher(text: str, shift: int, encode: bool) -> str:\n    if not encode:\n        shift = -shift\n    result = []\n\n    for char in text:\n        if char.isalpha():\n            base = ord('A') if char.isupper() else ord('a')\n            shifted_char = chr((ord(char) - base + shift) % 26 + base)\n            result.append(shifted_char)\n        else:\n            result.append(char)\n\n    return ''.join(result)",
+    "stage2_verification": {
+      "critique": "The provided solution correctly implements the Caesar cipher for both encoding and decoding by adjusting the shift based on the encode flag. It handles uppercase and lowercase letters by determining the ASCII base ('A' or 'a') and shifts characters accordingly with modular arithmetic, ensuring wrap-around within the alphabet. Non-alphabetical characters are left unchanged, satisfying the requirement. The method works for positive, negative, and zero shift values, and the code is robust for various input strings, including empty strings. The implementation is concise, clear, and adheres to all task specifications. It correctly distinguishes between encode and decode modes and processes the entire string in a single pass. Overall, it appears to meet all requirements and handle edge cases properly.",
+      "generated_tests": "assert caesar_cipher('abc', 1, True) == 'bcd'\nassert caesar_cipher('xyz', 2, True) == 'zab'\nassert caesar_cipher('ABC', 3, True) == 'DEF'\nassert caesar_cipher('Hello, World!', 5, True) == 'Mjqqt, Btwqi!'\nassert caesar_cipher('Mjqqt, Btwqi!', 5, False) == 'Hello, World!'\nassert caesar_cipher('', 10, True) == ''\nassert caesar_cipher('a', 26, True) == 'a'\nassert caesar_cipher('a', -1, True) == 'z'\nassert caesar_cipher('Z', 1, True) == 'A'\nassert caesar_cipher('Z', -1, True) == 'Y'\nassert caesar_cipher('12345!@#$', 4, True) == '12345!@#$'\nassert caesar_cipher('Test String 123!', 13, True) == 'Grfg Fgere 123!'\nassert caesar_cipher('Gure pbk', 13, False) == 'There cow'\nassert caesar_cipher('Mixtur3 and spe(ci)al!', 10, True) == 'Wxjdeb3 knq cid(ri)k!',\nassert caesar_cipher('Wzrr or T Sbg', 26, True) == 'Wzrr or T Sbg'\nassert caesar_cipher('abc', 0, True) == 'abc'\nassert caesar_cipher('abc', 1, False) == 'zab'\nassert caesar_cipher('abc', -1, True) == 'zab'",
+      "final_decision": "VERIFIED_PASS"
+    },
+    "model_decision": "PASS",
+    "actual_result": "FAIL",
+    "outcome": "FALSE_POSITIVE",
+    "timestamp": "2026-04-21T15:53:25.966003"
+  }
+]

@@ -1,0 +1,118 @@
+{
+  "gpt-4.1-nano": {
+    "code": {
+      "level": "L1_logical",
+      "model": "gpt-4.1-nano",
+      "domain": "code",
+      "total_tasks": 10,
+      "true_positives": 3,
+      "true_negatives": 0,
+      "false_positives": 7,
+      "false_negatives": 0,
+      "self_validation_accuracy": 0.3,
+      "false_positive_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "task_pass_rate": 0.3
+    },
+    "reasoning": {
+      "level": "L1_logical",
+      "model": "gpt-4.1-nano",
+      "domain": "reasoning",
+      "total_tasks": 10,
+      "true_positives": 5,
+      "true_negatives": 1,
+      "false_positives": 4,
+      "false_negatives": 0,
+      "self_validation_accuracy": 0.6,
+      "false_positive_rate": 0.8,
+      "false_negative_rate": 0.0,
+      "task_pass_rate": 0.5
+    },
+    "data_analysis": {
+      "level": "L1_logical",
+      "model": "gpt-4.1-nano",
+      "domain": "data_analysis",
+      "total_tasks": 5,
+      "true_positives": 1,
+      "true_negatives": 0,
+      "false_positives": 4,
+      "false_negatives": 0,
+      "self_validation_accuracy": 0.2,
+      "false_positive_rate": 1.0,
+      "false_negative_rate": 0.0,
+      "task_pass_rate": 0.2
+    },
+    "perceptual": {
+      "level": "L2_perceptual",
+      "model": "gpt-4.1-nano",
+      "domain": "perceptual",
+      "total_tasks": 15,
+      "total_planted_bugs": 15,
+      "total_bugs_found": 56,
+      "total_bugs_matched": 15,
+      "total_false_alarms": 41,
+      "avg_detection_rate": 1.0,
+      "overall_recall": 1.0,
+      "overall_precision": 0.2679,
+      "by_category": {
+        "image_sizing": {
+          "total": 10,
+          "planted": 10,
+          "matched": 10,
+          "found": 43,
+          "detection_rate": 1.0
+        },
+        "text_contrast": {
+          "total": 5,
+          "planted": 5,
+          "matched": 5,
+          "found": 13,
+          "detection_rate": 1.0
+        }
+      }
+    },
+    "consistency": {
+      "level": "L3_consistency",
+      "model": "gpt-4.1-nano",
+      "domain": "consistency",
+      "total_tasks": 10,
+      "total_planted_contradictions": 45,
+      "total_contradictions_found": 34,
+      "total_contradictions_matched": 28,
+      "total_false_alarms": 6,
+      "avg_detection_rate": 0.6017,
+      "overall_recall": 0.6222,
+      "overall_precision": 0.8235,
+      "by_category": {
+        "report_vs_data": {
+          "total": 3,
+          "planted": 7,
+          "matched": 6,
+          "found": 11,
+          "detection_rate": 0.8571
+        },
+        "readme_vs_code": {
+          "total": 3,
+          "planted": 21,
+          "matched": 14,
+          "found": 14,
+          "detection_rate": 0.6667
+        },
+        "chart_vs_data": {
+          "total": 3,
+          "planted": 13,
+          "matched": 7,
+          "found": 8,
+          "detection_rate": 0.5385
+        },
+        "slide_deck": {
+          "total": 1,
+          "planted": 4,
+          "matched": 1,
+          "found": 1,
+          "detection_rate": 0.25
+        }
+      }
+    }
+  }
+}

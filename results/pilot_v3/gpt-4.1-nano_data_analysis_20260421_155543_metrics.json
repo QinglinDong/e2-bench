@@ -1,0 +1,14 @@
+{
+  "level": "L1_logical",
+  "model": "gpt-4.1-nano",
+  "domain": "data_analysis",
+  "total_tasks": 5,
+  "true_positives": 1,
+  "true_negatives": 0,
+  "false_positives": 4,
+  "false_negatives": 0,
+  "self_validation_accuracy": 0.2,
+  "false_positive_rate": 1.0,
+  "false_negative_rate": 0.0,
+  "task_pass_rate": 0.2
+}

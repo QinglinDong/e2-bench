@@ -1,0 +1,504 @@
+[
+  {
+    "task_id": "perceptual_0001",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 4,
+    "bugs_found": [
+      "The image container uses 'object-fit: fill', which may distort product images by stretching them to fit the 400px height, leading to improper aspect ratios.",
+      "The image is styled with a fixed height (400px) but no explicit width, causing the image to stretch vertically possibly distorting the product image.",
+      "Color contrast of the price text (#e44) is insufficient for readability against white background, potentially affecting accessibility.",
+      "The margin-top of 12px on the 'Add to Cart' button may cause inconsistent spacing if the content above changes, but it is not a bug per se, just something to note."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 3,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The image container uses 'object-fit: fill', which may distort product images by stretching them to fit the 400px height, leading to improper aspect ratios.",
+        "The image is styled with a fixed height (400px) but no explicit width, causing the image to stretch vertically possibly distorting the product image.",
+        "Color contrast of the price text (#e44) is insufficient for readability against white background, potentially affecting accessibility.",
+        "The margin-top of 12px on the 'Add to Cart' button may cause inconsistent spacing if the content above changes, but it is not a bug per se, just something to note."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:44.584704"
+  },
+  {
+    "task_id": "perceptual_0002",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 5,
+    "bugs_found": [
+      "Image container uses object-fit: fill, which distorts the aspect ratio of the product image; the image may appear stretched or squished.",
+      "The product image is set to a fixed height of 400px without a specified width or aspect ratio maintenance, risking improper scaling on different screen sizes or screens with different aspect ratios.",
+      "Text color for the price (#e44) may not have sufficient contrast against a white background, potentially causing readability issues for users with visual impairments.",
+      "The layout uses fixed widths and margins that may not be fully responsive for smaller screens, leading to potential overflow or horizontal scrolling on mobile devices.",
+      "There is no responsive design consideration (media queries) for different screen sizes; the product card may not look optimal on various devices."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 4,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "Image container uses object-fit: fill, which distorts the aspect ratio of the product image; the image may appear stretched or squished.",
+        "The product image is set to a fixed height of 400px without a specified width or aspect ratio maintenance, risking improper scaling on different screen sizes or screens with different aspect ratios.",
+        "Text color for the price (#e44) may not have sufficient contrast against a white background, potentially causing readability issues for users with visual impairments.",
+        "The layout uses fixed widths and margins that may not be fully responsive for smaller screens, leading to potential overflow or horizontal scrolling on mobile devices.",
+        "There is no responsive design consideration (media queries) for different screen sizes; the product card may not look optimal on various devices."
+      ],
+      "num_bugs_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:45.829118"
+  },
+  {
+    "task_id": "perceptual_0003",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "Image container has fixed height (400px) with object-fit: fill, which may distort the image proportions under different image sizes or aspect ratios.",
+      "Using object-fit: fill causes possible distortion; typically, object-fit: contain or cover is preferable to maintain aspect ratio."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "Image container has fixed height (400px) with object-fit: fill, which may distort the image proportions under different image sizes or aspect ratios.",
+        "Using object-fit: fill causes possible distortion; typically, object-fit: contain or cover is preferable to maintain aspect ratio."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:46.881846"
+  },
+  {
+    "task_id": "perceptual_0004",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 6,
+    "bugs_found": [
+      "The product image uses 'object-fit: fill', which can distort the image, causing stretching or squashing and thus not maintaining the original aspect ratio.",
+      "The background color of the product image container is set to a light gray (#f5f5f5), which may be visible behind the image if the image does not cover the entire container, especially with 'object-fit: fill'.",
+      "The text color for the price is set to '#e44', which is missing a '#' for proper hex code, likely rendering as an invalid color or defaulting to black, reducing visual clarity.",
+      "The button text 'Add to Cart' may lack sufficient contrast against the blue background for accessibility; specific contrast ratio should be verified.",
+      "The margin around the product card is set to 40px and max-width is 320px, which could lead to inconsistent spacing on smaller screens or multiple product cards stacked without spacing in between if multiple are added.",
+      "The product image container has a fixed height of 400px; on smaller screens, this could cause layout issues or overflow if the content or image doesn't scale properly."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 5,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image uses 'object-fit: fill', which can distort the image, causing stretching or squashing and thus not maintaining the original aspect ratio.",
+        "The background color of the product image container is set to a light gray (#f5f5f5), which may be visible behind the image if the image does not cover the entire container, especially with 'object-fit: fill'.",
+        "The text color for the price is set to '#e44', which is missing a '#' for proper hex code, likely rendering as an invalid color or defaulting to black, reducing visual clarity.",
+        "The button text 'Add to Cart' may lack sufficient contrast against the blue background for accessibility; specific contrast ratio should be verified.",
+        "The margin around the product card is set to 40px and max-width is 320px, which could lead to inconsistent spacing on smaller screens or multiple product cards stacked without spacing in between if multiple are added.",
+        "The product image container has a fixed height of 400px; on smaller screens, this could cause layout issues or overflow if the content or image doesn't scale properly."
+      ],
+      "num_bugs_found": 6,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:48.401194"
+  },
+  {
+    "task_id": "perceptual_0005",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "stretched_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 4,
+    "bugs_found": [
+      "The image placeholder uses object-fit: fill, which can distort the aspect ratio of the product image, leading to stretched or squished visuals.",
+      "The background color for the image placeholder (#f5f5f5) and the font color (#999) provide low contrast, possibly affecting readability and aesthetic appeal.",
+      "The product image container has a fixed height of 400px, which may not adapt well to various device sizes or images of different aspect ratios, potentially causing overflow or empty space if images are smaller or larger.",
+      "The overall layout is limited to a single fixed-width card centered via margin auto; this may not be fully responsive or visually optimal across different screen sizes (no media queries or flexible layout)."
+    ],
+    "ground_truth_bugs": [
+      "Product image is stretched (height forced to 400px with object-fit: fill instead of cover, distorting the image)"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 3,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The image placeholder uses object-fit: fill, which can distort the aspect ratio of the product image, leading to stretched or squished visuals.",
+        "The background color for the image placeholder (#f5f5f5) and the font color (#999) provide low contrast, possibly affecting readability and aesthetic appeal.",
+        "The product image container has a fixed height of 400px, which may not adapt well to various device sizes or images of different aspect ratios, potentially causing overflow or empty space if images are smaller or larger.",
+        "The overall layout is limited to a single fixed-width card centered via margin auto; this may not be fully responsive or visually optimal across different screen sizes (no media queries or flexible layout)."
+      ],
+      "num_bugs_found": 4,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:49.614001"
+  },
+  {
+    "task_id": "perceptual_0006",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 3,
+    "bugs_found": [
+      "The .product-img element has a fixed height of 40px, which may not maintain the aspect ratio of the product image, potentially leading to distorted or very small images if actual images are used instead of placeholder text.",
+      "The placeholder text '[Product Image: Desk Lamp]' within .product-img is not styled as an image; it is just text, which may be confusing or look like a broken image placeholder, suggesting the need for an actual <img> element or background image for a real product image.",
+      "The background color of .product-img (#f5f5f5) combined with text color #999 might reduce readability if real images are used, or make placeholder ambiguous, but as an issue code-wise, this is minimal\u2014the main concern is actual image display."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 2,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The .product-img element has a fixed height of 40px, which may not maintain the aspect ratio of the product image, potentially leading to distorted or very small images if actual images are used instead of placeholder text.",
+        "The placeholder text '[Product Image: Desk Lamp]' within .product-img is not styled as an image; it is just text, which may be confusing or look like a broken image placeholder, suggesting the need for an actual <img> element or background image for a real product image.",
+        "The background color of .product-img (#f5f5f5) combined with text color #999 might reduce readability if real images are used, or make placeholder ambiguous, but as an issue code-wise, this is minimal\u2014the main concern is actual image display."
+      ],
+      "num_bugs_found": 3,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:50.697254"
+  },
+  {
+    "task_id": "perceptual_0007",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 5,
+    "bugs_found": [
+      "The image container '.product-img' has a fixed height of 40px, which is very small and does not preserve the aspect ratio of the actual product image, likely causing the image to appear cut off or not fully visible.",
+      "The 'product-img' element contains only placeholder text '[Product Image: Backpack]' and no actual <img> element or background image, leading to a non-visible or non-representative product image area.",
+      "The '.category' and '.price' elements may have insufficient contrast with the background, especially since the category color is #888 (gray) on a white background, which might be hard to read for some users with visual impairments.",
+      "The overall layout is centered with a fixed max-width, which may cause issues on very small screens or larger screens not optimizing space, but this is less critical.",
+      "The 'Add to Cart' button's hover state 'background: #1d4ed8' might have insufficient contrast if the default background '#2563eb' also isn't sufficiently distinguishable, but both are shades of blue, so contrast is likely acceptable."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 4,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The image container '.product-img' has a fixed height of 40px, which is very small and does not preserve the aspect ratio of the actual product image, likely causing the image to appear cut off or not fully visible.",
+        "The 'product-img' element contains only placeholder text '[Product Image: Backpack]' and no actual <img> element or background image, leading to a non-visible or non-representative product image area.",
+        "The '.category' and '.price' elements may have insufficient contrast with the background, especially since the category color is #888 (gray) on a white background, which might be hard to read for some users with visual impairments.",
+        "The overall layout is centered with a fixed max-width, which may cause issues on very small screens or larger screens not optimizing space, but this is less critical.",
+        "The 'Add to Cart' button's hover state 'background: #1d4ed8' might have insufficient contrast if the default background '#2563eb' also isn't sufficiently distinguishable, but both are shades of blue, so contrast is likely acceptable."
+      ],
+      "num_bugs_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:52.555366"
+  },
+  {
+    "task_id": "perceptual_0008",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "The product image is styled with a fixed height of 40px, which may distort the image or not display it properly if the aspect ratio is not square. It uses object-fit: cover, but the small height may cut off parts of the image or make it appear squished.",
+      "Text color '#e44' for the price may cause readability issues depending on the background; although white background likely makes it visible, it's better to ensure sufficient contrast."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The product image is styled with a fixed height of 40px, which may distort the image or not display it properly if the aspect ratio is not square. It uses object-fit: cover, but the small height may cut off parts of the image or make it appear squished.",
+        "Text color '#e44' for the price may cause readability issues depending on the background; although white background likely makes it visible, it's better to ensure sufficient contrast."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:53.743255"
+  },
+  {
+    "task_id": "perceptual_0009",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 4,
+    "bugs_found": [
+      "The .product-img element has a fixed height of 40px, which is very small for displaying an image, likely causing the image to be cut off or not visible properly.",
+      "The background color of the .product-img container is set to a light gray (#f5f5f5), but since the div contains only placeholder text '[Product Image: Sunglasses]', the actual image (if any) is not embedded or set as a background image, leading to potential misrepresentation or empty space.",
+      "There is no actual <img> element for the product image, just a placeholder div, which may not be suitable for displaying images properly and ensuring accessibility.",
+      "The contrast between the .price text (#e44) and the background (#fff) is good, but the font size of 22px while prominent might be more appealing with a clearer color (e.g., a darker shade) to ensure visibility in different lighting conditions."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 3,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The .product-img element has a fixed height of 40px, which is very small for displaying an image, likely causing the image to be cut off or not visible properly.",
+        "The background color of the .product-img container is set to a light gray (#f5f5f5), but since the div contains only placeholder text '[Product Image: Sunglasses]', the actual image (if any) is not embedded or set as a background image, leading to potential misrepresentation or empty space.",
+        "There is no actual <img> element for the product image, just a placeholder div, which may not be suitable for displaying images properly and ensuring accessibility.",
+        "The contrast between the .price text (#e44) and the background (#fff) is good, but the font size of 22px while prominent might be more appealing with a clearer color (e.g., a darker shade) to ensure visibility in different lighting conditions."
+      ],
+      "num_bugs_found": 4,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:55.228608"
+  },
+  {
+    "task_id": "perceptual_0010",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "image_sizing",
+    "bug_type": "tiny_image",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 8,
+    "bugs_found": [
+      "The 'product-img' element has a height set to 40px, which is very small and likely will not display the image properly or at all, especially if the image is larger. This may cause the image to be cut off or not visible as intended.",
+      "The 'product-img' element contains placeholder text '[Product Image: Bluetooth Speaker]', which indicates that an actual image is not used. This visual placeholder is not ideal and could be mistaken for broken image if replaced, although technically not a bug, it is a placeholder that might be confusing or not visually appealing.",
+      "The CSS sets 'color: #999' for the 'product-img' but since actual images are used, this style will not apply. If images are used later, the background color or placeholder behavior should be reconsidered.",
+      "There are no alt attributes or actual <img> tags, meaning no real images are embedded, which could cause accessibility issues and may not meet best practices for product images.",
+      "The styling is minimal but looks consistent; however, the fixed max-width of 320px may cause layout issues on very small screens or very large screens, but since the 'margin: 40px auto' centers the card on wider screens, only small screens may have truncated display or scrolling issues if content overflows.",
+      "Button has no explicit focus styles, which could impact accessibility for keyboard navigation.",
+      "No responsive behavior is defined beyond the basic viewport meta tag, but since the card is constrained to max-width: 320px, responsiveness is somewhat handled.",
+      "No accessibility attributes or semantics are present, such as aria-labels or descriptive attributes, but this is typical for simple static markup."
+    ],
+    "ground_truth_bugs": [
+      "Product image is extremely small (height: 40px instead of 240px), barely visible"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 7,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The 'product-img' element has a height set to 40px, which is very small and likely will not display the image properly or at all, especially if the image is larger. This may cause the image to be cut off or not visible as intended.",
+        "The 'product-img' element contains placeholder text '[Product Image: Bluetooth Speaker]', which indicates that an actual image is not used. This visual placeholder is not ideal and could be mistaken for broken image if replaced, although technically not a bug, it is a placeholder that might be confusing or not visually appealing.",
+        "The CSS sets 'color: #999' for the 'product-img' but since actual images are used, this style will not apply. If images are used later, the background color or placeholder behavior should be reconsidered.",
+        "There are no alt attributes or actual <img> tags, meaning no real images are embedded, which could cause accessibility issues and may not meet best practices for product images.",
+        "The styling is minimal but looks consistent; however, the fixed max-width of 320px may cause layout issues on very small screens or very large screens, but since the 'margin: 40px auto' centers the card on wider screens, only small screens may have truncated display or scrolling issues if content overflows.",
+        "Button has no explicit focus styles, which could impact accessibility for keyboard navigation.",
+        "No responsive behavior is defined beyond the basic viewport meta tag, but since the card is constrained to max-width: 320px, responsiveness is somewhat handled.",
+        "No accessibility attributes or semantics are present, such as aria-labels or descriptive attributes, but this is typical for simple static markup."
+      ],
+      "num_bugs_found": 8,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:57.317725"
+  },
+  {
+    "task_id": "perceptual_0011",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "The text color for the heading and paragraph (#2a2a3e) may have insufficient contrast against the very dark background (#1a1a2e), potentially affecting readability for some users with visual impairments.",
+      "Lack of visible input fields or call-to-action (e.g., a sign-up button) makes it unclear how users are supposed to sign up, which could lead to confusion or perception of a broken interface."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#2a2a3e) is nearly identical to background color (#1a1a2e), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "The text color for the heading and paragraph (#2a2a3e) may have insufficient contrast against the very dark background (#1a1a2e), potentially affecting readability for some users with visual impairments.",
+        "Lack of visible input fields or call-to-action (e.g., a sign-up button) makes it unclear how users are supposed to sign up, which could lead to confusion or perception of a broken interface."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:58.527294"
+  },
+  {
+    "task_id": "perceptual_0012",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "Text color #ffe0e0 (a light pink) on a white background (#fff) results in very low contrast, making the message difficult to read for users with visual impairments or in poor lighting conditions.",
+      "The header <h1> has a font size of 28px, which may be slightly small for immediate visibility, especially given the low contrast; increasing font size or contrast would improve readability."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#ffe0e0) is nearly identical to background color (#fff0f0), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "Text color #ffe0e0 (a light pink) on a white background (#fff) results in very low contrast, making the message difficult to read for users with visual impairments or in poor lighting conditions.",
+        "The header <h1> has a font size of 28px, which may be slightly small for immediate visibility, especially given the low contrast; increasing font size or contrast would improve readability."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:55:59.447042"
+  },
+  {
+    "task_id": "perceptual_0013",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 5,
+    "bugs_found": [
+      "Low contrast between text and background: The text colors (#e0ffe0) on a light green background (#f0fff0) may reduce readability for some users, especially those with color vision deficiencies or on certain screens.",
+      "Heading color inconsistency: The h1 text color (#e0ffe0) is similar to the paragraph text color and may lack sufficient contrast to stand out adequately.",
+      "Lack of accessibility contrast check: The current color choices do not appear to meet AA contrast ratio standards for readability.",
+      "Potential scaling issues: The font sizes are fixed (28px for heading, 16px for paragraph). On very small screens, text may become cramped or overflow unless further responsive styles are added.",
+      "Limited visual hierarchy: While the heading is larger, the overall color scheme could be improved to enhance visual separation and emphasis."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#e0ffe0) is nearly identical to background color (#f0fff0), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 4,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "Low contrast between text and background: The text colors (#e0ffe0) on a light green background (#f0fff0) may reduce readability for some users, especially those with color vision deficiencies or on certain screens.",
+        "Heading color inconsistency: The h1 text color (#e0ffe0) is similar to the paragraph text color and may lack sufficient contrast to stand out adequately.",
+        "Lack of accessibility contrast check: The current color choices do not appear to meet AA contrast ratio standards for readability.",
+        "Potential scaling issues: The font sizes are fixed (28px for heading, 16px for paragraph). On very small screens, text may become cramped or overflow unless further responsive styles are added.",
+        "Limited visual hierarchy: While the heading is larger, the overall color scheme could be improved to enhance visual separation and emphasis."
+      ],
+      "num_bugs_found": 5,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:56:01.099327"
+  },
+  {
+    "task_id": "perceptual_0014",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "Text color '#fff3cd' (a light yellow) provides poor contrast against the 'background: #fffbeb' (a very light yellow), making the warning text hard to read for users, especially those with visual impairments.",
+      "The heading <h1> and paragraph <p> both use the same color '#fff3cd', which reduces visual hierarchy and may cause the content to look monotonous and less visually distinct."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#fff3cd) is nearly identical to background color (#fffbeb), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "Text color '#fff3cd' (a light yellow) provides poor contrast against the 'background: #fffbeb' (a very light yellow), making the warning text hard to read for users, especially those with visual impairments.",
+        "The heading <h1> and paragraph <p> both use the same color '#fff3cd', which reduces visual hierarchy and may cause the content to look monotonous and less visually distinct."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:56:02.112150"
+  },
+  {
+    "task_id": "perceptual_0015",
+    "level": "L2_perceptual",
+    "domain": "perceptual",
+    "category": "text_contrast",
+    "bug_type": "low_contrast_text",
+    "severity": "high",
+    "model": "gpt-4.1-nano",
+    "num_planted_bugs": 1,
+    "num_bugs_found": 2,
+    "bugs_found": [
+      "Text color (#374151) on the background (#1f2937) has low contrast, potentially making it hard to read for some users, violating accessibility standards.",
+      "The footer text ('Privacy Policy | Terms of Service | Contact Us') is not styled for better spacing or clickable links, which may affect usability and clarity."
+    ],
+    "ground_truth_bugs": [
+      "Text color (#374151) is nearly identical to background color (#1f2937), making text unreadable"
+    ],
+    "detection_rate": 1.0,
+    "false_alarm_count": 1,
+    "matched_bugs": 1,
+    "raw_response": {
+      "bugs_found": [
+        "Text color (#374151) on the background (#1f2937) has low contrast, potentially making it hard to read for some users, violating accessibility standards.",
+        "The footer text ('Privacy Policy | Terms of Service | Contact Us') is not styled for better spacing or clickable links, which may affect usability and clarity."
+      ],
+      "num_bugs_found": 2,
+      "confidence": "high"
+    },
+    "timestamp": "2026-04-21T15:56:03.220418"
+  }
+]
