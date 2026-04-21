@@ -9,9 +9,9 @@
 
 \title{E$^2$-Bench: Eval of Eval for Measuring Self-Validation Reliability in LLM Agents}
 
-\author[1,*]{Qinglin Dong}
+\author[1,*]{Qinlin Dong}
 
-\affiliation{1}{University of Georgia}
+\affiliation{1}{Meta}
 
 \contribution[*]{Corresponding author}
 
@@ -20,11 +20,18 @@ As Large Language Models (LLMs) are increasingly deployed as autonomous agents, 
 }
 
 \date{April 2026}
-\correspondence{Qinglin Dong at \email{qd90658@uga.edu}}
+\correspondence{Qinlin Dong at \email{qinlin@meta.com}}
 \metadata[Code]{\url{https://github.com/QinglinDong/e2-bench}}
 
 \begin{document}
 \maketitle
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_hero_comprehensive.png}
+    \caption{\textbf{E$^2$-Bench Comprehensive Results.} A unified view of self-validation reliability across three cognitive levels and three frontier models. (A) Level 1 shows a severe ``Yes Man'' bias (high False Positive Rate). (B) Level 2 shows an over-reporting tendency (perfect recall but low precision). (C) Level 3 shows the highest reliability, scaling with model capability. (D) The cross-level radar chart summarizes the stark differences in reliability depending on the validation type.}
+    \label{fig:hero}
+\end{figure}
 
 %% ============================================================================
 \section{Introduction}
